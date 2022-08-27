@@ -3,11 +3,12 @@ import styled, { css } from 'styled-components';
 
 type Props = {
   secondary: boolean;
+  width?: number;
 };
 
 const Button = styled.button<Props>`
-  background-color: ${({ secondary }) => (secondary ? '#FFD82B' : '#E6E6E6')};
-  width: 105px;
+  background-color: #e6e6e6;
+  width: ${({ width }) => width || '220px'};
   height: 30px;
   border: none;
   border-radius: 50px;
