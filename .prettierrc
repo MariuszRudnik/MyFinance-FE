@@ -1,9 +1,12 @@
 {
-  "semi": false,
+  "semi": true,
   "tabWidth": 2,
   "printWidth": 100,
   "singleQuote": true,
-  "trailingComma": "all",
-  "jsxSingleQuote": true,
-  "bracketSpacing": true
+  "trailingComma": "none",
+  "jsxBracketSameLine": true,
+  "extends" : "@parcel/config-default",
+  "parcelIgnore" : [
+    "tailwind.config.js"
+  ]
 }
