@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 
 type Props = {
   secondary: boolean;
-  width?: number;
+  width?: string;
 };
 
 const Button = styled.button<Props>`
