@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import { theme } from '../../../theme/mainTheme';
 
 type Props = {
   secondary: boolean;
@@ -7,9 +8,9 @@ type Props = {
 };
 
 const Button = styled.button<Props>`
-  background-color: #e6e6e6;
+  background-color: ${({ theme }) => theme.primary};
   width: ${({ width }) => width || '220px'};
-  height: 30px;
+  height: 47px;
   border: none;
   border-radius: 50px;
   basefont: 'Montserrat';
@@ -20,10 +21,10 @@ const Button = styled.button<Props>`
   ${({ secondary }) =>
     secondary &&
     css`
-      background-color: #ffd82b;
-      width: 220px;
-      height: 47px;
-      font-size: 16px;
+      background-color: ${({ theme }) => theme.grey200};
+      width: 105px;
+      height: 30px;
+      font-size: 10px;
     `}
 `;
 
