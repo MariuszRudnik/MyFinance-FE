@@ -8,3 +8,4 @@ import { Input } from './Atoms/Input/Input.stories';
 import { ButtonIcon } from './Atoms/ButtonIcon/ButtonIcon.stories';
 import { Heading } from './Atoms/Heading/Heading.stories';
 import { Card } from './Molecules/Card/Card.stories';
+import { Sidebar } from './Organism/Sidebar/Sidebar.stories';

@@ -6,6 +6,7 @@ type Props = {
 };
 
 const ButtonIcon = styled.button<Props>`
+  display: block;
   width: 67px;
   height: 67px;
   border-radius: 20px;
@@ -14,7 +15,10 @@ const ButtonIcon = styled.button<Props>`
   background-position: 50% 50%;
   background-size: 40%;
   border: none;
-  background-color: ${({ active }) => (active ? 'white' : 'transparent')};
+  //background-color: ${({ active }) => (active ? 'white' : 'transparent')};
+  &.active {
+    background-color: white;
+  }
 `;
 
 export default ButtonIcon;

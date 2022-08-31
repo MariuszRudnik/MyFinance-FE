@@ -4,36 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="I fixed Error with Eslint and install StoryBook">
-      <change afterPath="$PROJECT_DIR$/.storybook/preview-head.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.storybook/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Assets/icons/bulb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Assets/icons/logout.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Assets/icons/magnifier.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Assets/icons/pen.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Assets/icons/plus.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Assets/icons/twitter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Atoms/Button/Button.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Atoms/ButtonIcon/ButtonIcon.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Atoms/ButtonIcon/ButtonIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Atoms/Heading/Heading.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Atoms/Heading/Heading.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Atoms/Input/Input.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Atoms/Input/Input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Atoms/Paragraph/Paragraph.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Atoms/Paragraph/Paragraph.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Molecules/Card/Card.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Molecules/Card/Card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/MainTemplate.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theme/mainTheme.ts" afterDir="false" />
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="I created Atoms">
+      <change afterPath="$PROJECT_DIR$/src/Pages/MainPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/News.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/Setting.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Assets/iconsLogo/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Organism/Sidebar/Sidebar.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Organism/Sidebar/Sidebar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/UserPageTemplates.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/types/UrtTypes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/Button/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/root/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/root/Root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Atoms/ButtonIcon/ButtonIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/ButtonIcon/ButtonIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/root/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Root/App.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/root/Root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/MainTemplate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/MainTemplate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/GlobalStyle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/GlobalStyle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/mainTheme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/mainTheme.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,11 +67,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Assets/iconsLogo" />
+      <recent name="$PROJECT_DIR$/src/Pages" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/components/Assets/icons" />
       <recent name="$PROJECT_DIR$/src/components/atoms" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/components/Button" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -148,7 +137,7 @@
       <workItem from="1661586905999" duration="232000" />
       <workItem from="1661587143001" duration="9170000" />
       <workItem from="1661599308040" duration="10263000" />
-      <workItem from="1661675311509" duration="13016000" />
+      <workItem from="1661675311509" duration="26030000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -171,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661601412899</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="I created Atoms">
+      <created>1661878512359</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661878512359</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +188,7 @@
     <MESSAGE value="I was created Button" />
     <MESSAGE value="Merge remote-tracking branch 'origin/Develop' into Develop" />
     <MESSAGE value="I fixed Error with Eslint and install StoryBook" />
-    <option name="LAST_COMMIT_MESSAGE" value="I fixed Error with Eslint and install StoryBook" />
+    <MESSAGE value="I created Atoms" />
+    <option name="LAST_COMMIT_MESSAGE" value="I created Atoms" />
   </component>
 </project>
