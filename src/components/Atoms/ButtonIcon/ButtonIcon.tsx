@@ -6,6 +6,7 @@ type Props = {
 };
 
 const ButtonIcon = styled.button<Props>`
+  text-decoration: none;
   display: block;
   width: 67px;
   height: 67px;

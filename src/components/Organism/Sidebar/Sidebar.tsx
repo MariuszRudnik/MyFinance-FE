@@ -7,6 +7,9 @@ import twitterIcon from '../../Assets/icons/twitter.svg';
 import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import iconsLogo from '../../Assets/iconsLogo/logo.png';
+import wallet from '../../Assets/icons/wallet.svg';
+import settings from '../../Assets/icons/settings.svg';
+import addNew from '../../Assets/icons/add_new.svg';
 
 type TypeProps = {
   activeColor?: any;
@@ -43,6 +46,10 @@ const StyledLogoutButton = styled(ButtonIcon)`
   margin-bottom: 36px;
 `;
 
+const StyledLinksParagraph = styled.p`
+  text-decoration: none;
+`;
+
 const StyledLinksList = styled.ul`
   margin: 0;
   padding: 0;
@@ -55,13 +62,13 @@ export const Sidebar = ({ activeColor }: TypeProps) => {
       <StyledLogoLink to="/" />
       <StyledLinksList>
         <li>
-          <ButtonIcon as={NavLink} to="/" icon={penIcon} />
+          <ButtonIcon as={NavLink} to="/setting" icon={addNew} />
         </li>
         <li>
-          <ButtonIcon as={NavLink} to="/news" icon={twitterIcon} />
+          <ButtonIcon as={NavLink} to="/" icon={wallet} />
         </li>
         <li>
-          <ButtonIcon as={NavLink} to="/setting" icon={bulbIcon} />
+          <ButtonIcon as={NavLink} to="/news" icon={settings} />
         </li>
       </StyledLinksList>
       <StyledLogoutButton as={NavLink} to="/login" icon={logoutIcon} />

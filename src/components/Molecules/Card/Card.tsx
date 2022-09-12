@@ -46,7 +46,7 @@ export const Card = ({ activeColor }: InnerWrapperProps) => {
         <DateInfo>3 days</DateInfo>
       </InnerWrapper>
       <InnerWrapper>
-        <Paragraph>Lorem LoremLoremLoremLoremLoremLoremLoremLoremLoremLorem</Paragraph>
+        <Paragraph>Lorem Lorem Lorem Lorem LoremLorem LoremLorem LoremLorem Lorem</Paragraph>
         <Button secondary>Remove</Button>
       </InnerWrapper>
     </StyledWrapper>
