@@ -1,8 +1,25 @@
-import React from 'react';
 import { createGlobalStyle } from 'styled-components';
+import { theme } from './mainTheme';
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+  @font-face {
+    font-family: Roboto-Regular;
+    src: url(../components/Assets/Fonts/Roboto-Regular.ttf);
+  }
+  @font-face {
+    font-family: Roboto-Bold;
+    src: url(../components/Assets/Fonts/Roboto-Bold.ttf);
+  }@font-face {
+    font-family: Roboto-Italic;
+    src: url(../components/Assets/Fonts/Roboto-Italic.ttf);
+  }
+  @font-face {
+    font-family: Roboto-Light;
+    src: url(../components/Assets/Fonts/Roboto-Light.ttf);
+  }
+  
+  
+
   *,*::before, *::after{
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -12,9 +29,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: 62.5%;
   }
   body {
+    background-color: ${theme.background};
     padding-left: 100px;
     font-size: 1.6rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto-Regular", sans-serif;
   }
 `;
 

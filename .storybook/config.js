@@ -6,5 +6,6 @@ function loadStories() {
   require('../src/components');
 }
 
+
 addDecorator((story) => <ThemeProvider theme={theme}>{story()}</ThemeProvider>);
 configure(loadStories, module);
