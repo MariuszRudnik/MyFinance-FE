@@ -1,5 +1,6 @@
 export enum UrtTypes {
   Setting = 'setting',
   MainPages = 'main-pages',
-  News = 'news'
+  News = 'news',
+  Login = 'login'
 }

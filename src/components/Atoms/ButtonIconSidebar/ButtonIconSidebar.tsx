@@ -15,12 +15,12 @@ const ButtonIconSidebar = styled.button<Props>`
   border: none;
   transition: width 0.25s ease-in-out;
   font-weight: bold;
-  color: ${theme.navy};
+  color: ${theme.gray400};
   background-color: ${theme.background};
   margin: 10px;
   &.active {
     background-color: ${({ closed }) => (closed ? theme.violet : theme.white)};
-    color: ${({ closed }) => (closed ? theme.white : theme.navy)};
+    color: ${({ closed }) => (closed ? theme.white : theme.gray400)};
     font-weight: bold;
   }
 `;

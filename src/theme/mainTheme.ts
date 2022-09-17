@@ -17,8 +17,10 @@ export const theme = {
     xl: '4rem'
   },
   background: '#F7F8FA',
-  navBackground: '#EDEFF2',
   white: '#FFFFFF',
+  white200: '#EDEFF2',
   violet: '#8833FF',
-  navy: '#6B7A99'
+  gray400: '#6B7A99',
+  navy200: 'rgb(31,38,55)',
+  blue100: 'rgb(52, 85, 247)'
 };

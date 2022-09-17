@@ -16,7 +16,7 @@ const SidebarWrapper = styled.div`
   flex-direction: column;
   width: 310px;
   min-height: 200px;
-  border: 2px solid ${theme.navBackground};
+  border: 2px solid ${theme.white200};
   border-radius: 20px;
 `;
 const StyledLinksList = styled.ul`

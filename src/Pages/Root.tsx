@@ -7,6 +7,7 @@ import { Setting } from './Setting';
 import { UrtTypes } from '../types/UrtTypes';
 import { Provider } from 'react-redux';
 import store from '../store';
+import { LoginPage } from './Access/LoginPage';
 
 function Root() {
   return (
@@ -17,6 +18,7 @@ function Root() {
             <Route path="/" element={<MainPage />}></Route>
             <Route path={`/${UrtTypes.News}`} element={<News />}></Route>
             <Route path={`/${UrtTypes.Setting}`} element={<Setting />}></Route>
+            <Route path={`/${UrtTypes.Login}`} element={<LoginPage />}></Route>
           </Routes>
         </MainTemplate>
       </BrowserRouter>
