@@ -13,6 +13,7 @@ const Input = styled.input<Props>`
   border: none;
   border-radius: 50px;
   margin: 5px;
+
   ::placeholder {
     text-transform: uppercase;
     letter-spacing: 1px;

@@ -4,25 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Create SidebarV2.tsx">
-      <change afterPath="$PROJECT_DIR$/src/Pages/Access/LoginPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Organism/Login/Login.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Organism/Login/Login.tsx" afterDir="false" />
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Create Login.tsx">
+      <change afterPath="$PROJECT_DIR$/src/types/UrlAddress.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Root.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Setting.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Setting.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Atoms/Button/Button.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/Button/Button.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Atoms/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/Button/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Atoms/ButtonIconSidebar/ButtonIconSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/ButtonIconSidebar/ButtonIconSidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Atoms/ButtonIconSidebar/content/ContentButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/ButtonIconSidebar/content/ContentButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Atoms/Input/Input.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/Input/Input.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.storybook/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/.storybook/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.storybook/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/.storybook/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Access/LoginPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Access/LoginPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Atoms/Input/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/Input/Input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Organism/SliderbarV2/SidebarV2.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/SliderbarV2/SidebarV2.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/MainTemplate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/MainTemplate.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/GlobalStyle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/GlobalStyle.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/mainTheme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/mainTheme.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/UrtTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/UrtTypes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Login/Login.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +24,7 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -80,7 +71,7 @@
       <recent name="$PROJECT_DIR$/src/components/Assets/iconsLogo" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.storybook">
+  <component name="RunManager" selected="npm.start">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -103,8 +94,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.storybook" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.storybook" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +141,7 @@
       <workItem from="1662736714828" duration="980000" />
       <workItem from="1662798707058" duration="1878000" />
       <workItem from="1662961325843" duration="222000" />
-      <workItem from="1663004875167" duration="33079000" />
+      <workItem from="1663004875167" duration="41938000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -201,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663334307410</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Create Login.tsx">
+      <created>1663400447103</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663400447103</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +224,7 @@
     <MESSAGE value="Create Sidebar" />
     <MESSAGE value="Create New Icon" />
     <MESSAGE value="Create SidebarV2.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create SidebarV2.tsx" />
+    <MESSAGE value="Create Login.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Login.tsx" />
   </component>
 </project>

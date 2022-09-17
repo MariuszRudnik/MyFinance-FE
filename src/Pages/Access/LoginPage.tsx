@@ -13,8 +13,10 @@ const Wrapper = styled.div`
   flex-direction: column;
 `;
 const TitleWrapper = styled.div``;
+
 const StyleH1 = styled.h1`
   font-size: ${theme.fontSize.xl};
+  color: ${theme.navy200};
   //filter: drop-shadow(1px 1px 1px ${theme.navy200});
 `;
 

@@ -1,4 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../src/components/Assets/Fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../src/components/Assets/Fonts/Roboto-Bold.ttf);
+}@font-face {
+    font-family: Roboto-Italic;
+    src: url(../src/components/Assets/Fonts/Roboto-Italic.ttf);
+}
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../src/components/Assets/Fonts/Roboto-Light.ttf);
+}
+
+
+
 *,*::before, *::after{
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -8,6 +25,7 @@ html{
     font-size: 62.5%;
 }
 body {
+    background-color: ${theme.background};
     font-size: 1.6rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto-Regular", sans-serif;
 }
