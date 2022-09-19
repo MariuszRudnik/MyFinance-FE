@@ -28,6 +28,7 @@ const StyledParagraph = styled.div`
   padding-left: 20px;
   justify-content: start;
   align-items: center;
+  font-family: 'Roboto-Regular', 'Roboto-Bold', 'Roboto-Italic', 'Roboto-Light', sans-serif;
 `;
 
 export const ContentButton = ({ title, icon }: Props) => {
