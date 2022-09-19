@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { theme } from '../../../theme/mainTheme';
 import Input from '../../Atoms/Input/Input';
 import Button from '../../Atoms/Button/Button';
-import axios from 'axios';
+
 import { Formik, FormikHelpers, FormikProps, Form, Field, FieldProps } from 'formik';
 import { UrlAddress } from '../../../types/UrlAddress';
 
@@ -26,19 +26,16 @@ const LoginWrapper = styled.div`
 
 export const Login = () => {
   const initialValues: MyFormValues = { email: '', pwd: '' };
-
-  const login = async (email: string, pwd: string) => {
-    const log = await axios({
-      method: 'post',
-      url: UrlAddress.Login,
+  const login = async (email: string, pwd: string): Promise<void> => {
+    await fetch(UrlAddress.Login, {
+      method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      data: {
+      credentials: 'include',
+      body: JSON.stringify({
         email,
         pwd
-      }
-    });
-    console.log('---');
-    console.log(log);
+      })
+    }).then((response) => console.log(response.ok));
   };
   return (
     <>
@@ -46,10 +43,8 @@ export const Login = () => {
         initialValues={initialValues}
         onSubmit={(values, actions) => {
           console.log({ values, actions });
-          alert(JSON.stringify(values, null, 2));
           const { email, pwd } = values;
-          login(email, pwd).then((r) => console.log(r));
-
+          login(email, pwd);
           actions.setSubmitting(false);
         }}>
         <LoginWrapper as={Form}>
