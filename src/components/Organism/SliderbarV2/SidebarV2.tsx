@@ -8,6 +8,7 @@ import addIcon from '../../Assets/icons/add.svg';
 import settings from '../../Assets/icons/settings.svg';
 import wallet from '../../Assets/icons/wallet.svg';
 import logout from '../../Assets/icons/logout.svg';
+import { UrtTypes } from '../../../types/UrtTypes';
 
 const SidebarWrapper = styled.div`
   display: flex;
@@ -16,8 +17,9 @@ const SidebarWrapper = styled.div`
   flex-direction: column;
   width: 310px;
   min-height: 200px;
-  border: 2px solid ${theme.navBackground};
+  border: 2px solid ${theme.white200};
   border-radius: 20px;
+  margin: 0 50px;
 `;
 const StyledLinksList = styled.ul`
   margin: 0;
@@ -30,17 +32,17 @@ export const SidebarV2 = () => {
     <SidebarWrapper>
       <StyledLinksList>
         <li>
-          <ButtonIconsSidebar as={NavLink} to="/setting">
+          <ButtonIconsSidebar as={NavLink} to={'/' + UrtTypes.AddWallet}>
             <ContentButton title="Add new wallet" icon={addIcon} />
           </ButtonIconsSidebar>
         </li>
         <li>
-          <ButtonIconsSidebar as={NavLink} to="/">
+          <ButtonIconsSidebar as={NavLink} to={'/' + UrtTypes.ListOfWallet}>
             <ContentButton title="List of wallet" icon={wallet} />
           </ButtonIconsSidebar>
         </li>
         <li>
-          <ButtonIconsSidebar as={NavLink} to="/news">
+          <ButtonIconsSidebar as={NavLink} to={'/' + UrtTypes.Setting}>
             <ContentButton title="Settings" icon={settings} />
           </ButtonIconsSidebar>
         </li>

@@ -1,5 +1,8 @@
 export enum UrtTypes {
   Setting = 'setting',
   MainPages = 'main-pages',
-  News = 'news'
+  News = 'news',
+  Login = 'login',
+  AddWallet = 'add-wallet',
+  ListOfWallet = 'list-of-wallet'
 }

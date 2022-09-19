@@ -11,7 +11,7 @@ const ContentButtonWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 15px;
+  padding: 12px 15px 0 15px;
 `;
 const Image = styled.img`
   width: 30px;
@@ -28,6 +28,7 @@ const StyledParagraph = styled.div`
   padding-left: 20px;
   justify-content: start;
   align-items: center;
+  font-family: 'Roboto-Regular', 'Roboto-Bold', 'Roboto-Italic', 'Roboto-Light', sans-serif;
 `;
 
 export const ContentButton = ({ title, icon }: Props) => {

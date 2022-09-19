@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import magnifierIcon from '../../Assets/icons/magnifier.svg';
 
 type Props = {
-  search?: any;
+  search?: boolean;
 };
 
 const Input = styled.input<Props>`
@@ -12,10 +12,12 @@ const Input = styled.input<Props>`
   background-color: ${({ theme }) => theme.grey100};
   border: none;
   border-radius: 50px;
+  margin: 5px;
+
   ::placeholder {
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: ${({ theme }) => theme.grey300};
+    color: ${({ theme }) => theme.gray400};
   }
   ${({ search }) =>
     search &&
