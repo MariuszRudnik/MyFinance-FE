@@ -12,3 +12,5 @@ import { Card } from './Molecules/Card/Card.stories';
 import { SidebarV2 } from './Organism/SliderbarV2/SidebarV2.stories';
 import { Login } from './Organism/Login/Login.stories';
 import { Navbar } from './Molecules/Navbar/Navbar.stories';
+import { AddWallet } from './Organism/AddWallet/AddWalletComponents.stories';
+import { Content } from './Molecules/Content/Content.stories';

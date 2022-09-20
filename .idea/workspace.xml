@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Create AddWalletComponents.tsx">
+      <change afterPath="$PROJECT_DIR$/src/components/Assets/ekran.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Molecules/Content/Content.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Molecules/Content/Content.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/MainPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Atoms/Input/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/Input/Input.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Menu/Menu.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Sidebar/Sidebar.stories.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Sidebar/Sidebar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,14 +67,14 @@
       <recent name="$PROJECT_DIR$/src/components/Assets/Fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/Assets/iconsLogo" />
       <recent name="$PROJECT_DIR$/src/components/Assets" />
+      <recent name="$PROJECT_DIR$/src/components/Assets/iconsLogo" />
       <recent name="$PROJECT_DIR$/src/components/Assets/icons" />
       <recent name="$PROJECT_DIR$/src/components/Atoms" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.storybook">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -87,8 +97,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.storybook" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663650760843</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Create AddWalletComponents.tsx">
+      <created>1663652427843</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1663652427843</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
