@@ -9,7 +9,7 @@ import { ButtonIcon } from './Atoms/ButtonIcon/ButtonIcon.stories';
 import { Heading } from './Atoms/Heading/Heading.stories';
 import { Card } from './Molecules/Card/Card.stories';
 
-import { SidebarV2 } from './Organism/SliderbarV2/SidebarV2.stories';
+import { SidebarV2 } from './Organism/Sliderbar/Sidebar.stories';
 import { Login } from './Organism/Login/Login.stories';
 import { Navbar } from './Molecules/Navbar/Navbar.stories';
 import { AddWallet } from './Organism/AddWallet/AddWalletComponents.stories';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { SidebarV2 } from '../components/Organism/SliderbarV2/SidebarV2';
+import { Sidebar } from '../components/Organism/Sliderbar/Sidebar';
 import { Navbar } from '../components/Molecules/Navbar/Navbar';
 import styled from 'styled-components';
 
@@ -20,7 +20,7 @@ export const UserPageTemplates = ({ children, activeColor }: TypeProps) => {
     <MainWrapper>
       <Navbar />
       <StyleBodyWrapper>
-        <SidebarV2 />
+        <Sidebar />
         {children}
       </StyleBodyWrapper>
     </MainWrapper>

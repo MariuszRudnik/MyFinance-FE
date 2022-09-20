@@ -9,6 +9,7 @@ import { Provider } from 'react-redux';
 import store from '../store';
 import { LoginPage } from './Access/LoginPage';
 import { AddWallet } from './AddWallet';
+import { ListOfWallet } from './ListOfWallet';
 
 function Root() {
   return (
@@ -19,7 +20,7 @@ function Root() {
             <Route path="/" element={<MainPage />} />
             <Route path={`/${UrtTypes.News}`} element={<News />} />
             <Route path={`/${UrtTypes.AddWallet}`} element={<AddWallet />} />
-            <Route path={`/${UrtTypes.ListOfWallet}`} element={<AddWallet />} />
+            <Route path={`/${UrtTypes.ListOfWallet}`} element={<ListOfWallet />} />
             <Route path={`/${UrtTypes.Setting}`} element={<Setting />} />
             <Route path={`/${UrtTypes.Login}`} element={<LoginPage />} />
           </Routes>
