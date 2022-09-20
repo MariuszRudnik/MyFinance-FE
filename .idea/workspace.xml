@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Create AddWalletComponents.tsx">
-      <change afterPath="$PROJECT_DIR$/src/Pages/ListOfWallet.tsx" afterDir="false" />
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Work at List of Wallet">
+      <change afterPath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsWallet.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/AddWallet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/AddWallet.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Root.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Organism/SliderbarV2/SidebarV2.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Organism/SliderbarV2/SidebarV2.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/UserPageTemplates.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/UserPageTemplates.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +137,7 @@
       <workItem from="1663004875167" duration="55752000" />
       <workItem from="1663611637561" duration="3076000" />
       <workItem from="1663686348348" duration="30000" />
-      <workItem from="1663686406877" duration="841000" />
+      <workItem from="1663686406877" duration="1348000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -243,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663685032753</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Work at List of Wallet">
+      <created>1663687269932</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1663687269932</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,6 +273,7 @@
     <MESSAGE value="Add Formik" />
     <MESSAGE value="Interface" />
     <MESSAGE value="Create AddWalletComponents.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create AddWalletComponents.tsx" />
+    <MESSAGE value="Work at List of Wallet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Work at List of Wallet" />
   </component>
 </project>
