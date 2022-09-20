@@ -1,5 +1,7 @@
 import * as React from 'react';
 import { Formik, FormikHelpers, FormikProps, Form, Field, FieldProps } from 'formik';
+import Input from '../../Atoms/Input/Input';
+import Button from '../../Atoms/Button/Button';
 
 interface MyFormValues {
   firstName: string;
@@ -19,8 +21,10 @@ export const AddWalletComponents: React.FC<any> = () => {
         }}>
         <Form>
           <label htmlFor="firstName">First Name</label>
-          <Field id="firstName" name="firstName" placeholder="First Name" />
-          <button type="submit">Submit</button>
+          <Input as={Field} placeholder="login" id="firstName" name="firstName" />
+          <Button secondary={false} type="submit">
+            Save
+          </Button>
         </Form>
       </Formik>
     </div>
