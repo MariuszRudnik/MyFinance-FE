@@ -6,7 +6,7 @@ import News from './News';
 import { Setting } from './Setting';
 import { UrtTypes } from '../types/UrtTypes';
 import { Provider } from 'react-redux';
-import store from '../store';
+import store from '../Redux/store';
 import { LoginPage } from './Access/LoginPage';
 import { AddWallet } from './AddWallet';
 import { ListOfWallet } from './ListOfWallet';

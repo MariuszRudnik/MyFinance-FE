@@ -1,16 +1,19 @@
-import React, { PropsWithChildren } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../../../theme/mainTheme';
 import Heading from '../../Atoms/Heading/Heading';
-import { ChildProcess } from 'child_process';
 
-const StyleContentWrapper = styled.div`
+type Style = {
+  widthStyle?: string;
+};
+
+const StyleContentWrapper = styled.div<Style>`
   background-color: ${theme.white};
   width: 100%;
   margin: 0 50px 0 0;
   border-radius: 10px;
   overflow: hidden;
-  max-width: 800px;
+  max-width: ${({ widthStyle }) => (widthStyle ? widthStyle : '800px')};
 `;
 const TitleWrapper = styled.div`
   border-bottom: 2px solid ${theme.white200};
@@ -20,12 +23,13 @@ const TitleWrapper = styled.div`
 type Props = {
   heading: string;
   children: JSX.Element;
+  widthContent?: string;
 };
 
-export const Content = ({ heading, children }: Props) => {
+export const Content = ({ heading, widthContent, children }: Props) => {
   return (
     <>
-      <StyleContentWrapper>
+      <StyleContentWrapper widthStyle={widthContent}>
         <TitleWrapper>
           <Heading color={theme.gray400} big={'18px'}>
             {heading}

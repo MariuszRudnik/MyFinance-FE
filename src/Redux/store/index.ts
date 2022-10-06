@@ -1,10 +1,12 @@
 import { createStore } from 'redux';
-import { rootReducer } from '../reducers/index';
+import { state } from '../action/state';
+import { reducer } from '../reducers';
 
 /* eslint-disable no-underscore-dangle */
 // @ts-ignore
 const store = createStore(
-  rootReducer,
+  reducer,
+  state,
   // @ts-ignore
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );

@@ -4,9 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Work at List of Wallet">
-      <change afterPath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsWallet.tsx" afterDir="false" />
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Fixed Redux">
+      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/action/state.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_09_2022,_21_32_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_09_2022__21_32__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_19_09_2022,_21_33_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_19_09_2022,_21_33_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_19_09_2022,_21_34_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_19_09_2022,_21_35_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_19_09_2022__21_33__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_19_09_2022__21_33__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_19_09_2022__21_34__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_19_09_2022__21_35__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/ListOfWallet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/ListOfWallet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/action/action.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Content/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Content/Content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsWallet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsWallet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/reducers/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/mainTheme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/mainTheme.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +59,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.15.1&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.59&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.63&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/src/components/Assets/Fonts&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -57,11 +80,11 @@
       <recent name="$PROJECT_DIR$/src/components/Assets/Fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Redux/Action" />
+      <recent name="$PROJECT_DIR$/src/Redux" />
+      <recent name="$PROJECT_DIR$/src/components/Assets/img" />
       <recent name="$PROJECT_DIR$/src/components/Assets" />
       <recent name="$PROJECT_DIR$/src/components/Assets/iconsLogo" />
-      <recent name="$PROJECT_DIR$/src/components/Assets/icons" />
-      <recent name="$PROJECT_DIR$/src/components/Atoms" />
-      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -137,7 +160,10 @@
       <workItem from="1663004875167" duration="55752000" />
       <workItem from="1663611637561" duration="3076000" />
       <workItem from="1663686348348" duration="30000" />
-      <workItem from="1663686406877" duration="1348000" />
+      <workItem from="1663686406877" duration="6896000" />
+      <workItem from="1663700568984" duration="3000" />
+      <workItem from="1664810473534" duration="1137000" />
+      <workItem from="1665073594169" duration="2000000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -244,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663687269932</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Work at List of Wallet">
+      <created>1663687829053</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1663687829053</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +307,7 @@
     <MESSAGE value="Interface" />
     <MESSAGE value="Create AddWalletComponents.tsx" />
     <MESSAGE value="Work at List of Wallet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Work at List of Wallet" />
+    <MESSAGE value="Fixed Redux" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Redux" />
   </component>
 </project>
