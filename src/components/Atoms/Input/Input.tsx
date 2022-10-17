@@ -3,6 +3,7 @@ import magnifierIcon from '../../Assets/icons/magnifier.svg';
 
 type Props = {
   search?: boolean;
+  widthInput?: string;
 };
 
 const Input = styled.input<Props>`
@@ -13,6 +14,7 @@ const Input = styled.input<Props>`
   border: none;
   border-radius: 50px;
   margin: 5px;
+  width: ${({ widthInput }) => (widthInput ? widthInput : '')};
 
   ::placeholder {
     text-transform: uppercase;

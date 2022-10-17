@@ -18,6 +18,7 @@
         "sourceType": "module"
     },
     "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+    "ignorePatterns": ["./src/Redux/store", "*.ts"],
     "rules": {
             "react/react-in-jsx-scope": "off",
             "camelcase": "error",

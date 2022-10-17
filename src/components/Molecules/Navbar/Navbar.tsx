@@ -65,8 +65,8 @@ export const Navbar = () => {
         </Menu>
       </StyleDiv>
       <StyleDiv>
-        <ButtonIcon icon={bell}></ButtonIcon>
         <ButtonIcon icon={monitoring}></ButtonIcon>
+        <ButtonIcon icon={bell}></ButtonIcon>
         <FlexDiv>
           <Paragraph>Hello User !</Paragraph>
           <Image />

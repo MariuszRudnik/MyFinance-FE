@@ -27,7 +27,7 @@ const StyledLinksList = styled.ul`
   list-style: none;
 `;
 
-export const SidebarV2 = () => {
+export const Sidebar = () => {
   return (
     <SidebarWrapper>
       <StyledLinksList>
