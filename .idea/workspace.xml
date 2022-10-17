@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Fixed Redux">
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Fixed Redux new">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/reducers/loginRedux.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/reducers/loginRedux.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +17,7 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="fe#3_add_wallet" />
+        <entry key="$PROJECT_DIR$" value="fe#4_list_of_wallet" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -145,7 +144,7 @@
       <workItem from="1665338981938" duration="1342000" />
       <workItem from="1665926562032" duration="2794000" />
       <workItem from="1666001066299" duration="12039000" />
-      <workItem from="1666022863708" duration="5296000" />
+      <workItem from="1666022863708" duration="6016000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -280,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666028747497</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Fixed Redux new">
+      <created>1666029500247</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1666029500247</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +317,8 @@
     <MESSAGE value="Create AddWalletComponents.tsx" />
     <MESSAGE value="Work at List of Wallet" />
     <MESSAGE value="Fixed Redux" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Redux" />
+    <MESSAGE value="Fixed Redux new" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Redux new" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

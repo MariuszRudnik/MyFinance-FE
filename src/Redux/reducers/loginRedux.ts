@@ -39,23 +39,13 @@ export const fetchBooks = (login: any) => {
 const reducer = function (statePart: any = {}, action: any = {}) {
   switch (action.type) {
     case LOGIN:
-      return {
-        ...statePart,
-        login: action.payload
-      };
-
+      return { ...statePart, login: action.payload };
     case USER_DATA:
-      return {
-        ...statePart,
-        data: action.payload
-      };
-
+      return { ...statePart, data: action.payload };
     case START_REQUEST:
       return { ...statePart, request: { pending: true, error: false, success: false } };
-
     case FINISH_REQUEST_WITH_SUCCESS:
       return { ...statePart, request: { pending: false, error: false, success: true } };
-
     case FINISH_REQUEST_WITH_ERROR:
       return { ...statePart, request: { pending: false, error: true, success: false } };
 
