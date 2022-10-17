@@ -5,31 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Fixed Redux">
-      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/action/state.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_09_2022,_21_32_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_09_2022__21_32__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_19_09_2022,_21_33_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_19_09_2022,_21_33_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_19_09_2022,_21_34_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_19_09_2022,_21_35_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_19_09_2022__21_33__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_19_09_2022__21_33__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_19_09_2022__21_34__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_19_09_2022__21_35__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Organism/Login/LoginContainer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/ListOfWallet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/ListOfWallet.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Root.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/action/action.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Content/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Content/Content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsWallet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsWallet.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/reducers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/store/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/mainTheme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/mainTheme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Access/LoginPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Access/LoginPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/initialState/state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/initialState/state.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/reducers/loginRedux.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/reducers/loginRedux.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/selectors/root.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/selectors/root.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Login/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/UrlAddress.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/UrlAddress.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +43,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.15.1&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.63&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.66&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/src/components/Assets/Fonts&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -70,8 +54,8 @@
     &quot;nodejs_interpreter_path&quot;: &quot;/Users/mariusz/.nvm/versions/node/v16.15.1/bin/node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.typescriptcompiler&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -80,11 +64,11 @@
       <recent name="$PROJECT_DIR$/src/components/Assets/Fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Pages/Root" />
+      <recent name="$PROJECT_DIR$/src/Redux/initialState" />
+      <recent name="$PROJECT_DIR$/src/Redux/store" />
+      <recent name="$PROJECT_DIR$/src/Redux/state" />
       <recent name="$PROJECT_DIR$/src/Redux/Action" />
-      <recent name="$PROJECT_DIR$/src/Redux" />
-      <recent name="$PROJECT_DIR$/src/components/Assets/img" />
-      <recent name="$PROJECT_DIR$/src/components/Assets" />
-      <recent name="$PROJECT_DIR$/src/components/Assets/iconsLogo" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -163,7 +147,11 @@
       <workItem from="1663686406877" duration="6896000" />
       <workItem from="1663700568984" duration="3000" />
       <workItem from="1664810473534" duration="1137000" />
-      <workItem from="1665073594169" duration="2000000" />
+      <workItem from="1665073594169" duration="3480000" />
+      <workItem from="1665338981938" duration="1342000" />
+      <workItem from="1665926562032" duration="2794000" />
+      <workItem from="1666001066299" duration="12039000" />
+      <workItem from="1666022863708" duration="4421000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -277,7 +265,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663687829053</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Fixed Redux">
+      <created>1665080367308</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1665080367308</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Fixed Redux">
+      <created>1666006660927</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1666006660927</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,5 +311,16 @@
     <MESSAGE value="Work at List of Wallet" />
     <MESSAGE value="Fixed Redux" />
     <option name="LAST_COMMIT_MESSAGE" value="Fixed Redux" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/Redux/initialState/state.ts</url>
+          <line>25</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -8,6 +8,8 @@ import { theme } from '../../../theme/mainTheme';
 import bell from '../../Assets/icons/bell.svg';
 import monitoring from '../../Assets/icons/monitoring.svg';
 import logo from '../../Assets/iconsLogo/people.jpg';
+import { useSelector } from 'react-redux';
+import state from '../../../Redux/initialState/state';
 
 const NavWrapper = styled.nav`
   display: flex;
@@ -50,6 +52,7 @@ const Image = styled.div`
 `;
 
 export const Navbar = () => {
+  const data = useSelector((state: any) => state.login.data);
   return (
     <NavWrapper>
       <StyleDiv>
@@ -68,7 +71,9 @@ export const Navbar = () => {
         <ButtonIcon icon={monitoring}></ButtonIcon>
         <ButtonIcon icon={bell}></ButtonIcon>
         <FlexDiv>
-          <Paragraph>Hello User !</Paragraph>
+          <Paragraph>
+            Hello {data.first_name} {data.last_name} !
+          </Paragraph>
           <Image />
         </FlexDiv>
       </StyleDiv>

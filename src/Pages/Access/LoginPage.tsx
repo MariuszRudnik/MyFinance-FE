@@ -1,5 +1,5 @@
 import React from 'react';
-import { Login } from '../../components/Organism/Login/Login';
+import Login from '../../components/Organism/Login/LoginContainer';
 import styled from 'styled-components';
 import { theme } from '../../theme/mainTheme';
 
