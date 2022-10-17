@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Root from './Pages/Root';
+import Root from './Pages/Root/RootConstainer';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './Redux/store';
