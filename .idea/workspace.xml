@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Fixed Redux">
-      <change afterPath="$PROJECT_DIR$/src/components/Organism/Login/LoginContainer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Access/LoginPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Access/LoginPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/initialState/state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/initialState/state.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/reducers/loginRedux.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/reducers/loginRedux.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/selectors/root.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/selectors/root.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Organism/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Login/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/UrlAddress.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/UrlAddress.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +145,7 @@
       <workItem from="1665338981938" duration="1342000" />
       <workItem from="1665926562032" duration="2794000" />
       <workItem from="1666001066299" duration="12039000" />
-      <workItem from="1666022863708" duration="4421000" />
+      <workItem from="1666022863708" duration="5296000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -279,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666006660927</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Fixed Redux">
+      <created>1666028747497</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1666028747497</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

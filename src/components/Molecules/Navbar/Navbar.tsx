@@ -9,7 +9,6 @@ import bell from '../../Assets/icons/bell.svg';
 import monitoring from '../../Assets/icons/monitoring.svg';
 import logo from '../../Assets/iconsLogo/people.jpg';
 import { useSelector } from 'react-redux';
-import state from '../../../Redux/initialState/state';
 
 const NavWrapper = styled.nav`
   display: flex;
@@ -43,7 +42,7 @@ const Image = styled.div`
   height: 40px;
   background-image: url(${logo});
   background-repeat: no-repeat;
-  background-size: 100%;
+
   background-position: center;
   border: none;
   border-radius: 10px;
