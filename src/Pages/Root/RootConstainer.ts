@@ -7,8 +7,7 @@ const mapStateToProps = (state: any) => ({
   login: getLogin(state)
 });
 const mapDispatchToProps = (dispatch: any) => ({
-  //loginAccess: (data: any) => dispatch(fetchBooks(data)),
-  loginAccess: (data: any) => dispatch(LoginAccess(data)),
+  loginAccess: (data: boolean) => dispatch(LoginAccess(data)),
   userAccess: (data: any) => dispatch(UserAccess(data))
 });
 export default connect(mapStateToProps, mapDispatchToProps)(Root);
