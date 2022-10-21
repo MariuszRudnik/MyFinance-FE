@@ -2,10 +2,10 @@ import React from 'react';
 import { UserPageTemplates } from '../templates/UserPageTemplates';
 import { theme } from '../theme/mainTheme';
 import { Login } from '../components/Organism/Login/Login';
-import { UrtTypes } from '../types/UrtTypes';
+import { UrlTypes } from '../types/UrlTypes';
 
 export const Setting = () => {
-  console.log(UrtTypes.News);
+  console.log(UrlTypes.News);
   return (
     <UserPageTemplates activeColor={theme.tertiary}>
       <Login />

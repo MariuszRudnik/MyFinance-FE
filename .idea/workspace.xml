@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="I Created Login and Logout">
-      <change afterPath="$PROJECT_DIR$/img/screen1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Organism/Register/Register.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Organism/Register/Register.tsx" afterDir="false" />
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="I wrote README.md and created register.">
+      <change afterPath="$PROJECT_DIR$/src/Pages/Access/Register.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Setting.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Setting.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Login/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Register/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Register/Register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/UrtTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/UrlTypes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +65,11 @@
       <recent name="$PROJECT_DIR$/src/components/Assets/Fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Pages/Access" />
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/Pages/Root" />
       <recent name="$PROJECT_DIR$/src/Redux/initialState" />
-      <recent name="$PROJECT_DIR$/src/Redux/store" />
     </key>
   </component>
   <component name="RunManager" selected="npm.storybook">
@@ -309,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666342774464</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="I wrote README.md and created register.">
+      <created>1666355376484</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1666355376484</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +352,8 @@
     <MESSAGE value="Fixed Redux new" />
     <MESSAGE value="Authentication with backend" />
     <MESSAGE value="I Created Login and Logout" />
-    <option name="LAST_COMMIT_MESSAGE" value="I Created Login and Logout" />
+    <MESSAGE value="I wrote README.md and created register." />
+    <option name="LAST_COMMIT_MESSAGE" value="I wrote README.md and created register." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -4,11 +4,12 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { MainPage } from '../MainPage';
 import News from '../News';
 import { Setting } from '../Setting';
-import { UrtTypes } from '../../types/UrtTypes';
+import { UrlTypes } from '../../types/UrlTypes';
 import { LoginPage } from '../Access/LoginPage';
 import { AddWallet } from '../AddWallet';
 import { ListOfWallet } from '../ListOfWallet';
 import { UrlAddress } from '../../types/UrlAddress';
+import { RegisterPage } from '../Access/Register';
 
 function Root({ login, loginAccess, userAccess }: any) {
   let access = null;
@@ -45,14 +46,15 @@ function Root({ login, loginAccess, userAccess }: any) {
       <MainTemplate>
         <Routes>
           <Route path="/" element={access ? <MainPage /> : <LoginPage />} />
-          <Route path={`/${UrtTypes.News}`} element={access ? <News /> : <LoginPage />} />
-          <Route path={`/${UrtTypes.AddWallet}`} element={access ? <AddWallet /> : <LoginPage />} />
+          <Route path={`/${UrlTypes.News}`} element={access ? <News /> : <LoginPage />} />
+          <Route path={`/${UrlTypes.AddWallet}`} element={access ? <AddWallet /> : <LoginPage />} />
           <Route
-            path={`/${UrtTypes.ListOfWallet}`}
+            path={`/${UrlTypes.ListOfWallet}`}
             element={access ? <ListOfWallet /> : <LoginPage />}
           />
-          <Route path={`/${UrtTypes.Setting}`} element={access ? <Setting /> : <LoginPage />} />
-          <Route path={`/${UrtTypes.Login}`} element={access ? <LoginPage /> : <LoginPage />} />
+          <Route path={`/${UrlTypes.Setting}`} element={access ? <Setting /> : <LoginPage />} />
+          <Route path={`/${UrlTypes.Login}`} element={access ? <LoginPage /> : <LoginPage />} />
+          <Route path={`/${UrlTypes.Register}`} element={<RegisterPage />} />
         </Routes>
       </MainTemplate>
     </BrowserRouter>

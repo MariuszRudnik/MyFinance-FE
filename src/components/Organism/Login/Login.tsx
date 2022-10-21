@@ -6,6 +6,7 @@ import Button from '../../Atoms/Button/Button';
 
 import { Formik, FormikHelpers, FormikProps, Form, Field, FieldProps } from 'formik';
 import { UrlAddress } from '../../../types/UrlAddress';
+import { Link } from 'react-router-dom';
 
 interface MyFormValues {
   email: string;
@@ -56,7 +57,9 @@ export const Login = ({ loginAccess }: any) => {
           <Input as={Field} placeholder="Email" name="email" id="email"></Input>
           <Input as={Field} type="password" placeholder="Password" name="password" id="password" />
           <Button type="submit">Loog in</Button>
-          <p>I want to register!</p>
+          <p>
+            I want to <Link to="/register"> register! </Link>
+          </p>
         </LoginWrapper>
       </Formik>
     </>
