@@ -1,4 +1,6 @@
 import { UrlAddress } from '../../types/UrlAddress';
+import { useQuery } from '@tanstack/react-query';
+
 const createActionName = (name: string) => `app/access/${name}`;
 
 //Action name
@@ -9,19 +11,20 @@ const FINISH_REQUEST_WITH_ERROR = createActionName('FINISH_REQUEST_WITH_ERROR');
 const FINISH_REQUEST_WITH_SUCCESS = createActionName('FINISH_REQUEST_WITH_SUCCESS');
 
 //Action Creators
-export const LoginAccess = (payload: any) => ({ type: LOGIN, payload });
+export const LoginAccess = (payload: boolean) => ({ type: LOGIN, payload });
 export const UserAccess = (payload: any) => ({ type: USER_DATA, payload });
 export const startRequest = () => ({ type: START_REQUEST });
 export const finishRequestWithError = () => ({ type: FINISH_REQUEST_WITH_ERROR });
 export const finishRequestWithSuccess = () => ({ type: FINISH_REQUEST_WITH_SUCCESS });
 
-export const fetchBooks = (login: any) => {
+export const fetchLogin = (login: any) => {
   return async (dispatch: any) => {
     try {
       dispatch(startRequest());
       const res = await fetch(UrlAddress.Login, {
         method: 'POST',
         body: JSON.stringify(login),
+        credentials: 'include',
         headers: { 'Content-Type': 'application/json' }
       });
       if (res.status !== 201) throw new Error('Something went wrong');
@@ -32,6 +35,25 @@ export const fetchBooks = (login: any) => {
     } catch (err) {
       console.error(err);
       dispatch(finishRequestWithError());
+    }
+  };
+};
+export const fetchLogout = () => {
+  return async (dispatch: any) => {
+    try {
+      dispatch(startRequest());
+      const res = await fetch(UrlAddress.Logout, {
+        method: 'POST',
+        credentials: 'include',
+        headers: { 'Content-Type': 'application/json' }
+      });
+      if (res.status !== 201) throw new Error('Something went wrong');
+      dispatch(finishRequestWithSuccess());
+      dispatch(LoginAccess(false));
+      dispatch(UserAccess(null));
+    } catch (err) {
+      dispatch(LoginAccess(false));
+      dispatch(UserAccess(null));
     }
   };
 };

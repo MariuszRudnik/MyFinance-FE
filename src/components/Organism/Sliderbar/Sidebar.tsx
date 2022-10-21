@@ -9,6 +9,8 @@ import settings from '../../Assets/icons/settings.svg';
 import wallet from '../../Assets/icons/wallet.svg';
 import logout from '../../Assets/icons/logout.svg';
 import { UrtTypes } from '../../../types/UrtTypes';
+import { useDispatch } from 'react-redux';
+import { fetchLogout } from '../../../Redux/reducers/loginRedux';
 
 const SidebarWrapper = styled.div`
   display: flex;
@@ -28,6 +30,11 @@ const StyledLinksList = styled.ul`
 `;
 
 export const Sidebar = () => {
+  const dispatch: any = useDispatch();
+  const logOut = () => {
+    return dispatch(fetchLogout());
+  };
+
   return (
     <SidebarWrapper>
       <StyledLinksList>
@@ -47,7 +54,7 @@ export const Sidebar = () => {
           </ButtonIconsSidebar>
         </li>
         <li>
-          <ButtonIconsSidebar as={NavLink} to="/log">
+          <ButtonIconsSidebar as={NavLink} to={'/'} onClick={logOut}>
             <ContentButton title="Log out" icon={logout} />
           </ButtonIconsSidebar>
         </li>

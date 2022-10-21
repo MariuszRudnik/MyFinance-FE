@@ -9,6 +9,7 @@ export const GETCategory = Url + 'expensecategory/';
 
 export const UrlAddress = {
   Login: Url + 'api/login',
+  User: Url + 'api/user',
   Register: Url + 'api/register',
   Logout: Url + 'api/logout'
 };
