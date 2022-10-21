@@ -1,46 +1,141 @@
-# Getting Started with Create React App
+<!-- Spis treści -->
+# :notebook_with_decorative_cover: Spis treści
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [Wstęp](#pushpin-wstęp)
+- [Opis projektu](#star2-opis-projektu)
+  * [Screenshoty](#camera-screenshoty)
+  * [Zastosowane technologie](#space_invader-zastosowane-technologie)
+  * [Funkcjonalności](#dart-funkcjonalności)
+  * [Konfiguracja projektu](#key-konfiguracja-projektu)
+  * [Kolorystyka](#art-kolorystyka)
+- [Uruchomienie projektu](#toolbox-uruchomienie-projektu)
+  * [Instalacja](#gear-instalacja)
+  * [Uruchomienie lokalne](#running-uruchomienie-lokalne)
+- [Przeznaczenie projektu](#eyes-przeznaczenie-projektu)
+- [Endpointy](#mailbox_with_mail-endpointy)
+- [Przyszłe aktualizacje](#compass-przyszłe-aktualizacje)
+- [Licencja](#warning-licencja)
+- [Użyte paczki](#gem-użyte-paczki)
+- [Backend](#small_red_triangle_down-backend)
 
-## Available Scripts
+  
+<!-- Wstęp -->
+## :pushpin: Wstęp
 
-In the project directory, you can run:
+MyFinances to projekt powstały ...
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<!-- Screenshoty -->
+### :camera: Screenshoty
 
-### `npm test`
+<div align="center">
+  <img src="./img/screen1.png" alt="" />
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- Zastosowane technologie -->
+### :space_invader: Zastosowane technologie
 
-### `npm run build`
+  Strona klienta
+  <ul>
+    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  Strona serwera
+  <ul>
+    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
+    <li><a href="https://nestjs.com/">Nest.js</a></li>
+  </ul>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  Baza danych
+  <ul>
+    <li><a href="https://www.mysql.com/">MySQL</a></li>
+  </ul>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- Kolorystyka -->
+### :art: Kolorystyka
 
-### `npm run eject`
+| Color             | Hex  |
+| ----------------- |------|
+| Primary Color | bra  |
+| Secondary Color | brak |
+| Accent Color | brak |
+| Text Color | brak |
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<!-- Funkcjonalności -->
+### :dart: Funkcjonalności
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Rejestrowanie użytkowników 
+- Zaimplemetowanie autoryzacji i autentykacji przy użyciu JWT
+- Aktualizowanie danych profilowych
+- Zaimplementowanie powiadomień mailowych z użyciem cron
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<!-- Konfiguracja projektu -->
+### :key: Konfiguracja projektu
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+W celu prawidłowego skonfigurowania : xxxx
 
-## Learn More
+<!-- Uruchomienie projektu -->
+## 	:toolbox: Uruchomienie projektu
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+W tym projekcie domyślnym menadżerem paczek jest NPM.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- Instalacja -->
+### :gear: Instalacja
+
+W katalogu projektu zainstaluj niezbędne zależności i paczki za pomocą komendy:
+
+```bash
+  npm install
+```
+<!-- Uruchomienie lokalne -->
+### :running: Uruchomienie lokalne
+
+Uruchomienie aplikacji
+
+```bash
+  npm start
+```
+
+Zbudowanie wersji produkcyjnej aplikacji
+
+```bash
+  npm run build
+```
+
+<!-- Przeznaczenie projektu -->
+## :eyes: Przeznaczenie projektu
+
+Aplikacja pozwala w prosty sposób  : xxx
+
+
+<!-- Endpointy -->
+
+
+
+<!-- Przyszłe aktualizacje -->
+## :compass: Przyszłe aktualizacje
+
+* [ ] widok RWD
+* [ ] dodanie testów jednostkowych i integracyjnych
+* [ ] zoptymalizowanie aplikacji
+
+<!-- Licencja -->
+## :warning: Licencja
+
+Distributed under the no License. See LICENSE.txt for more information.
+
+<!-- Użyte paczki -->
+## :gem: Użyte paczki
+
+ 
+ - [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+ - [uuid](https://www.npmjs.com/package/uuid)
+ 
+ 
+<!-- Backend -->
+## :small_red_triangle_down: Backend
+
+[Readme](https://github.com/sxx)
+

@@ -14,3 +14,4 @@ import { Login } from './Organism/Login/Login.stories';
 import { Navbar } from './Molecules/Navbar/Navbar.stories';
 import { AddWallet } from './Organism/AddWallet/AddWalletComponents.stories';
 import { Content } from './Molecules/Content/Content.stories';
+import { Register } from './Organism/Register/Register.stories';
