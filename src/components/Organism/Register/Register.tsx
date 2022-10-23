@@ -4,8 +4,8 @@ import { theme } from '../../../theme/mainTheme';
 import Input from '../../Atoms/Input/Input';
 import Button from '../../Atoms/Button/Button';
 import { Link } from 'react-router-dom';
-
-import { Formik, FormikHelpers, FormikProps, Form, Field, FieldProps } from 'formik';
+import * as Yup from 'yup';
+import { Formik, FormikHelpers, FormikProps, Form, Field, FieldProps, ErrorMessage } from 'formik';
 import { UrlAddress } from '../../../types/UrlAddress';
 
 interface MyFormValues {
@@ -27,6 +27,13 @@ const LoginWrapper = styled.div`
   flex-direction: column;
   gap: 10px;
 `;
+const SignupSchema = Yup.object().shape({
+  firstName: Yup.string().min(2, 'Too Short!').max(52, 'Too Long!').required('Required'),
+  lastName: Yup.string().min(2, 'Too Short!').max(52, 'Too Long!').required('Required'),
+  email: Yup.string().email('Invalid email').required('Required'),
+  password: Yup.string().required('Required'),
+  passwordConfirm: Yup.string().required('Required')
+});
 
 export const Register = () => {
   const initialValues: MyFormValues = {
@@ -36,17 +43,25 @@ export const Register = () => {
     password: '',
     passwordConfirm: ''
   };
-  const registerOnSubmit = async (email: string, password: string): Promise<void> => {
-    console.log({ email, password });
+  const registerOnSubmit = async (
+    email: string,
+    password: string,
+    firstName: string,
+    lastName: string,
+    passwordConfirm: string
+  ): Promise<void> => {
+    console.log({ email, password, firstName, lastName, passwordConfirm });
   };
   return (
     <>
       <Formik
         initialValues={initialValues}
+        validationSchema={SignupSchema}
         onSubmit={(values, actions) => {
           console.log({ values, actions });
-          const { email, password } = values;
-          registerOnSubmit(email, password);
+
+          const { email, password, firstName, lastName, passwordConfirm } = values;
+          registerOnSubmit(email, password, firstName, lastName, passwordConfirm);
           actions.setSubmitting(false);
         }}>
         <LoginWrapper as={Form}>
@@ -54,9 +69,17 @@ export const Register = () => {
             <label htmlFor="Sing in">Register</label>
           </h1>
           <Input as={Field} type="text" placeholder="First name" name="firstName" id="firstName" />
-          <Input as={Field} type="text" placeholder="Last Name" name="last_name" id="last_name" />
+          <ErrorMessage name="firstName"></ErrorMessage>
+
+          <Input as={Field} type="text" placeholder="Last Name" name="lastName" id="lastName" />
+          <ErrorMessage name="lastName"></ErrorMessage>
+
           <Input as={Field} type="email" placeholder="Email" name="email" id="email"></Input>
+          <ErrorMessage name="email"></ErrorMessage>
+
           <Input as={Field} type="password" placeholder="Password" name="password" id="password" />
+          <ErrorMessage name="password"></ErrorMessage>
+
           <Input
             as={Field}
             type="password"
@@ -64,6 +87,8 @@ export const Register = () => {
             name="passwordConfirm"
             id="passwordConfirm"
           />
+          <ErrorMessage name="passwordConfirm"></ErrorMessage>
+
           <Button type="submit">Register</Button>
           <p>
             I have account. <Link to="/"> I want Login. </Link>{' '}
