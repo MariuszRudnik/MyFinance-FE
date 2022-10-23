@@ -8,6 +8,7 @@ import { theme } from '../../../theme/mainTheme';
 import bell from '../../Assets/icons/bell.svg';
 import monitoring from '../../Assets/icons/monitoring.svg';
 import logo from '../../Assets/iconsLogo/people.jpg';
+import { useSelector } from 'react-redux';
 
 const NavWrapper = styled.nav`
   display: flex;
@@ -41,7 +42,7 @@ const Image = styled.div`
   height: 40px;
   background-image: url(${logo});
   background-repeat: no-repeat;
-  background-size: 100%;
+
   background-position: center;
   border: none;
   border-radius: 10px;
@@ -50,6 +51,7 @@ const Image = styled.div`
 `;
 
 export const Navbar = () => {
+  const data = useSelector((state: any) => state.login.data);
   return (
     <NavWrapper>
       <StyleDiv>
@@ -68,7 +70,9 @@ export const Navbar = () => {
         <ButtonIcon icon={monitoring}></ButtonIcon>
         <ButtonIcon icon={bell}></ButtonIcon>
         <FlexDiv>
-          <Paragraph>Hello User !</Paragraph>
+          <Paragraph>
+            Hello {data.firstName} {data.lastName} !
+          </Paragraph>
           <Image />
         </FlexDiv>
       </StyleDiv>

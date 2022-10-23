@@ -6,10 +6,11 @@ import Button from '../../Atoms/Button/Button';
 
 import { Formik, FormikHelpers, FormikProps, Form, Field, FieldProps } from 'formik';
 import { UrlAddress } from '../../../types/UrlAddress';
+import { Link } from 'react-router-dom';
 
 interface MyFormValues {
   email: string;
-  pwd: string;
+  password: string;
 }
 
 const LoginWrapper = styled.div`
@@ -24,18 +25,11 @@ const LoginWrapper = styled.div`
   gap: 10px;
 `;
 
-export const Login = () => {
-  const initialValues: MyFormValues = { email: '', pwd: '' };
-  const login = async (email: string, pwd: string): Promise<void> => {
-    await fetch(UrlAddress.Login, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      credentials: 'include',
-      body: JSON.stringify({
-        email,
-        pwd
-      })
-    }).then((response) => console.log(response.ok));
+export const Login = ({ loginAccess }: any) => {
+  const initialValues: MyFormValues = { email: '', password: '' };
+  const login = async (email: string, password: string): Promise<void> => {
+    console.log({ email, password });
+    loginAccess({ email, password });
   };
   return (
     <>
@@ -43,8 +37,8 @@ export const Login = () => {
         initialValues={initialValues}
         onSubmit={(values, actions) => {
           console.log({ values, actions });
-          const { email, pwd } = values;
-          login(email, pwd);
+          const { email, password } = values;
+          login(email, password);
           actions.setSubmitting(false);
         }}>
         <LoginWrapper as={Form}>
@@ -52,9 +46,11 @@ export const Login = () => {
             <label htmlFor="Sing in">Sing in</label>
           </h1>
           <Input as={Field} placeholder="Email" name="email" id="email"></Input>
-          <Input as={Field} type="password" placeholder="Password" name="pwd" id="pwd" />
+          <Input as={Field} type="password" placeholder="Password" name="password" id="password" />
           <Button type="submit">Loog in</Button>
-          <p>I want to register!</p>
+          <p>
+            I want to <Link to="/register"> register! </Link>
+          </p>
         </LoginWrapper>
       </Formik>
     </>

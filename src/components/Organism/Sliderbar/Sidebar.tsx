@@ -8,7 +8,9 @@ import addIcon from '../../Assets/icons/add.svg';
 import settings from '../../Assets/icons/settings.svg';
 import wallet from '../../Assets/icons/wallet.svg';
 import logout from '../../Assets/icons/logout.svg';
-import { UrtTypes } from '../../../types/UrtTypes';
+import { UrlTypes } from '../../../types/UrlTypes';
+import { useDispatch } from 'react-redux';
+import { fetchLogout } from '../../../Redux/reducers/loginRedux';
 
 const SidebarWrapper = styled.div`
   display: flex;
@@ -28,26 +30,31 @@ const StyledLinksList = styled.ul`
 `;
 
 export const Sidebar = () => {
+  const dispatch: any = useDispatch();
+  const logOut = () => {
+    return dispatch(fetchLogout());
+  };
+
   return (
     <SidebarWrapper>
       <StyledLinksList>
         <li>
-          <ButtonIconsSidebar as={NavLink} to={'/' + UrtTypes.AddWallet}>
+          <ButtonIconsSidebar as={NavLink} to={'/' + UrlTypes.AddWallet}>
             <ContentButton title="Add new wallet" icon={addIcon} />
           </ButtonIconsSidebar>
         </li>
         <li>
-          <ButtonIconsSidebar as={NavLink} to={'/' + UrtTypes.ListOfWallet}>
+          <ButtonIconsSidebar as={NavLink} to={'/' + UrlTypes.ListOfWallet}>
             <ContentButton title="List of wallet" icon={wallet} />
           </ButtonIconsSidebar>
         </li>
         <li>
-          <ButtonIconsSidebar as={NavLink} to={'/' + UrtTypes.Setting}>
+          <ButtonIconsSidebar as={NavLink} to={'/' + UrlTypes.Setting}>
             <ContentButton title="Settings" icon={settings} />
           </ButtonIconsSidebar>
         </li>
         <li>
-          <ButtonIconsSidebar as={NavLink} to="/log">
+          <ButtonIconsSidebar as={NavLink} to={'/'} onClick={logOut}>
             <ContentButton title="Log out" icon={logout} />
           </ButtonIconsSidebar>
         </li>

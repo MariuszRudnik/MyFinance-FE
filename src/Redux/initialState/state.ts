@@ -1,8 +1,9 @@
 const state: any = {
   login: {
+    login: false,
     data: {
-      login: false,
-      name: null,
+      first_name: null,
+      last_name: null,
       email: null
     },
     request: {

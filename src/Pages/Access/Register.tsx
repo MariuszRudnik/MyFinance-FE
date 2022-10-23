@@ -1,7 +1,8 @@
 import React from 'react';
-import Login from '../../components/Organism/Login/LoginContainer';
+
 import styled from 'styled-components';
 import { theme } from '../../theme/mainTheme';
+import { Register } from '../../components/Organism/Register/Register';
 
 const Wrapper = styled.div`
   display: flex;
@@ -20,13 +21,13 @@ const StyleH1 = styled.h1`
   //filter: drop-shadow(1px 1px 1px ${theme.navy200});
 `;
 
-export const LoginPage = () => {
+export const RegisterPage = () => {
   return (
     <Wrapper>
       <TitleWrapper>
         <StyleH1>My Finance App</StyleH1>
       </TitleWrapper>
-      <Login />
+      <Register />
     </Wrapper>
   );
 };

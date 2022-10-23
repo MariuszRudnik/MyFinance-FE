@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Fixed Redux">
-      <change afterPath="$PROJECT_DIR$/src/Pages/Root/RootConstainer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/initialState/state.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/reducers/loginRedux.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/selectors/root.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Yup added to the registration form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/action/state.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/store/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/reducers/loginRedux.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/reducers/loginRedux.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Login/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Register/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Register/Register.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +21,7 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="fe#3_add_wallet" />
+        <entry key="$PROJECT_DIR$" value="Develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,7 +41,7 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "16.15.1",
     "javascript.nodejs.core.library.typings.version": "16.11.66",
-    "last_opened_file_path": "/Users/mariusz/Documents/GitHub/NoteBook-FE/src/components/Assets/Fonts",
+    "last_opened_file_path": "/Users/mariusz/Documents/GitHub/NoteBook-FE/src/components/Organism/Register",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -64,17 +58,19 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Organism/Register" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/components/Assets/Fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Pages/Access" />
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/Pages/Root" />
       <recent name="$PROJECT_DIR$/src/Redux/initialState" />
-      <recent name="$PROJECT_DIR$/src/Redux/store" />
-      <recent name="$PROJECT_DIR$/src/Redux/state" />
-      <recent name="$PROJECT_DIR$/src/Redux/Action" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.storybook">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -97,8 +93,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.storybook" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.storybook" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +151,9 @@
       <workItem from="1665073594169" duration="3480000" />
       <workItem from="1665338981938" duration="1342000" />
       <workItem from="1665926562032" duration="2794000" />
-      <workItem from="1666001066299" duration="4341000" />
+      <workItem from="1666001066299" duration="12039000" />
+      <workItem from="1666022863708" duration="6184000" />
+      <workItem from="1666189313266" duration="18422000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -274,7 +274,63 @@
       <option name="project" value="LOCAL" />
       <updated>1665080367308</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Fixed Redux">
+      <created>1666006660927</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1666006660927</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fixed Redux">
+      <created>1666028747497</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1666028747497</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Fixed Redux new">
+      <created>1666029500247</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1666029500247</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Authentication with backend">
+      <created>1666033749086</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1666033749086</updated>
+    </task>
+    <task id="LOCAL-00022" summary="I Created Login and Logout">
+      <created>1666342774464</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1666342774464</updated>
+    </task>
+    <task id="LOCAL-00023" summary="I wrote README.md and created register.">
+      <created>1666355376484</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1666355376484</updated>
+    </task>
+    <task id="LOCAL-00024" summary="I worked on the registers">
+      <created>1666362348952</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1666362348952</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Yup added to the registration form">
+      <created>1666537955350</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1666537955350</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,15 +361,20 @@
     <MESSAGE value="Create AddWalletComponents.tsx" />
     <MESSAGE value="Work at List of Wallet" />
     <MESSAGE value="Fixed Redux" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Redux" />
+    <MESSAGE value="Fixed Redux new" />
+    <MESSAGE value="Authentication with backend" />
+    <MESSAGE value="I Created Login and Logout" />
+    <MESSAGE value="I wrote README.md and created register." />
+    <MESSAGE value="I worked on the registers" />
+    <MESSAGE value="Yup added to the registration form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Yup added to the registration form" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/Redux/initialState/state.ts</url>
-          <line>24</line>
-          <properties lambdaOrdinal="-1" />
+          <line>25</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

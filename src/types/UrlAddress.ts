@@ -1,4 +1,4 @@
-const Url = 'http://localhost:3001/';
+const Url = 'http://localhost:8000/';
 
 export const GETUserHost = Url + 'user';
 export const POSTListOfWallets = Url + 'list-of-wallets/';
@@ -8,7 +8,8 @@ export const GETTransactionExpenses = Url + 'transactions/expenses/';
 export const GETCategory = Url + 'expensecategory/';
 
 export const UrlAddress = {
-  Login: Url + 'auth/login',
-  Register: Url + 'user/register',
-  Logout: Url + 'auth/logout'
+  Login: Url + 'api/login',
+  User: Url + 'api/user',
+  Register: Url + 'api/register',
+  Logout: Url + 'api/logout'
 };

@@ -1,1 +1,1 @@
-export const getLogin = (state: any) => state.login.data;
+export const getLogin = (state: any) => state.login;
