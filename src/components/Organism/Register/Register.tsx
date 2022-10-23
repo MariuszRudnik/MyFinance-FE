@@ -3,10 +3,13 @@ import styled from 'styled-components';
 import { theme } from '../../../theme/mainTheme';
 import Input from '../../Atoms/Input/Input';
 import Button from '../../Atoms/Button/Button';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
 import { Formik, FormikHelpers, FormikProps, Form, Field, FieldProps, ErrorMessage } from 'formik';
 import { UrlAddress } from '../../../types/UrlAddress';
+import { useDispatch } from 'react-redux';
+import { fetchRegister } from '../../../Redux/reducers/loginRedux';
+import { navigate } from '@storybook/addon-links';
 
 interface MyFormValues {
   firstName: string;
@@ -27,15 +30,22 @@ const LoginWrapper = styled.div`
   flex-direction: column;
   gap: 10px;
 `;
+
 const SignupSchema = Yup.object().shape({
   firstName: Yup.string().min(2, 'Too Short!').max(52, 'Too Long!').required('Required'),
   lastName: Yup.string().min(2, 'Too Short!').max(52, 'Too Long!').required('Required'),
   email: Yup.string().email('Invalid email').required('Required'),
   password: Yup.string().required('Required'),
-  passwordConfirm: Yup.string().required('Required')
+  passwordConfirm: Yup.string()
+    .oneOf([Yup.ref('password'), null], 'Passwords must match')
+    .required('Required')
 });
 
 export const Register = () => {
+  const dispatch: any = useDispatch();
+  const addUser = (data: MyFormValues) => dispatch(fetchRegister(data));
+  const navigate = useNavigate();
+
   const initialValues: MyFormValues = {
     firstName: '',
     lastName: '',
@@ -51,6 +61,7 @@ export const Register = () => {
     passwordConfirm: string
   ): Promise<void> => {
     console.log({ email, password, firstName, lastName, passwordConfirm });
+    await addUser({ email, password, firstName, lastName, passwordConfirm });
   };
   return (
     <>
@@ -59,10 +70,10 @@ export const Register = () => {
         validationSchema={SignupSchema}
         onSubmit={(values, actions) => {
           console.log({ values, actions });
-
           const { email, password, firstName, lastName, passwordConfirm } = values;
           registerOnSubmit(email, password, firstName, lastName, passwordConfirm);
           actions.setSubmitting(false);
+          navigate('/');
         }}>
         <LoginWrapper as={Form}>
           <h1>

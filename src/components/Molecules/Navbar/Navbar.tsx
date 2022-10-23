@@ -71,7 +71,7 @@ export const Navbar = () => {
         <ButtonIcon icon={bell}></ButtonIcon>
         <FlexDiv>
           <Paragraph>
-            Hello {data.first_name} {data.last_name} !
+            Hello {data.firstName} {data.lastName} !
           </Paragraph>
           <Image />
         </FlexDiv>

@@ -57,6 +57,33 @@ export const fetchLogout = () => {
     }
   };
 };
+interface FormValues {
+  firstName: string;
+  lastName: string;
+  email: string;
+  password: string;
+  passwordConfirm: string;
+}
+export const fetchRegister = (data: FormValues) => {
+  return async (dispatch: any) => {
+    try {
+      dispatch(startRequest());
+      const res = await fetch(UrlAddress.Register, {
+        method: 'POST',
+        credentials: 'include',
+        body: JSON.stringify(data),
+        headers: { 'Content-Type': 'application/json' }
+      });
+      //if (res.status !== 201) throw new Error('Something went wrong');
+      dispatch(finishRequestWithSuccess());
+      dispatch(LoginAccess(true));
+      dispatch(UserAccess(data));
+    } catch (err) {
+      dispatch(LoginAccess(false));
+      dispatch(UserAccess(null));
+    }
+  };
+};
 
 const reducer = function (statePart: any = {}, action: any = {}) {
   switch (action.type) {

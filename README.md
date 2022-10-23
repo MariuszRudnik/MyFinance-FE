@@ -15,7 +15,6 @@
 - [Endpointy](#mailbox_with_mail-endpointy)
 - [Przyszłe aktualizacje](#compass-przyszłe-aktualizacje)
 - [Licencja](#warning-licencja)
-- [Użyte paczki](#gem-użyte-paczki)
 - [Backend](#small_red_triangle_down-backend)
 
   
@@ -40,6 +39,14 @@ MyFinances to projekt powstały ...
   <ul>
     <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
     <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+
+Użyte paczki
+  <ul>
+    <li><a href="https://redux.js.org/">Redux</a></li>
+    <li><a href="https://formik.org/">Formik</a></li>
+    <li><a href="https://storybook.js.org/">Storybook</a></li>
+    <li><a href="https://styled-components.com/">Styled Components</a></li>
   </ul>
 
   Strona serwera
@@ -126,12 +133,7 @@ Aplikacja pozwala w prosty sposób  : xxx
 
 Distributed under the no License. See LICENSE.txt for more information.
 
-<!-- Użyte paczki -->
-## :gem: Użyte paczki
 
- 
- - [react-router-dom](https://www.npmjs.com/package/react-router-dom)
- - [uuid](https://www.npmjs.com/package/uuid)
  
  
 <!-- Backend -->

@@ -30,15 +30,6 @@ export const Login = ({ loginAccess }: any) => {
   const login = async (email: string, password: string): Promise<void> => {
     console.log({ email, password });
     loginAccess({ email, password });
-    // await fetch(UrlAddress.Login, {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   credentials: 'include',
-    //   body: JSON.stringify({
-    //     email,
-    //     password
-    //   })
-    // }).then((response) => console.log(response.ok));
   };
   return (
     <>

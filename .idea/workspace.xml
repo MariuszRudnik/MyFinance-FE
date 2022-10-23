@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="I worked on the registers">
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Yup added to the registration form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/reducers/loginRedux.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/reducers/loginRedux.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Login/Login.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Organism/Register/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Register/Register.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -321,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666362348952</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Yup added to the registration form">
+      <created>1666537955350</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1666537955350</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +366,8 @@
     <MESSAGE value="I Created Login and Logout" />
     <MESSAGE value="I wrote README.md and created register." />
     <MESSAGE value="I worked on the registers" />
-    <option name="LAST_COMMIT_MESSAGE" value="I worked on the registers" />
+    <MESSAGE value="Yup added to the registration form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Yup added to the registration form" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
