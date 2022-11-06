@@ -4,23 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Registration works">
-      <change afterPath="$PROJECT_DIR$/src/Redux/reducers/walletRedux.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Atoms/SelectOption/SelectOption.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Atoms/SelectOption/SelectOption.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Organism/AddWallet/addWallet.module.css" afterDir="false" />
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Add wallet  works">
+      <change afterPath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddwalletContainer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/AddWallet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/AddWallet.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/initialState/state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/initialState/state.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/selectors/root.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/selectors/root.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/store/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/reducers/walletRedux.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/reducers/walletRedux.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Organism/Register/Register.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Register/Register.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/UrlAddress.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/UrlAddress.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +157,7 @@
       <workItem from="1666022863708" duration="6184000" />
       <workItem from="1666189313266" duration="18422000" />
       <workItem from="1667408050605" duration="1202000" />
-      <workItem from="1667669896669" duration="16384000" />
+      <workItem from="1667669896669" duration="24149000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -358,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666545304321</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Add wallet  works">
+      <created>1667738238636</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1667738238636</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,7 +393,8 @@
     <MESSAGE value="I worked on the registers" />
     <MESSAGE value="Yup added to the registration form" />
     <MESSAGE value="Registration works" />
-    <option name="LAST_COMMIT_MESSAGE" value="Registration works" />
+    <MESSAGE value="Add wallet  works" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add wallet  works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

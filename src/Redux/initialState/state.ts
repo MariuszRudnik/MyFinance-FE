@@ -12,7 +12,7 @@ const state: any = {
       success: false
     }
   },
-  wallet: { numberWalletUser: 1, nameOfWallet: 'Wallet', typeOfCurrency: 'PLN' },
+  //wallet: { numberWalletUser: 1, nameOfWallet: 'Wallet', typeOfCurrency: 'PLN' },
   walletOperations: [
     {
       id: 1,

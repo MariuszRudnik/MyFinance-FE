@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Formik, FormikHelpers, FormikProps, Form, Field, FieldProps } from 'formik';
+import { Formik, FormikHelpers, FormikProps, Form, Field, FieldProps, ErrorMessage } from 'formik';
 import Input from '../../Atoms/Input/Input';
 import Button from '../../Atoms/Button/Button';
 import Heading from '../../Atoms/Heading/Heading';
@@ -9,9 +9,10 @@ import Paragraph from '../../Atoms/Paragraph/Paragraph';
 import { useDispatch, useSelector } from 'react-redux';
 import { AddWallet } from '../../../Redux/reducers/walletRedux';
 import cssStyle from './addWallet.module.css';
+import * as Yup from 'yup';
 
 interface MyFormValues {
-  nameWallet: string;
+  nameOfWallet: string;
   initialState: number;
   typeOfCurrency: string;
 }
@@ -49,13 +50,12 @@ const ButtonWrapper = styled.div`
   margin: 20px auto;
 `;
 
-export const AddWalletComponents: React.FC<any> = () => {
-  const dispatch: any = useDispatch();
-  const addUser = (data: any) => dispatch(AddWallet(data));
-  const data = useSelector((state: any) => state.wallet);
-
+export const AddWalletComponents: React.FC<any> = ({ addWallet }: any) => {
+  const SignupSchema = Yup.object().shape({
+    initialState: Yup.number().required('Must be number')
+  });
   const initialValues: MyFormValues = {
-    nameWallet: '',
+    nameOfWallet: '',
     typeOfCurrency: 'PlN',
     initialState: 0
   };
@@ -67,20 +67,27 @@ export const AddWalletComponents: React.FC<any> = () => {
 
       <Formik
         initialValues={initialValues}
+        validationSchema={SignupSchema}
         onSubmit={(values, actions) => {
-          console.log(values);
+          const { initialState } = values;
+          const value = {
+            ...values,
+            initialState: Number(initialState)
+          };
+
+          addWallet(values);
           actions.setSubmitting(false);
         }}>
         <StylForm as={Form}>
           <FormWrapper>
-            <label htmlFor="nameWallet">
+            <label htmlFor="nameOfWallet">
               <Paragraph>Name Wallet</Paragraph>
               <Input
                 as={Field}
                 type="text"
-                placeholder="Name Wallet"
-                name="nameWallet"
-                id="nameWallet"
+                placeholder="Name of Wallet"
+                name="nameOfWallet"
+                id="nameOfWallet"
               />
             </label>
 
@@ -102,12 +109,13 @@ export const AddWalletComponents: React.FC<any> = () => {
               <Paragraph>Initial State</Paragraph>
               <Input
                 as={Field}
-                type="text"
+                type="number"
                 placeholder="Initial State"
                 name="initialState"
                 id="initialState"
               />
             </label>
+            <ErrorMessage name="initialState"></ErrorMessage>
 
             <ButtonWrapper>
               <Button secondary={false} type="submit">
