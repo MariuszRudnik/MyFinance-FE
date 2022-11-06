@@ -52,7 +52,11 @@ const ButtonWrapper = styled.div`
 
 export const AddWalletComponents: React.FC<any> = ({ addWallet }: any) => {
   const SignupSchema = Yup.object().shape({
-    initialState: Yup.number().required('Must be number')
+    initialState: Yup.number().required('Required'),
+    nameOfWallet: Yup.string()
+      .min(2, 'Name of wallet is too short')
+      .max(52, 'Name of wallet is too long')
+      .required('Required')
   });
   const initialValues: MyFormValues = {
     nameOfWallet: '',
@@ -90,6 +94,7 @@ export const AddWalletComponents: React.FC<any> = ({ addWallet }: any) => {
                 id="nameOfWallet"
               />
             </label>
+            <ErrorMessage name="nameOfWallet"></ErrorMessage>
 
             <label htmlFor="typeOfCurrency">
               <Paragraph>Type Of Currency</Paragraph>

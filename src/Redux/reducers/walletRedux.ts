@@ -21,7 +21,7 @@ export const fetchAddWallet = (login: any) => {
       const dataJson = await res.json();
       console.log(login);
       console.log(AddWallet(login));
-      AddWallet(login);
+      dispatch(AddWallet(login));
     } catch (err) {
       console.error(err);
     }
