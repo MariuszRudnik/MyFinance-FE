@@ -9,6 +9,7 @@ import bell from '../../Assets/icons/bell.svg';
 import monitoring from '../../Assets/icons/monitoring.svg';
 import logo from '../../Assets/iconsLogo/people.jpg';
 import { useSelector } from 'react-redux';
+import { AddWallet } from '../../../Redux/reducers/walletRedux';
 
 const NavWrapper = styled.nav`
   display: flex;

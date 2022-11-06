@@ -3,9 +3,11 @@ import state from '../initialState/state';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import loginRedux from '../reducers/loginRedux';
+import walletRedux from '../reducers/walletRedux';
 
 const rootReducer = {
-  login: loginRedux
+  login: loginRedux,
+  wallet: walletRedux
 };
 
 const reducer = combineReducers(rootReducer);

@@ -6,11 +6,14 @@ import Heading from '../../Atoms/Heading/Heading';
 import styled from 'styled-components';
 import { theme } from '../../../theme/mainTheme';
 import Paragraph from '../../Atoms/Paragraph/Paragraph';
+import { useDispatch, useSelector } from 'react-redux';
+import { AddWallet } from '../../../Redux/reducers/walletRedux';
+import cssStyle from './addWallet.module.css';
 
 interface MyFormValues {
   nameWallet: string;
-  openingBalance: string;
-  currency: string;
+  initialState: number;
+  typeOfCurrency: string;
 }
 // Atom
 const StyleAddWallet = styled.div`
@@ -45,8 +48,17 @@ const FormWrapper = styled.div`
 const ButtonWrapper = styled.div`
   margin: 20px auto;
 `;
+
 export const AddWalletComponents: React.FC<any> = () => {
-  const initialValues: MyFormValues = { nameWallet: '', currency: '', openingBalance: 'PLN' };
+  const dispatch: any = useDispatch();
+  const addUser = (data: any) => dispatch(AddWallet(data));
+  const data = useSelector((state: any) => state.wallet);
+
+  const initialValues: MyFormValues = {
+    nameWallet: '',
+    typeOfCurrency: 'PlN',
+    initialState: 0
+  };
   return (
     <StyleAddWallet>
       <TitleWrapper>
@@ -56,42 +68,47 @@ export const AddWalletComponents: React.FC<any> = () => {
       <Formik
         initialValues={initialValues}
         onSubmit={(values, actions) => {
-          console.log({ values, actions });
-          alert(JSON.stringify(values, null, 2));
+          console.log(values);
           actions.setSubmitting(false);
         }}>
         <StylForm as={Form}>
           <FormWrapper>
-            <label htmlFor="firstName">
+            <label htmlFor="nameWallet">
               <Paragraph>Name Wallet</Paragraph>
+              <Input
+                as={Field}
+                type="text"
+                placeholder="Name Wallet"
+                name="nameWallet"
+                id="nameWallet"
+              />
             </label>
-            <Input
-              as={Field}
-              placeholder="Name Wallet"
-              id="nameWallet"
-              name="nameWallet"
-              widthInput={'300px'}
-            />
-            <label htmlFor="firstName">
-              <Paragraph>Currency</Paragraph>
+
+            <label htmlFor="typeOfCurrency">
+              <Paragraph>Type Of Currency</Paragraph>
+              <Field
+                as="select"
+                type="text"
+                placeholder="TypeOfCurrency"
+                name="typeOfCurrency"
+                id="typeOfCurrency"
+                className={cssStyle.select}>
+                <option value="PLN">PLN</option>
+                <option value="USD">USD</option>
+                <option value="EURO">EURO</option>
+              </Field>
             </label>
-            <Input
-              as={Field}
-              placeholder="Currency"
-              id="currency"
-              name="currency"
-              widthInput={'300px'}
-            />
-            <label htmlFor="firstName">
-              <Paragraph>Opening Balance</Paragraph>
+            <label htmlFor="initialState">
+              <Paragraph>Initial State</Paragraph>
+              <Input
+                as={Field}
+                type="text"
+                placeholder="Initial State"
+                name="initialState"
+                id="initialState"
+              />
             </label>
-            <Input
-              as={Field}
-              placeholder="openingBalance"
-              id="openingBalance"
-              name="openingBalance"
-              widthInput={'300px'}
-            />
+
             <ButtonWrapper>
               <Button secondary={false} type="submit">
                 Save

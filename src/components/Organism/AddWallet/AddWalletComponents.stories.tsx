@@ -3,6 +3,8 @@ import { storiesOf } from '@storybook/react';
 
 import styled from 'styled-components';
 import { AddWalletComponents } from './AddWalletComponents';
+import store from '../../../Redux/store';
+import { Provider } from 'react-redux';
 
 const Background = styled.div`
   display: flex;
@@ -15,4 +17,8 @@ const Background = styled.div`
 
 storiesOf('Organism/AddWallet', module)
   .addDecorator((story) => <Background>{story()}</Background>)
-  .add('Normal', () => <AddWalletComponents />);
+  .add('Normal', () => (
+    <Provider store={store}>
+      <AddWalletComponents />
+    </Provider>
+  ));

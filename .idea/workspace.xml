@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Registration works">
+      <change afterPath="$PROJECT_DIR$/src/Redux/reducers/walletRedux.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Atoms/SelectOption/SelectOption.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Atoms/SelectOption/SelectOption.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Organism/AddWallet/addWallet.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/initialState/state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/initialState/state.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/selectors/root.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/selectors/root.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Register/Register.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Register/Register.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/UrlAddress.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/UrlAddress.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,30 +45,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.15.1&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.66&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/src/components/Organism/Register&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;/Users/mariusz/.nvm/versions/node/v16.15.1/bin/node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.typescriptcompiler&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "16.15.1",
+    "javascript.nodejs.core.library.typings.version": "16.18.3",
+    "last_opened_file_path": "/Users/mariusz/Documents/GitHub/NoteBook-FE/src/components/Atoms/InputOption",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "/Users/mariusz/.nvm/versions/node/v16.15.1/bin/node",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/mariusz/Documents/GitHub/NoteBook-FE/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.typescriptcompiler",
+    "ts.external.directory.path": "/Users/mariusz/Documents/GitHub/NoteBook-FE/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Atoms/InputOption" />
       <recent name="$PROJECT_DIR$/src/components/Organism/Register" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/components/Assets/Fonts" />
@@ -66,7 +82,7 @@
       <recent name="$PROJECT_DIR$/src/Redux/initialState" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.storybook">
+  <component name="RunManager" selected="npm.start">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -89,8 +105,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.storybook" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.storybook" />
         <item itemvalue="npm.storybook" />
         <item itemvalue="npm.start" />
       </list>
@@ -150,6 +166,8 @@
       <workItem from="1666001066299" duration="12039000" />
       <workItem from="1666022863708" duration="6184000" />
       <workItem from="1666189313266" duration="18422000" />
+      <workItem from="1667408050605" duration="1202000" />
+      <workItem from="1667669896669" duration="16384000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -333,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666544788575</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Registration works">
+      <created>1666545304321</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1666545304321</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,7 +403,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/Redux/initialState/state.ts</url>
-          <line>25</line>
+          <line>26</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

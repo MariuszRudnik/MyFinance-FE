@@ -1,4 +1,4 @@
-const Url = 'http://localhost:8000/';
+const Url = 'http://localhost:3002/';
 
 export const GETUserHost = Url + 'user';
 export const POSTListOfWallets = Url + 'list-of-wallets/';
