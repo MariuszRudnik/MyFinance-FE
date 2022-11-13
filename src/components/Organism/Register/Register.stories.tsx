@@ -3,6 +3,8 @@ import { storiesOf } from '@storybook/react';
 
 import styled from 'styled-components';
 import { Register } from './Register';
+import store from '../../../Redux/store';
+import { Provider } from 'react-redux';
 const Background = styled.div`
   display: flex;
   justify-content: center;
@@ -14,4 +16,8 @@ const Background = styled.div`
 
 storiesOf('Organism/Register', module)
   .addDecorator((story) => <Background>{story()}</Background>)
-  .add('Normal', () => <Register></Register>);
+  .add('Normal', () => (
+    <Provider store={store}>
+      <Register></Register>
+    </Provider>
+  ));

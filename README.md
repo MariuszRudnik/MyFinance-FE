@@ -44,6 +44,7 @@ MyFinances to projekt powstały ...
 Użyte paczki
   <ul>
     <li><a href="https://redux.js.org/">Redux</a></li>
+    <li><a href="https://reactrouter.com/en/main">React Router</a></li>
     <li><a href="https://formik.org/">Formik</a></li>
     <li><a href="https://storybook.js.org/">Storybook</a></li>
     <li><a href="https://styled-components.com/">Styled Components</a></li>
