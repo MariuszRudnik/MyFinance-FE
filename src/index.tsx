@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './components/Assets/i18next/i18next';
 import Root from './Pages/Root/RootConstainer';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
