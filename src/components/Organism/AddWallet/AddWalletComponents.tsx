@@ -27,11 +27,7 @@ interface MyFormValues {
 export const AddWalletComponents: React.FC<any> = ({ addWallet }: any) => {
   const [addedWallet, setAddedWallet] = useState(false);
   const SignupSchema = Yup.object().shape({
-    initialState: Yup.number().required('Required'),
-    nameOfWallet: Yup.string()
-      .min(2, 'Name of wallet is too short')
-      .max(52, 'Name of wallet is too long')
-      .required('Required')
+    initialState: Yup.number().required('Must be number')
   });
   const initialValues: MyFormValues = {
     nameOfWallet: '',
@@ -64,49 +60,47 @@ export const AddWalletComponents: React.FC<any> = ({ addWallet }: any) => {
               initialState: Number(initialState)
             };
 
-            addWallet(values);
-            setAddedWallet(true);
-            actions.setSubmitting(false);
-          }}>
-          <StylForm as={Form}>
-            <FormWrapper>
-              <label htmlFor="nameOfWallet">
-                <Paragraph>Name Wallet</Paragraph>
-                <Input
-                  as={Field}
-                  type="text"
-                  placeholder="Name of Wallet"
-                  name="nameOfWallet"
-                  id="nameOfWallet"
-                />
-              </label>
-              <ErrorMessage name="nameOfWallet"></ErrorMessage>
+          addWallet(values);
+          actions.setSubmitting(false);
+        }}>
+        <StylForm as={Form}>
+          <FormWrapper>
+            <label htmlFor="nameOfWallet">
+              <Paragraph>Name Wallet</Paragraph>
+              <Input
+                as={Field}
+                type="text"
+                placeholder="Name of Wallet"
+                name="nameOfWallet"
+                id="nameOfWallet"
+              />
+            </label>
 
-              <label htmlFor="typeOfCurrency">
-                <Paragraph>Type Of Currency</Paragraph>
-                <Field
-                  as="select"
-                  type="text"
-                  placeholder="TypeOfCurrency"
-                  name="typeOfCurrency"
-                  id="typeOfCurrency"
-                  className={cssStyle.select}>
-                  <option value="PLN">PLN</option>
-                  <option value="USD">USD</option>
-                  <option value="EURO">EURO</option>
-                </Field>
-              </label>
-              <label htmlFor="initialState">
-                <Paragraph>Initial State</Paragraph>
-                <Input
-                  as={Field}
-                  type="number"
-                  placeholder="Initial State"
-                  name="initialState"
-                  id="initialState"
-                />
-              </label>
-              <ErrorMessage name="initialState"></ErrorMessage>
+            <label htmlFor="typeOfCurrency">
+              <Paragraph>Type Of Currency</Paragraph>
+              <Field
+                as="select"
+                type="text"
+                placeholder="TypeOfCurrency"
+                name="typeOfCurrency"
+                id="typeOfCurrency"
+                className={cssStyle.select}>
+                <option value="PLN">PLN</option>
+                <option value="USD">USD</option>
+                <option value="EURO">EURO</option>
+              </Field>
+            </label>
+            <label htmlFor="initialState">
+              <Paragraph>Initial State</Paragraph>
+              <Input
+                as={Field}
+                type="number"
+                placeholder="Initial State"
+                name="initialState"
+                id="initialState"
+              />
+            </label>
+            <ErrorMessage name="initialState"></ErrorMessage>
 
               <ButtonWrapper>
                 <Button secondary={false} type="submit">
