@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { MainTemplate } from '../../templates/MainTemplate';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { MainPage } from '../MainPage';
-import News from '../News';
 import { Setting } from '../Setting';
 import { UrlTypes } from '../../types/UrlTypes';
 import { LoginPage } from '../Access/LoginPage';
@@ -46,7 +45,6 @@ function Root({ login, loginAccess, userAccess }: any) {
       <MainTemplate>
         <Routes>
           <Route path="/" element={access ? <MainPage /> : <LoginPage />} />
-          <Route path={`/${UrlTypes.News}`} element={access ? <News /> : <LoginPage />} />
           <Route path={`/${UrlTypes.AddWallet}`} element={access ? <AddWallet /> : <LoginPage />} />
           <Route
             path={`/${UrlTypes.ListOfWallet}`}

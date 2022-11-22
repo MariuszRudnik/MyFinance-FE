@@ -17,6 +17,7 @@ import {
 } from './style/StyleAddWallet.style';
 import { useState } from 'react';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 
 interface MyFormValues {
   nameOfWallet: string;
@@ -25,6 +26,7 @@ interface MyFormValues {
 }
 
 export const AddWalletComponents: React.FC<any> = ({ addWallet }: any) => {
+  const { t, i18n } = useTranslation();
   const [addedWallet, setAddedWallet] = useState(false);
   const SignupSchema = Yup.object().shape({
     initialState: Yup.number().required('Must be number')
@@ -37,16 +39,16 @@ export const AddWalletComponents: React.FC<any> = ({ addWallet }: any) => {
   return (
     <StyleAddWallet>
       <TitleWrapper>
-        <Heading color={theme.gray400}>Add new wallet</Heading>
+        <Heading color={theme.gray400}>{t('Add new wallet')}</Heading>
       </TitleWrapper>
 
       {addedWallet ? (
         <FormWrapper>
-          <h1>Congratulation. </h1>
-          <p>You added new wallet. Now you will be able to add your transaction.</p>
+          <h1>{t('Congratulation.')} </h1>
+          <p>{t('You added new wallet. Now you will be able to add your transaction.')}</p>
           <ButtonWrapperStyle>
-            <Button>Go to your wallet</Button>
-            <Button onClick={() => setAddedWallet(false)}>Add new wallet</Button>
+            <Button>{t('Go to your wallet')}</Button>
+            <Button onClick={() => setAddedWallet(false)}>{t('Add new wallet')}</Button>
           </ButtonWrapperStyle>
         </FormWrapper>
       ) : (
@@ -60,24 +62,25 @@ export const AddWalletComponents: React.FC<any> = ({ addWallet }: any) => {
               initialState: Number(initialState)
             };
 
+            setAddedWallet(true);
             addWallet(values);
             actions.setSubmitting(false);
           }}>
           <StylForm as={Form}>
             <FormWrapper>
               <label htmlFor="nameOfWallet">
-                <Paragraph>Name Wallet</Paragraph>
+                <Paragraph>{t('Name of wallet')}</Paragraph>
                 <Input
                   as={Field}
                   type="text"
-                  placeholder="Name of Wallet"
+                  placeholder={t('Name of wallet')}
                   name="nameOfWallet"
                   id="nameOfWallet"
                 />
               </label>
 
               <label htmlFor="typeOfCurrency">
-                <Paragraph>Type Of Currency</Paragraph>
+                <Paragraph>{t('Type Of Currency')}</Paragraph>
                 <Field
                   as="select"
                   type="text"
@@ -91,7 +94,7 @@ export const AddWalletComponents: React.FC<any> = ({ addWallet }: any) => {
                 </Field>
               </label>
               <label htmlFor="initialState">
-                <Paragraph>Initial State</Paragraph>
+                <Paragraph>{t('Initial State')}</Paragraph>
                 <Input
                   as={Field}
                   type="number"
@@ -104,7 +107,7 @@ export const AddWalletComponents: React.FC<any> = ({ addWallet }: any) => {
 
               <ButtonWrapper>
                 <Button secondary={false} type="submit">
-                  Save
+                  {t('Save')}
                 </Button>
               </ButtonWrapper>
             </FormWrapper>

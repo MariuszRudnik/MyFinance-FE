@@ -12,6 +12,7 @@ const Paragraph = styled.p<Props>`
   font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : theme.bold)};
   color: ${({ color }) => (color ? color : theme.gray400)};
   word-wrap: break-word;
+  position: relative;
 `;
 
 export default Paragraph;

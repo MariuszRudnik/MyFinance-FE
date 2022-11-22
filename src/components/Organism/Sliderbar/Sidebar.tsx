@@ -11,6 +11,7 @@ import logout from '../../Assets/icons/logout.svg';
 import { UrlTypes } from '../../../types/UrlTypes';
 import { useDispatch } from 'react-redux';
 import { fetchLogout } from '../../../Redux/reducers/loginRedux';
+import { useTranslation } from 'react-i18next';
 
 const SidebarWrapper = styled.div`
   display: flex;
@@ -30,6 +31,7 @@ const StyledLinksList = styled.ul`
 `;
 
 export const Sidebar = () => {
+  const { t, i18n } = useTranslation();
   const dispatch: any = useDispatch();
   const logOut = () => {
     return dispatch(fetchLogout());
@@ -40,24 +42,24 @@ export const Sidebar = () => {
       <StyledLinksList>
         <li>
           <ButtonIconsSidebar as={NavLink} to={'/' + UrlTypes.AddWallet}>
-            <ContentButton title="Add new wallet" icon={addIcon} />
+            <ContentButton title={t('Add new wallet')} icon={addIcon} />
           </ButtonIconsSidebar>
         </li>
         <li>
           <ButtonIconsSidebar as={NavLink} to={'/' + UrlTypes.ListOfWallet}>
-            <ContentButton title="List of wallet" icon={wallet} />
+            <ContentButton title={t('List of wallet')} icon={wallet} />
           </ButtonIconsSidebar>
         </li>
-        <li>
-          <ButtonIconsSidebar as={NavLink} to={'/' + UrlTypes.Setting}>
-            <ContentButton title="Settings" icon={settings} />
-          </ButtonIconsSidebar>
-        </li>
-        <li>
-          <ButtonIconsSidebar as={NavLink} to={'/'} onClick={logOut}>
-            <ContentButton title="Log out" icon={logout} />
-          </ButtonIconsSidebar>
-        </li>
+        {/* <li> */}
+        {/*   <ButtonIconsSidebar as={NavLink} to={'/' + UrlTypes.Setting}> */}
+        {/*     <ContentButton title={t('Settings')} icon={settings} /> */}
+        {/*   </ButtonIconsSidebar> */}
+        {/* </li> */}
+        {/* <li> */}
+        {/*   <ButtonIconsSidebar as={NavLink} to={'/'} onClick={logOut}> */}
+        {/*     <ContentButton title={t('Log out')} icon={logout} /> */}
+        {/*   </ButtonIconsSidebar> */}
+        {/* </li> */}
       </StyledLinksList>
     </SidebarWrapper>
   );

@@ -1,3 +1,19 @@
 {
-  "welcome_to_react": "Welcom to Engish"
+  "welcome_to_react": "Welcome to English",
+  "Hello": "Hello",
+  "Name of wallet": "Name of wallet",
+  "Type Of Currency": "Type Of Currency",
+  "Initial State": "Initial State",
+  "Save": "Save",
+  "Congratulation.": "Congratulation.",
+  "You added new wallet. Now you will be able to add your transaction.": "You added new wallet. Now you will be able to add your transaction.",
+  "Add new wallet": "Add new wallet",
+  "Go to your wallet": "Go to your wallet",
+  "List of wallet": "List of wallet",
+  "Settings": "Settings",
+  "Log out": "Log out",
+  "Language application": "Language application :",
+  "English": "English",
+  "Polish": "Polish"
+
 }
