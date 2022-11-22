@@ -16,7 +16,7 @@ export const Setting = () => {
     <UserPageTemplates activeColor={theme.tertiary}>
       <Content heading={t('Settings')} widthContent={'90%'}>
         <WrapperContent>
-          {t('Language application')} <button onClick={() => i18n.changeLanguage('en')}>EN</button>{' '}
+          {t('Application language')} <button onClick={() => i18n.changeLanguage('en')}>EN</button>{' '}
           <button onClick={() => i18n.changeLanguage('pl')}>PL</button>
         </WrapperContent>
       </Content>

@@ -4,24 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Added i18next to the project">
-      <change afterPath="$PROJECT_DIR$/src/components/Molecules/Navbar/style/navbar.style.tsx" afterDir="false" />
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Added i18next to the project and nav menu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/locales/en/translate.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/locales/en/translate.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/locales/pl/translate.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/locales/pl/translate.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/News.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Setting.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Setting.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Atoms/ButtonIconSidebar/ButtonIconSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/ButtonIconSidebar/ButtonIconSidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Atoms/ButtonIconSidebar/content/ContentButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/ButtonIconSidebar/content/ContentButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Atoms/Paragraph/Paragraph.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/Paragraph/Paragraph.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Card/Card.stories.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Card/Card.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Login/Login.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Login/Login.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Register/Register.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Register/Register.stories.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +161,7 @@
       <workItem from="1668018205070" duration="370000" />
       <workItem from="1668162714780" duration="1979000" />
       <workItem from="1668324656948" duration="6037000" />
-      <workItem from="1668969538064" duration="8712000" />
+      <workItem from="1668969538064" duration="10147000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -405,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668328534608</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Added i18next to the project and nav menu">
+      <created>1669145843571</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1669145843571</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,7 +441,8 @@
     <MESSAGE value="Registration works" />
     <MESSAGE value="Add wallet  works" />
     <MESSAGE value="Added i18next to the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added i18next to the project" />
+    <MESSAGE value="Added i18next to the project and nav menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added i18next to the project and nav menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
