@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import './components/Assets/i18next/i18next';
 import Root from './Pages/Root/RootConstainer';
@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './Redux/store';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { LoadingElements } from './components/Atoms/LoadingElements/LoadingElements';
 
 const queryClient = new QueryClient();
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
@@ -13,7 +14,9 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <QueryClientProvider client={queryClient}>
-        <Root />
+        <Suspense fallback={<LoadingElements />}>
+          <Root />
+        </Suspense>
       </QueryClientProvider>
     </Provider>
   </React.StrictMode>
