@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Add wallet  works">
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="added spiner">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +18,7 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feat#6_Register" />
+        <entry key="$PROJECT_DIR$" value="feat#7_addwallet" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,7 +38,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.15.1&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.18.3&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/src/components/Atoms/InputOption&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/public&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -54,20 +55,21 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/components/Atoms/InputOption" />
       <recent name="$PROJECT_DIR$/src/components/Organism/Register" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/components/Assets/Fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/Organism/AddWallet/style" />
       <recent name="$PROJECT_DIR$/src/components/Assets/icons" />
+      <recent name="$PROJECT_DIR$/src/components/Assets" />
+      <recent name="$PROJECT_DIR$/src/components/Organism/AddWallet/style" />
       <recent name="$PROJECT_DIR$/src/components/Molecules/Navbar" />
       <recent name="$PROJECT_DIR$/src/Pages/Access" />
-      <recent name="$PROJECT_DIR$/img" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.storybook">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -90,8 +92,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.storybook" />
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.storybook" />
         <item itemvalue="npm.start" />
       </list>
@@ -155,7 +157,12 @@
       <workItem from="1667669896669" duration="28394000" />
       <workItem from="1668018205070" duration="370000" />
       <workItem from="1668162714780" duration="1979000" />
-      <workItem from="1668324656948" duration="2722000" />
+      <workItem from="1668324656948" duration="6037000" />
+      <workItem from="1668969538064" duration="10374000" />
+      <workItem from="1669224941835" duration="4248000" />
+      <workItem from="1669549574370" duration="2621000" />
+      <workItem from="1669735280968" duration="2630000" />
+      <workItem from="1669744954445" duration="866000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -374,7 +381,42 @@
       <option name="project" value="LOCAL" />
       <updated>1668327251650</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Add wallet  works">
+      <created>1668327397551</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1668327397551</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Added i18next to the project">
+      <created>1668328534608</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1668328534608</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Added i18next to the project and nav menu">
+      <created>1669145843571</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1669145843571</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Fixed storrybook">
+      <created>1669147037294</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1669147037294</updated>
+    </task>
+    <task id="LOCAL-00036" summary="added spiner">
+      <created>1669551742217</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1669551742217</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,7 +455,11 @@
     <MESSAGE value="Yup added to the registration form" />
     <MESSAGE value="Registration works" />
     <MESSAGE value="Add wallet  works" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add wallet  works" />
+    <MESSAGE value="Added i18next to the project" />
+    <MESSAGE value="Added i18next to the project and nav menu" />
+    <MESSAGE value="Fixed storrybook" />
+    <MESSAGE value="added spiner" />
+    <option name="LAST_COMMIT_MESSAGE" value="added spiner" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -424,9 +470,14 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.tsx</url>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/src/components/Molecules/Navbar/style/navbar.style.tsx</url>
+          <line>1</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx</url>
+          <line>60</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

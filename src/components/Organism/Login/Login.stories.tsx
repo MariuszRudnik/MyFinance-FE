@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import styled from 'styled-components';
 import { Login } from './Login';
+import { MemoryRouter } from 'react-router-dom';
 const Background = styled.div`
   display: flex;
   justify-content: center;
@@ -14,4 +15,5 @@ const Background = styled.div`
 
 storiesOf('Organism/Login', module)
   .addDecorator((story) => <Background>{story()}</Background>)
+  .addDecorator((story) => <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>)
   .add('Normal', () => <Login></Login>);

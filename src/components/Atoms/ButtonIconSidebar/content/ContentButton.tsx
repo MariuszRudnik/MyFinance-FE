@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import expandLess from '../../../Assets/icons/expand-less.svg';
 
 type Props = {
-  title: string;
+  title: string | any;
   icon?: any;
 };
 

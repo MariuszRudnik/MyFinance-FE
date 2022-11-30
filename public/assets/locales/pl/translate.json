@@ -1,0 +1,18 @@
+{
+  "welcome_to_react": "Test po polsku",
+  "Hello": "Cześć",
+  "Name of wallet": "Nazwa portfela",
+  "Type Of Currency": "Rodzaj waluty",
+  "Initial State": "Stan początkowy",
+  "Save": "Zapisz",
+  "Congratulation.": "Gratulacje.",
+  "You added new wallet. Now you will be able to add your transaction.": "Dodałeś nowy portfel. Teraz będziesz mógł dodać swoją transakcję.",
+  "Add new wallet": "Dodaj nowy portfel",
+  "Go to your wallet": "Przejdź do portfela",
+  "List of wallet": "Lista portfeli",
+  "Settings": "Ustawienia",
+  "Log out": "Wyloguj",
+  "Application language": " Język aplikacji : ",
+  "English": "Angielski",
+  "Polish": "Polski"
+}

@@ -48,6 +48,7 @@ Użyte paczki
     <li><a href="https://formik.org/">Formik</a></li>
     <li><a href="https://storybook.js.org/">Storybook</a></li>
     <li><a href="https://styled-components.com/">Styled Components</a></li>
+    <li><a href="https://www.i18next.com/">i18next React</a></li>
   </ul>
 
   Strona serwera
@@ -64,12 +65,12 @@ Użyte paczki
 <!-- Kolorystyka -->
 ### :art: Kolorystyka
 
-| Color             | Hex  |
-| ----------------- |------|
-| Primary Color | bra  |
-| Secondary Color | brak |
-| Accent Color | brak |
-| Text Color | brak |
+| Color             | Hex       |
+| ----------------- |-----------|
+| Primary Color | #3455F7FF |
+| Secondary Color | #6B7A99   |
+| Accent Color | #F7F8FA     |
+| Text Color | #6B7A99     |
 
 <!-- Funkcjonalności -->
 ### :dart: Funkcjonalności

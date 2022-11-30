@@ -5,6 +5,8 @@ import { withRouter } from 'storybook-addon-react-router-v6';
 import { theme } from '../../../theme/mainTheme';
 import { Sidebar } from './Sidebar';
 import styled from 'styled-components';
+import store from '../../../Redux/store';
+import { Provider } from 'react-redux';
 const Background = styled.div`
   display: flex;
   justify-content: center;
@@ -17,4 +19,8 @@ const Background = styled.div`
 storiesOf('Sidebar/SidebarV2', module)
   .addDecorator((story) => <Background>{story()}</Background>)
   .addDecorator(withRouter)
-  .add('Normal', () => <Sidebar></Sidebar>);
+  .add('Normal', () => (
+    <Provider store={store}>
+      <Sidebar></Sidebar>
+    </Provider>
+  ));
