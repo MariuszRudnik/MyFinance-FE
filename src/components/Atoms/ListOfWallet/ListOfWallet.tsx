@@ -1,0 +1,124 @@
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import arrowIgm from '../../Assets/icons/expand-less.svg';
+import walletImg from '../../Assets/icons/wallet.svg';
+import { theme } from '../../../theme/mainTheme';
+import loadingImage from '../../Assets/icons/login.svg';
+import { NavLink } from 'react-router-dom';
+import { UrlTypes } from '../../../types/UrlTypes';
+
+const Wrapper = styled.div`
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 280px;
+  min-height: 50px;
+  background-color: ${({ theme }) => theme.white};
+  border-radius: 15px;
+  padding: 15px 5px;
+`;
+
+const TitleWrapper = styled.div`
+  display: flex;
+  width: 250px;
+  height: 40px;
+  margin-left: 15px;
+  justify-content: space-between;
+  align-content: center;
+  border-bottom: 2px solid ${({ theme }) => theme.grey300};
+`;
+const HeadlinesWrapper = styled.div`
+  display: flex;
+`;
+const Icon30 = styled.img`
+  width: 30px;
+  height: 30px;
+`;
+const Title = styled.p`
+  font-family: 'Roboto-Regular', 'Roboto-Bold', 'Roboto-Italic', 'Roboto-Light', sans-serif;
+  font-size: 16px;
+  font-weight: ${theme.bold};
+  color: ${({ color }) => (color ? color : theme.gray400)};
+  word-wrap: break-word;
+  position: relative;
+  margin: 10px 20px;
+`;
+const LoadingWrapper = styled.div`
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+`;
+const IsLoading = () => {
+  return (
+    <LoadingWrapper>
+      <img src={loadingImage} alt="" />
+      <p>Loading...</p>
+    </LoadingWrapper>
+  );
+};
+interface walletData {
+  numberWalletUser: number;
+  nameOfWallet: string;
+  typeOfCurrency: string;
+}
+const LiWallet = styled.li`
+  list-style-type: none;
+  width: 233px;
+  height: 30px;
+`;
+const ParagraphList = styled.p`
+  font-family: 'Roboto-Regular', 'Roboto-Bold', 'Roboto-Italic', 'Roboto-Light', sans-serif;
+  font-size: 16px;
+  font-weight: ${theme.bold};
+  color: ${({ color }) => (color ? color : theme.gray400)};
+  word-wrap: break-word;
+`;
+
+const Wallet = ({ wallet }: walletData | any) => {
+  return (
+    <>
+      <ul>
+        {wallet.map((item: any) => (
+          <LiWallet key={item.numberWalletUser}>
+            <ParagraphList>
+              <NavLink to={`/${UrlTypes.ListOfWallet}/${item.numberWalletUser}`}>
+                {item.nameOfWallet}
+              </NavLink>
+            </ParagraphList>
+          </LiWallet>
+        ))}
+      </ul>
+    </>
+  );
+};
+
+export const ListOfWallet = ({ title }: any | string) => {
+  const [loading, setLoading] = useState(false);
+  const walletItem: any = [
+    {
+      numberWalletUser: 0,
+      nameOfWallet: 'Wallet',
+      typeOfCurrency: 'PLN'
+    },
+    {
+      numberWalletUser: 1,
+      nameOfWallet: 'Wallet2',
+      typeOfCurrency: 'PLN'
+    }
+  ];
+  return (
+    <Wrapper>
+      <TitleWrapper>
+        <HeadlinesWrapper>
+          <Icon30 src={walletImg} alt="" />
+          <Title>{title}</Title>
+        </HeadlinesWrapper>
+        <Icon30 src={arrowIgm} alt="" />
+      </TitleWrapper>
+      {loading ? <IsLoading /> : <Wallet wallet={walletItem} />}
+    </Wrapper>
+  );
+};

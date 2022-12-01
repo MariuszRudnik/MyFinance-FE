@@ -12,6 +12,7 @@ import { UrlTypes } from '../../../types/UrlTypes';
 import { useDispatch } from 'react-redux';
 import { fetchLogout } from '../../../Redux/reducers/loginRedux';
 import { useTranslation } from 'react-i18next';
+import { ListOfWallet } from '../../Atoms/ListOfWallet/ListOfWallet';
 
 const SidebarWrapper = styled.div`
   display: flex;
@@ -44,6 +45,9 @@ export const Sidebar = () => {
           <ButtonIconsSidebar as={NavLink} to={'/' + UrlTypes.AddWallet}>
             <ContentButton title={t('Add new wallet')} icon={addIcon} />
           </ButtonIconsSidebar>
+        </li>
+        <li>
+          <ListOfWallet as={NavLink} title={t('List of wallet')} />
         </li>
         <li>
           <ButtonIconsSidebar as={NavLink} to={'/' + UrlTypes.ListOfWallet}>
