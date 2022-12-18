@@ -49,6 +49,8 @@ Użyte paczki
     <li><a href="https://storybook.js.org/">Storybook</a></li>
     <li><a href="https://styled-components.com/">Styled Components</a></li>
     <li><a href="https://www.i18next.com/">i18next React</a></li>
+<li><a href="https://lodash.com/">Lodash </a></li>
+<li><a href="https://www.npmjs.com/package/json-server">JSON Server </a></li>
   </ul>
 
   Strona serwera

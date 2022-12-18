@@ -17,6 +17,7 @@ const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.white};
   border-radius: 15px;
   padding: 15px 5px;
+  margin: 10px;
 `;
 
 const TitleWrapper = styled.div`
@@ -76,49 +77,81 @@ const ParagraphList = styled.p`
   color: ${({ color }) => (color ? color : theme.gray400)};
   word-wrap: break-word;
 `;
+const LinkOfWallet = styled.a`
+  cursor: pointer;
+  color: ${theme.gray400};
+  text-decoration: none;
 
-const Wallet = ({ wallet }: walletData | any) => {
+  &.active {
+    text-decoration: underline;
+  }
+`;
+const NavigateOfWallet = styled(LinkOfWallet)`
+  &.active {
+    text-decoration: none;
+  }
+`;
+
+const Wallet = ({ numberWalletUser }: any) => {
   return (
     <>
       <ul>
-        {wallet.map((item: any) => (
-          <LiWallet key={item.numberWalletUser}>
+        <>
+          <LiWallet key={numberWalletUser}>
             <ParagraphList>
-              <NavLink to={`/${UrlTypes.ListOfWallet}/${item.numberWalletUser}`}>
-                {item.nameOfWallet}
-              </NavLink>
+              <LinkOfWallet
+                as={NavLink}
+                to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/wallet`}>
+                Wallet
+              </LinkOfWallet>
             </ParagraphList>
           </LiWallet>
-        ))}
+          <LiWallet>
+            <ParagraphList>
+              <LinkOfWallet
+                as={NavLink}
+                to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/category`}>
+                Category
+              </LinkOfWallet>
+            </ParagraphList>
+          </LiWallet>
+          <LiWallet>
+            <ParagraphList>
+              <LinkOfWallet
+                as={NavLink}
+                to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/add-wallet`}>
+                Add transaction
+              </LinkOfWallet>
+            </ParagraphList>
+          </LiWallet>
+        </>
       </ul>
     </>
   );
 };
 
-export const ListOfWallet = ({ title }: any | string) => {
+export const ListOfWallet = ({ title, walletList }: any | string) => {
   const [loading, setLoading] = useState(false);
   const walletItem: any = [
     {
       numberWalletUser: 0,
       nameOfWallet: 'Wallet',
       typeOfCurrency: 'PLN'
-    },
-    {
-      numberWalletUser: 1,
-      nameOfWallet: 'Wallet2',
-      typeOfCurrency: 'PLN'
     }
   ];
+  const numberWalletUser = 0;
   return (
     <Wrapper>
-      <TitleWrapper>
-        <HeadlinesWrapper>
-          <Icon30 src={walletImg} alt="" />
-          <Title>{title}</Title>
-        </HeadlinesWrapper>
-        <Icon30 src={arrowIgm} alt="" />
-      </TitleWrapper>
-      {loading ? <IsLoading /> : <Wallet wallet={walletItem} />}
+      <NavigateOfWallet as={NavLink} to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/wallet`}>
+        <TitleWrapper>
+          <HeadlinesWrapper>
+            <Icon30 src={walletImg} alt="" />
+            <Title>{title}</Title>
+          </HeadlinesWrapper>
+          <Icon30 src={arrowIgm} alt="" />
+        </TitleWrapper>
+      </NavigateOfWallet>
+      {loading ? <IsLoading /> : <Wallet numberWalletUser={numberWalletUser} />}
     </Wrapper>
   );
 };

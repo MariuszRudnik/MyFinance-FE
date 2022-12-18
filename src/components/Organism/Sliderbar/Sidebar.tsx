@@ -5,14 +5,18 @@ import ButtonIconsSidebar from '../../Atoms/ButtonIconSidebar/ButtonIconSidebar'
 import { NavLink } from 'react-router-dom';
 import { ContentButton } from '../../Atoms/ButtonIconSidebar/content/ContentButton';
 import addIcon from '../../Assets/icons/add.svg';
-import settings from '../../Assets/icons/settings.svg';
-import wallet from '../../Assets/icons/wallet.svg';
-import logout from '../../Assets/icons/logout.svg';
+import homeIcon from '../../Assets/icons/home_app_logo.svg';
 import { UrlTypes } from '../../../types/UrlTypes';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { fetchLogout } from '../../../Redux/reducers/loginRedux';
 import { useTranslation } from 'react-i18next';
-import { ListOfWallet } from '../../Atoms/ListOfWallet/ListOfWallet';
+import ListOfWallet from '../../Atoms/ListOfWallet/walletList';
+
+type PropsWallets = {
+  numberWalletUser: number;
+  nameOfWallet: string;
+  typeOfCurrency: string;
+};
 
 const SidebarWrapper = styled.div`
   display: flex;
@@ -32,6 +36,9 @@ const StyledLinksList = styled.ul`
 `;
 
 export const Sidebar = () => {
+  const wallets = useSelector((state: any) => state.wallet);
+  const listWallets = wallets.walletList;
+  console.log(listWallets);
   const { t, i18n } = useTranslation();
   const dispatch: any = useDispatch();
   const logOut = () => {
@@ -42,28 +49,24 @@ export const Sidebar = () => {
     <SidebarWrapper>
       <StyledLinksList>
         <li>
+          <ButtonIconsSidebar as={NavLink} to={'/'}>
+            <ContentButton title={t('Home Page')} icon={homeIcon} />
+          </ButtonIconsSidebar>
+        </li>
+        <li>
           <ButtonIconsSidebar as={NavLink} to={'/' + UrlTypes.AddWallet}>
             <ContentButton title={t('Add new wallet')} icon={addIcon} />
           </ButtonIconsSidebar>
         </li>
         <li>
-          <ListOfWallet as={NavLink} title={t('List of wallet')} />
+          {listWallets.map((wallets: PropsWallets) => (
+            <ListOfWallet
+              as={NavLink}
+              key={wallets.numberWalletUser}
+              title={wallets.nameOfWallet}
+            />
+          ))}
         </li>
-        <li>
-          <ButtonIconsSidebar as={NavLink} to={'/' + UrlTypes.ListOfWallet}>
-            <ContentButton title={t('List of wallet')} icon={wallet} />
-          </ButtonIconsSidebar>
-        </li>
-        {/* <li> */}
-        {/*   <ButtonIconsSidebar as={NavLink} to={'/' + UrlTypes.Setting}> */}
-        {/*     <ContentButton title={t('Settings')} icon={settings} /> */}
-        {/*   </ButtonIconsSidebar> */}
-        {/* </li> */}
-        {/* <li> */}
-        {/*   <ButtonIconsSidebar as={NavLink} to={'/'} onClick={logOut}> */}
-        {/*     <ContentButton title={t('Log out')} icon={logout} /> */}
-        {/*   </ButtonIconsSidebar> */}
-        {/* </li> */}
       </StyledLinksList>
     </SidebarWrapper>
   );

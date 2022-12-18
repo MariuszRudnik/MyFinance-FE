@@ -11,7 +11,7 @@ import { UrlAddress } from '../../types/UrlAddress';
 import { RegisterPage } from '../Access/Register';
 import { LoadingElements } from '../../components/Atoms/LoadingElements/LoadingElements';
 
-function Root({ login, loginAccess, userAccess }: any) {
+function Root({ login, loginAccess, userAccess, walletList }: any) {
   let access = null;
 
   useEffect(() => {
@@ -28,6 +28,7 @@ function Root({ login, loginAccess, userAccess }: any) {
         .then((res) => {
           loginAccess(true);
           userAccess(res);
+          walletList();
         })
         .catch((error) => {
           loginAccess(false);
@@ -53,7 +54,7 @@ function Root({ login, loginAccess, userAccess }: any) {
               element={access ? <AddWallet /> : <LoginPage />}
             />
             <Route
-              path={`/${UrlTypes.ListOfWallet}`}
+              path={`/${UrlTypes.ListOfWallet}/:id/*`}
               element={access ? <ListOfWallet /> : <LoginPage />}
             />
             <Route path={`/${UrlTypes.Setting}`} element={access ? <Setting /> : <LoginPage />} />
