@@ -1,6 +1,6 @@
 import React from 'react';
 import ButtonIcon from '../../Atoms/ButtonIcon/ButtonIcon';
-import twiter from '../../Assets/icons/twitter.svg';
+import twiter from '../../Assets/icons/add.svg';
 import { theme } from '../../../theme/mainTheme';
 import styled from 'styled-components';
 import Paragraph from '../../Atoms/Paragraph/Paragraph';

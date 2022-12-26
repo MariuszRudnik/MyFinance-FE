@@ -1,17 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { theme } from '../../../theme/mainTheme';
 import ButtonIconsSidebar from '../../Atoms/ButtonIconSidebar/ButtonIconSidebar';
 import { NavLink } from 'react-router-dom';
 import { ContentButton } from '../../Atoms/ButtonIconSidebar/content/ContentButton';
 import addIcon from '../../Assets/icons/add.svg';
-import settings from '../../Assets/icons/settings.svg';
-import wallet from '../../Assets/icons/wallet.svg';
-import logout from '../../Assets/icons/logout.svg';
+import homeIcon from '../../Assets/icons/home_app_logo.svg';
 import { UrlTypes } from '../../../types/UrlTypes';
-import { useDispatch } from 'react-redux';
-import { fetchLogout } from '../../../Redux/reducers/loginRedux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
+import { ListOfWallet } from '../ListOfWallet/ListOfWallet';
+import { fetchDownloadWallet } from '../../../Redux/reducers/walletRedux';
+
+type PropsWallets = {
+  numberWalletUser: number;
+  nameOfWallet: string;
+  typeOfCurrency: string;
+  active: boolean;
+};
 
 const SidebarWrapper = styled.div`
   display: flex;
@@ -33,33 +39,39 @@ const StyledLinksList = styled.ul`
 export const Sidebar = () => {
   const { t, i18n } = useTranslation();
   const dispatch: any = useDispatch();
-  const logOut = () => {
-    return dispatch(fetchLogout());
+  const fetchWallet = () => {
+    return dispatch(fetchDownloadWallet());
   };
+  useEffect(() => {
+    fetchWallet();
+  }, []);
+  const wallet = useSelector((state: any) => state.wallet.walletList);
 
   return (
     <SidebarWrapper>
       <StyledLinksList>
         <li>
-          <ButtonIconsSidebar as={NavLink} to={'/' + UrlTypes.AddWallet}>
-            <ContentButton title={t('Add new wallet')} icon={addIcon} />
+          <ButtonIconsSidebar as={NavLink} to={'/'}>
+            <ContentButton title={t('Home Page')} icon={homeIcon} />
           </ButtonIconsSidebar>
         </li>
+        {wallet.length <= 5 ? (
+          <li>
+            <ButtonIconsSidebar as={NavLink} to={'/' + UrlTypes.AddWallet}>
+              <ContentButton title={t('Add new wallet')} icon={addIcon} />
+            </ButtonIconsSidebar>
+          </li>
+        ) : null}
         <li>
-          <ButtonIconsSidebar as={NavLink} to={'/' + UrlTypes.ListOfWallet}>
-            <ContentButton title={t('List of wallet')} icon={wallet} />
-          </ButtonIconsSidebar>
+          {wallet.map((wallet: PropsWallets) => (
+            <ListOfWallet
+              as={NavLink}
+              key={wallet.numberWalletUser}
+              title={wallet.nameOfWallet}
+              walletList={wallet}
+            />
+          ))}
         </li>
-        {/* <li> */}
-        {/*   <ButtonIconsSidebar as={NavLink} to={'/' + UrlTypes.Setting}> */}
-        {/*     <ContentButton title={t('Settings')} icon={settings} /> */}
-        {/*   </ButtonIconsSidebar> */}
-        {/* </li> */}
-        {/* <li> */}
-        {/*   <ButtonIconsSidebar as={NavLink} to={'/'} onClick={logOut}> */}
-        {/*     <ContentButton title={t('Log out')} icon={logout} /> */}
-        {/*   </ButtonIconsSidebar> */}
-        {/* </li> */}
       </StyledLinksList>
     </SidebarWrapper>
   );

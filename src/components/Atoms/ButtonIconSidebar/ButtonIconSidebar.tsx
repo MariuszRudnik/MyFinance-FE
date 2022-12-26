@@ -21,7 +21,7 @@ const ButtonIconSidebar = styled.button<Props>`
   margin: ${({ size }) => (size ? 0 : '10px')};
 
   &.active {
-    background-color: ${({ closed }) => (closed ? theme.violet : theme.white)};
+    background-color: ${({ closed }) => (closed ? theme.violet : theme.blue300)};
     color: ${({ closed }) => (closed ? theme.white : theme.gray400)};
     font-weight: bold;
   }

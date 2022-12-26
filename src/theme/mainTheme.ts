@@ -19,10 +19,13 @@ export const theme = {
   background: '#F7F8FA',
   white: '#FFFFFF',
   white200: '#EDEFF2',
+  white300: 'rgba(237,239,242,0.8)',
   violet: '#8833FF',
   gray400: '#6B7A99',
   navy200: 'rgb(31,38,55)',
   blue100: 'rgb(52, 85, 247)',
+  blue200: '#33BFFF',
+  blue300: 'rgba(51,97,255,0.1)',
   pink100: 'rgba(230,46,123,0.15)',
   green100: 'rgba(41,204,57,0.15)'
 };
