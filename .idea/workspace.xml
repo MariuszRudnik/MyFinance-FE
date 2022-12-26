@@ -5,24 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="I created list of wallet.">
-      <change afterPath="$PROJECT_DIR$/data/db.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Assets/icons/home_app_logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Atoms/ListOfWallet/walletList.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Atoms/ListOfWallet/WalletItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/MainPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Root/RootConstainer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Root/RootConstainer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/initialState/state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/initialState/state.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/reducers/loginRedux.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/reducers/loginRedux.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/reducers/walletRedux.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/reducers/walletRedux.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Assets/icons/twitter.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Atoms/ButtonIcon/ButtonIcon.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/ButtonIcon/ButtonIcon.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Atoms/ButtonIconSidebar/ButtonIconSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/ButtonIconSidebar/ButtonIconSidebar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Atoms/ListOfWallet/ListOfWallet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/ListOfWallet/ListOfWallet.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsWallet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsWallet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Atoms/ListOfWallet/walletList.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/mainTheme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/mainTheme.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +43,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.15.1&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.18.8&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.18.10&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/data&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -91,7 +82,7 @@
       <scripts>
         <script value="start" />
       </scripts>
-      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v16.15.1/bin/node" />
+      <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
@@ -118,8 +109,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.start:db" />
         <item itemvalue="npm.storybook" />
+        <item itemvalue="npm.start:db" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -194,6 +186,9 @@
       <workItem from="1670872710323" duration="80000" />
       <workItem from="1670948605886" duration="7137000" />
       <workItem from="1671287954190" duration="4938000" />
+      <workItem from="1671870702909" duration="10038000" />
+      <workItem from="1671954611895" duration="372000" />
+      <workItem from="1671981945336" duration="2894000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -498,21 +493,5 @@
     <MESSAGE value="i" />
     <MESSAGE value="I created list of wallet." />
     <option name="LAST_COMMIT_MESSAGE" value="I created list of wallet." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/Molecules/Navbar/style/navbar.style.tsx</url>
-          <line>1</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx</url>
-          <line>60</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

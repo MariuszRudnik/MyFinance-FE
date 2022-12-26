@@ -12,6 +12,9 @@ const state: any = {
       success: false
     }
   },
+  wallet: {
+    walletList: []
+  },
   //wallet: { numberWalletUser: 1, nameOfWallet: 'Wallet', typeOfCurrency: 'PLN' },
   walletOperations: [
     {

@@ -5,6 +5,7 @@ const createActionName = (name: string) => `app/wallet/${name}`;
 //Action name
 const ADD_WALLET = createActionName('ADD_WALLET');
 const FETCH_WALLET = createActionName('FETCH_WALLET');
+const ACTIVE_WALLET = createActionName('ACTIVE_WALLET');
 
 //Action Creators
 export const AddWallet = (payload: any) => ({ type: ADD_WALLET, payload });
@@ -20,7 +21,8 @@ export const fetchDownloadWallet = () => {
       });
       if (res.status !== 200) throw new Error('Something went wrong');
       const dataJson = await res.json();
-      dispatch(fetchWallet(dataJson));
+      const wallet = dataJson.map((item: any) => ({ ...item, active: false }));
+      await dispatch(fetchWallet(wallet));
     } catch (err) {
       console.error(err);
     }
@@ -37,8 +39,6 @@ export const fetchAddWallet = (login: any) => {
       });
       if (res.status !== 201) throw new Error('Something went wrong');
       const dataJson = await res.json();
-      console.log(login);
-      console.log(AddWallet(login));
       dispatch(AddWallet(login));
     } catch (err) {
       console.error(err);
@@ -51,6 +51,8 @@ const reducer = function (statePart: any = {}, action: any = {}) {
     case ADD_WALLET:
       return [...statePart, action.payload];
     case FETCH_WALLET:
+      return { walletList: action.payload };
+    case ACTIVE_WALLET:
       return { walletList: action.payload };
     default:
       return statePart;

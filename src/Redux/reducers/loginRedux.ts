@@ -1,5 +1,6 @@
 import { UrlAddress } from '../../types/UrlAddress';
 import { useQuery } from '@tanstack/react-query';
+import { fetchDownloadWallet } from './walletRedux';
 
 const createActionName = (name: string) => `app/access/${name}`;
 
@@ -29,9 +30,11 @@ export const fetchLogin = (login: any) => {
       });
       if (res.status !== 201) throw new Error('Something went wrong');
       const data = await res.json();
-      dispatch(finishRequestWithSuccess());
-      dispatch(LoginAccess(true));
-      dispatch(UserAccess(data));
+      await dispatch(finishRequestWithSuccess());
+
+      await dispatch(UserAccess(data));
+
+      await dispatch(LoginAccess(true));
     } catch (err) {
       console.error(err);
       dispatch(finishRequestWithError());
@@ -75,9 +78,9 @@ export const fetchRegister = (data: FormValues) => {
         headers: { 'Content-Type': 'application/json' }
       });
       //if (res.status !== 201) throw new Error('Something went wrong');
-      dispatch(finishRequestWithSuccess());
-      dispatch(LoginAccess(true));
-      dispatch(UserAccess(data));
+      await dispatch(finishRequestWithSuccess());
+      await dispatch(UserAccess(data));
+      await dispatch(LoginAccess(true));
     } catch (err) {
       dispatch(LoginAccess(false));
       dispatch(UserAccess(null));
