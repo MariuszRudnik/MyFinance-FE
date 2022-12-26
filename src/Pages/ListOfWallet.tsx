@@ -13,14 +13,12 @@ const ImgCenter = styled.img`
 export const ListOfWallet = () => {
   return (
     <>
-      <UserPageTemplates activeColor={theme.secondary}>
-        <Content heading="Chart Wallet">
-          <ImgCenter src={charge} />
-        </Content>
-        <Content heading="Wallet operations" widthContent={'530px'}>
-          <EventsWallet />
-        </Content>
-      </UserPageTemplates>
+      <Content heading="Chart Wallet">
+        <ImgCenter src={charge} />
+      </Content>
+      <Content heading="Wallet operations" widthContent={'530px'}>
+        <EventsWallet />
+      </Content>
     </>
   );
 };

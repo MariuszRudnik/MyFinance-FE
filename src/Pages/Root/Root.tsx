@@ -10,6 +10,9 @@ import { ListOfWallet } from '../ListOfWallet';
 import { UrlAddress } from '../../types/UrlAddress';
 import { RegisterPage } from '../Access/Register';
 import { LoadingElements } from '../../components/Atoms/LoadingElements/LoadingElements';
+import { theme } from '../../theme/mainTheme';
+import { UserPageTemplates } from '../../templates/UserPageTemplates';
+import { CategoryPage } from '../Wallet/CategoryPage';
 
 function Root({ login, loginAccess, userAccess, walletList }: any) {
   let access = null;
@@ -47,20 +50,23 @@ function Root({ login, loginAccess, userAccess, walletList }: any) {
     <BrowserRouter>
       <React.Suspense fallback={<LoadingElements />}>
         <MainTemplate>
-          <Routes>
-            <Route path="/" element={access ? <MainPage /> : <LoginPage />} />
-            <Route
-              path={`/${UrlTypes.AddWallet}`}
-              element={access ? <AddWallet /> : <LoginPage />}
-            />
-            <Route
-              path={`/${UrlTypes.ListOfWallet}/:id/*`}
-              element={access ? <ListOfWallet /> : <LoginPage />}
-            />
-            <Route path={`/${UrlTypes.Setting}`} element={access ? <Setting /> : <LoginPage />} />
-            <Route path={`/${UrlTypes.Login}`} element={access ? <LoginPage /> : <LoginPage />} />
-            <Route path={`/${UrlTypes.Register}`} element={<RegisterPage />} />
-          </Routes>
+          {access ? (
+            <UserPageTemplates activeColor={theme.secondary}>
+              <Routes>
+                <Route path="/" element={<MainPage />} />
+                <Route path={`/${UrlTypes.AddWallet}`} element={<AddWallet />} />
+                <Route path={`/${UrlTypes.ListOfWallet}/:id/*`} element={<ListOfWallet />} />
+                <Route path={`/${UrlTypes.ListOfWallet}/:id/category`} element={<CategoryPage />} />
+                <Route path={`/${UrlTypes.Setting}`} element={<Setting />} />
+                <Route path={`/${UrlTypes.Login}`} element={<LoginPage />} />
+              </Routes>
+            </UserPageTemplates>
+          ) : (
+            <Routes>
+              <Route path="/*" element={<LoginPage />} />
+              <Route path={`/${UrlTypes.Register}`} element={<RegisterPage />} />
+            </Routes>
+          )}
         </MainTemplate>
       </React.Suspense>
     </BrowserRouter>

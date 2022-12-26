@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Further work on wallet">
+    <list default="true" id="a30701d8-d299-4f86-9836-1c91dffa2d7b" name="Changes" comment="I was created closes and open wallet">
+      <change afterPath="$PROJECT_DIR$/src/Pages/Wallet/CategoryPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/reducers/walletRedux.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/reducers/walletRedux.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Atoms/ListOfWallet/ListOfWallet.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/ListOfWallet/ListOfWallet.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Atoms/ListOfWallet/ListOfWallet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/ListOfWallet/ListOfWallet.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Atoms/ListOfWallet/WalletItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/ListOfWallet/WalletItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/AddWallet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/AddWallet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/ListOfWallet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/ListOfWallet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/MainPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Setting.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Setting.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -505,7 +505,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Organism/ListOfWallet/ListOfWallet.tsx</url>
           <line>30</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

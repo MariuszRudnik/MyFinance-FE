@@ -13,13 +13,11 @@ const WrapperContent = styled.div`
 export const Setting = () => {
   const { t, i18n } = useTranslation();
   return (
-    <UserPageTemplates activeColor={theme.tertiary}>
-      <Content heading={t('Settings')} widthContent={'90%'}>
-        <WrapperContent>
-          {t('Application language')} <button onClick={() => i18n.changeLanguage('en')}>EN</button>{' '}
-          <button onClick={() => i18n.changeLanguage('pl')}>PL</button>
-        </WrapperContent>
-      </Content>
-    </UserPageTemplates>
+    <Content heading={t('Settings')} widthContent={'90%'}>
+      <WrapperContent>
+        {t('Application language')} <button onClick={() => i18n.changeLanguage('en')}>EN</button>{' '}
+        <button onClick={() => i18n.changeLanguage('pl')}>PL</button>
+      </WrapperContent>
+    </Content>
   );
 };
