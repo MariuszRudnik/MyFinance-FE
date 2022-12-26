@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="I created list of wallet.">
-      <change afterPath="$PROJECT_DIR$/src/components/Atoms/ListOfWallet/WalletItem.tsx" afterDir="false" />
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Further work on wallet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/initialState/state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/initialState/state.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/reducers/loginRedux.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/reducers/loginRedux.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/reducers/walletRedux.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/reducers/walletRedux.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Atoms/ListOfWallet/ListOfWallet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/ListOfWallet/ListOfWallet.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Atoms/ListOfWallet/walletList.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Atoms/ListOfWallet/ListOfWallet.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/ListOfWallet/ListOfWallet.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Atoms/ListOfWallet/ListOfWallet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/ListOfWallet/ListOfWallet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Atoms/ListOfWallet/WalletItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/ListOfWallet/WalletItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,11 +66,11 @@
       <recent name="$PROJECT_DIR$/src/components/Organism/Register" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Organism" />
       <recent name="$PROJECT_DIR$/src/components/Assets/icons" />
       <recent name="$PROJECT_DIR$/src/components/Assets" />
       <recent name="$PROJECT_DIR$/src/components/Organism/AddWallet/style" />
       <recent name="$PROJECT_DIR$/src/components/Molecules/Navbar" />
-      <recent name="$PROJECT_DIR$/src/Pages/Access" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -188,7 +186,7 @@
       <workItem from="1671287954190" duration="4938000" />
       <workItem from="1671870702909" duration="10038000" />
       <workItem from="1671954611895" duration="372000" />
-      <workItem from="1671981945336" duration="2894000" />
+      <workItem from="1671981945336" duration="8544000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -449,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669927469972</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Further work on wallet">
+      <created>1672052351668</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1672052351668</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,7 +472,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="I fixed Error with Eslint and install StoryBook" />
     <MESSAGE value="I created Atoms" />
     <MESSAGE value="Create Sidebar" />
     <MESSAGE value="Create New Icon" />
@@ -492,6 +496,19 @@
     <MESSAGE value="added spiner" />
     <MESSAGE value="i" />
     <MESSAGE value="I created list of wallet." />
-    <option name="LAST_COMMIT_MESSAGE" value="I created list of wallet." />
+    <MESSAGE value="Further work on wallet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Further work on wallet" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Organism/ListOfWallet/ListOfWallet.tsx</url>
+          <line>30</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

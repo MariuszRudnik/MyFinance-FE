@@ -10,6 +10,7 @@ const ACTIVE_WALLET = createActionName('ACTIVE_WALLET');
 //Action Creators
 export const AddWallet = (payload: any) => ({ type: ADD_WALLET, payload });
 export const fetchWallet = (payload: any) => ({ type: FETCH_WALLET, payload });
+export const ActiveWallet = (payload: any) => ({ type: ACTIVE_WALLET, payload });
 
 export const fetchDownloadWallet = () => {
   return async (dispatch: any) => {
@@ -53,7 +54,19 @@ const reducer = function (statePart: any = {}, action: any = {}) {
     case FETCH_WALLET:
       return { walletList: action.payload };
     case ACTIVE_WALLET:
-      return { walletList: action.payload };
+      return {
+        ...statePart,
+        walletList: statePart.walletList.map((index: any) => {
+          if (index.numberWalletUser == action.payload) {
+            if (index.active == false) {
+              index.active = true;
+            } else {
+              index.active = false;
+            }
+          }
+          return index;
+        })
+      };
     default:
       return statePart;
   }

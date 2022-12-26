@@ -9,7 +9,7 @@ import homeIcon from '../../Assets/icons/home_app_logo.svg';
 import { UrlTypes } from '../../../types/UrlTypes';
 import { useDispatch, useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
-import { ListOfWallet } from '../../Atoms/ListOfWallet/ListOfWallet';
+import { ListOfWallet } from '../ListOfWallet/ListOfWallet';
 import { fetchDownloadWallet } from '../../../Redux/reducers/walletRedux';
 
 type PropsWallets = {

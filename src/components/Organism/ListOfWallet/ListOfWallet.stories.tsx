@@ -14,6 +14,6 @@ const Background = styled.div`
   background: ${({ theme }) => theme.background};
 `;
 
-storiesOf('Attoms/LsitOfWallet', module)
+storiesOf('Organism/LsitOfWallet', module)
   .addDecorator((story) => <Background>{story()}</Background>)
   .add('Normal', () => <ListOfWallet title="Lista" />);

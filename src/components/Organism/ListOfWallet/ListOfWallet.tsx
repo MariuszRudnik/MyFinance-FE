@@ -7,6 +7,8 @@ import loadingImage from '../../Assets/icons/login.svg';
 import { NavLink } from 'react-router-dom';
 import { UrlTypes } from '../../../types/UrlTypes';
 import { WalletItems } from './WalletItem';
+import { ActiveWallet, fetchDownloadWallet } from '../../../Redux/reducers/walletRedux';
+import { useDispatch } from 'react-redux';
 
 const Wrapper = styled.div`
   display: flex;
@@ -20,7 +22,6 @@ const Wrapper = styled.div`
   padding: 15px 5px;
   margin: 10px;
 `;
-
 const TitleWrapper = styled.div`
   display: flex;
   width: 250px;
@@ -74,12 +75,13 @@ const NavigateOfWallet = styled.a`
   }
 `;
 
-const activeWallet = (id: any) => {
-  console.log(id);
-};
-
 export const ListOfWallet = ({ title, walletList }: any | string) => {
+  const dispatch: any = useDispatch();
   const { numberWalletUser, nameOfWallet, typeOfCurrency, active } = walletList;
+
+  const activeWallet = (id: number) => {
+    dispatch(ActiveWallet(id));
+  };
 
   return (
     <Wrapper>
@@ -95,7 +97,7 @@ export const ListOfWallet = ({ title, walletList }: any | string) => {
           <Icon30 src={arrowIgm} alt="" />
         </TitleWrapper>
       </NavigateOfWallet>
-      {active == false ? <WalletItems numberWalletUser={numberWalletUser} /> : null}
+      {active ? <WalletItems numberWalletUser={numberWalletUser} /> : null}
     </Wrapper>
   );
 };

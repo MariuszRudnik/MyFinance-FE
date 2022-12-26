@@ -15,4 +15,4 @@ import { AddWallet } from './Organism/AddWallet/AddWalletComponents.stories';
 import { Content } from './Molecules/Content/Content.stories';
 import { Register } from './Organism/Register/Register.stories';
 import { SelectOption } from './Atoms/SelectOption/SelectOption.stories';
-import { ListOfWallet } from './Atoms/ListOfWallet/ListOfWallet.stories';
+import { ListOfWallet } from './Organism/ListOfWallet/ListOfWallet.stories';
