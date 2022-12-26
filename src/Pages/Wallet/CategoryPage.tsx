@@ -1,5 +1,9 @@
 import React from 'react';
 
 export const CategoryPage = () => {
-  return <h1>DD</h1>;
+  return (
+    <>
+      <h1>Category</h1>
+    </>
+  );
 };
