@@ -32,15 +32,16 @@ export const WalletItems = ({ numberWalletUser }: any) => {
     <>
       <ul>
         <>
-          <LiWallet key={numberWalletUser}>
+          <LiWallet>
             <ParagraphList>
               <LinkOfWallet
                 as={NavLink}
-                to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/wallet`}>
-                Wallet
+                to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/add-wallet`}>
+                Add transaction
               </LinkOfWallet>
             </ParagraphList>
           </LiWallet>
+
           <LiWallet>
             <ParagraphList>
               <LinkOfWallet
@@ -50,12 +51,12 @@ export const WalletItems = ({ numberWalletUser }: any) => {
               </LinkOfWallet>
             </ParagraphList>
           </LiWallet>
-          <LiWallet>
+          <LiWallet key={numberWalletUser}>
             <ParagraphList>
               <LinkOfWallet
                 as={NavLink}
-                to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/add-wallet`}>
-                Add transaction
+                to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/wallet`}>
+                Wallet
               </LinkOfWallet>
             </ParagraphList>
           </LiWallet>
