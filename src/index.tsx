@@ -5,10 +5,11 @@ import Root from './Pages/Root/RootConstainer';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './Redux/store';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { LoadingElements } from './components/Atoms/LoadingElements/LoadingElements';
+import { QueryClient, QueryClientProvider } from 'react-query';
 
 const queryClient = new QueryClient();
+
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>

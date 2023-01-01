@@ -20,6 +20,7 @@ import { BudgetCategoryList } from '../../components/Molecules/BudgetCategoryLis
 export const CategoryPage = () => {
   const { t, i18n } = useTranslation();
   const [addedWallet, setAddedWallet] = useState(false);
+
   const SignupSchema = Yup.object().shape({
     initialState: Yup.number().required('Must be number')
   });

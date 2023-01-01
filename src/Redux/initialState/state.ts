@@ -13,7 +13,8 @@ const state: any = {
     }
   },
   wallet: {
-    walletList: []
+    walletList: [],
+    category: []
   },
   //wallet: { numberWalletUser: 1, nameOfWallet: 'Wallet', typeOfCurrency: 'PLN' },
   walletOperations: [
