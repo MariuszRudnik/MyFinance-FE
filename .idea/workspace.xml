@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="I work CategoryPage.tsx">
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Add React Query">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Wallet/CategoryPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Wallet/CategoryPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/initialState/state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/initialState/state.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Molecules/BudgetCategoryList/BudgetCategoryList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/BudgetCategoryList/BudgetCategoryList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +32,8 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Git.Branch.Popup.ShowAllLocals&quot;: &quot;false&quot;,
+    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
@@ -169,7 +166,9 @@
       <workItem from="1666189313266" duration="18422000" />
       <workItem from="1672428107005" duration="1382000" />
       <workItem from="1672567084517" duration="123000" />
-      <workItem from="1672567460762" duration="5622000" />
+      <workItem from="1672567460762" duration="6092000" />
+      <workItem from="1672683871418" duration="29000" />
+      <workItem from="1672683993122" duration="9189000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -360,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672337065850</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Add React Query">
+      <created>1672602157490</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1672602157490</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,7 +404,8 @@
     <MESSAGE value="I worked on the registers" />
     <MESSAGE value="Yup added to the registration form" />
     <MESSAGE value="I work CategoryPage.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="I work CategoryPage.tsx" />
+    <MESSAGE value="Add React Query" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add React Query" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
