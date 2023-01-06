@@ -4,6 +4,7 @@ import { theme } from '../../../theme/mainTheme';
 type Props = {
   color?: string;
   fontWeight?: string;
+  textAlign?: string;
 };
 
 const Paragraph = styled.p<Props>`
@@ -13,6 +14,7 @@ const Paragraph = styled.p<Props>`
   color: ${({ color }) => (color ? color : theme.gray400)};
   word-wrap: break-word;
   position: relative;
+  text-align: ${({ textAlign }) => (textAlign ? textAlign : 'start')};
 `;
 
 export default Paragraph;

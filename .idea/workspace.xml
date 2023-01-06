@@ -4,9 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Add React Query">
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="I created BudgetCategoryList.tsx">
+      <change afterPath="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddBudgetCategory.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Molecules/BudgetCategoryList/BudgetContainer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Utils/featchHelper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Utils/formatCurrency.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Wallet/CategoryPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Wallet/CategoryPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/initialState/state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/initialState/state.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/reducers/walletRedux.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/reducers/walletRedux.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Atoms/Input/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/Input/Input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Atoms/Paragraph/Paragraph.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/Paragraph/Paragraph.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Molecules/BudgetCategoryList/BudgetCategoryList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/BudgetCategoryList/BudgetCategoryList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/UrlAddress.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/UrlAddress.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,32 +41,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Git.Branch.Popup.ShowAllLocals&quot;: &quot;false&quot;,
-    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.15.1&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.18.11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/img&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;/Users/mariusz/.nvm/versions/node/v16.15.1/bin/node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.typescriptcompiler&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Git.Branch.Popup.ShowAllLocals": "false",
+    "Git.Branch.Popup.ShowAllRemotes": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "16.15.1",
+    "javascript.nodejs.core.library.typings.version": "16.18.11",
+    "last_opened_file_path": "/Users/mariusz/Documents/GitHub/NoteBook-FE/src/components/Molecules/BudgetCategoryList",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "/Users/mariusz/.nvm/versions/node/v16.15.1/bin/node",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/mariusz/Documents/GitHub/NoteBook-FE/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.typescriptcompiler",
+    "ts.external.directory.path": "/Users/mariusz/Documents/GitHub/NoteBook-FE/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Molecules/BudgetCategoryList" />
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/src/components/Organism/Register" />
       <recent name="$PROJECT_DIR$" />
@@ -168,7 +180,8 @@
       <workItem from="1672567084517" duration="123000" />
       <workItem from="1672567460762" duration="6092000" />
       <workItem from="1672683871418" duration="29000" />
-      <workItem from="1672683993122" duration="9189000" />
+      <workItem from="1672683993122" duration="10927000" />
+      <workItem from="1672946788467" duration="25270000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -366,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672602157490</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="I created BudgetCategoryList.tsx">
+      <created>1672769675566</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1672769675566</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,17 +425,7 @@
     <MESSAGE value="Yup added to the registration form" />
     <MESSAGE value="I work CategoryPage.tsx" />
     <MESSAGE value="Add React Query" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add React Query" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/Redux/initialState/state.ts</url>
-          <line>26</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="I created BudgetCategoryList.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="I created BudgetCategoryList.tsx" />
   </component>
 </project>

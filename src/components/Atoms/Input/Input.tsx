@@ -4,6 +4,8 @@ import magnifierIcon from '../../Assets/icons/magnifier.svg';
 type Props = {
   search?: boolean;
   widthInput?: string;
+  textAlign?: string;
+  margin?: string;
 };
 
 const Input = styled.input<Props>`
@@ -13,11 +15,12 @@ const Input = styled.input<Props>`
   background-color: ${({ theme }) => theme.grey100};
   border: none;
   border-radius: 50px;
-  margin: 5px;
+  margin: ${({ margin }) => (margin ? margin : '5px')};
   width: ${({ widthInput }) => (widthInput ? widthInput : '')};
+  text-align: ${({ textAlign }) => (textAlign ? textAlign : 'start')};
 
   ::placeholder {
-    text-transform: uppercase;
+    //text-transform: uppercase;
     letter-spacing: 1px;
     color: ${({ theme }) => theme.gray400};
   }

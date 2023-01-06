@@ -23,9 +23,8 @@
             "react/react-in-jsx-scope": "off",
             "camelcase": "error",
             "spaced-comment": "error",
-            "quotes": ["error", "single"],
+            "quotes": [2, "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
             "no-duplicate-imports": "error",
             "ban-ts-comment": 0
-
     }
 }
