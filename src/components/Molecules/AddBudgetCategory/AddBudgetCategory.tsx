@@ -51,10 +51,7 @@ export const AddBudgetCategory = () => {
   };
 
   return (
-    <StyleAddWallet>
-      <TitleWrapper>
-        <Heading color={theme.gray400}>{t('Categories')}</Heading>
-      </TitleWrapper>
+    <>
       <div>
         <Formik
           initialValues={initialValues}
@@ -128,6 +125,6 @@ export const AddBudgetCategory = () => {
           </StylForm>
         </Formik>
       </div>
-    </StyleAddWallet>
+    </>
   );
 };

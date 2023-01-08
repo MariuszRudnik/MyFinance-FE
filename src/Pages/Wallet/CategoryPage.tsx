@@ -11,19 +11,20 @@ import { theme } from '../../theme/mainTheme';
 import { useTranslation } from 'react-i18next';
 import { BudgetCategoryList } from '../../components/Molecules/BudgetCategoryList/BudgetCategoryList';
 import { AddBudgetCategory } from '../../components/Molecules/AddBudgetCategory/AddBudgetCategory';
+import { Accordion } from '../../components/Molecules/Accordion/Accordion';
 
 export const CategoryPage = () => {
   const { t, i18n } = useTranslation();
 
   return (
     <>
-      <StyleAddWallet>
-        <TitleWrapper>
-          <Heading color={theme.gray400}>{t('Budget Category List')}</Heading>
-        </TitleWrapper>
-        <BudgetCategoryList />
-      </StyleAddWallet>
-      <AddBudgetCategory />
+      {/* <StyleAddWallet> */}
+      {/*   <TitleWrapper> */}
+      {/*     <Heading color={theme.gray400}>{t('Budget Category List')}</Heading> */}
+      {/*   </TitleWrapper> */}
+      {/* </StyleAddWallet> */}
+
+      <Accordion />
     </>
   );
 };
