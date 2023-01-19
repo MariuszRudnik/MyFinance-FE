@@ -16,13 +16,13 @@ const ButtonIconSidebar = styled.button<Props>`
   border: none;
   transition: width 0.25s ease-in-out;
   font-weight: bold;
-  color: ${theme.gray400};
-  background-color: ${({ size }) => (size ? theme.white : theme.background)};
+  color: ${theme.textColor};
+  background-color: ${({ size }) => (size ? theme.secondary : theme.background)};
   margin: ${({ size }) => (size ? 0 : '10px')};
 
   &.active {
     background-color: ${({ closed }) => (closed ? theme.violet : theme.blue300)};
-    color: ${({ closed }) => (closed ? theme.white : theme.gray400)};
+    color: ${({ closed }) => (closed ? theme.secondary : theme.textColor)};
     font-weight: bold;
   }
 `;

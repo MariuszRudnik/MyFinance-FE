@@ -15,11 +15,11 @@ type PropsType = {
 };
 
 const Wrapper = styled.div`
-  border: 2px solid ${({ theme }) => theme.white300};
+  border: 2px solid ${({ theme }) => theme.tertiary};
   border-radius: 20px;
   width: 70%;
   overflow: hidden;
-  background-color: ${({ theme }) => theme.white};
+  background-color: ${({ theme }) => theme.secondary};
 `;
 const NameWrapper = styled.div`
   display: flex;
@@ -28,8 +28,8 @@ const NameWrapper = styled.div`
   cursor: pointer;
   overflow: hidden;
   padding: 0 10px;
-  background-color: ${({ theme }) => theme.white300};
-  border: 2px solid ${({ theme }) => theme.white300};
+  background-color: ${({ theme }) => theme.tertiary};
+  border: 2px solid ${({ theme }) => theme.tertiary};
 `;
 const ActiveIcon = styled.img`
   margin: 10px;

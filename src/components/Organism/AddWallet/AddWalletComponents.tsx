@@ -39,7 +39,7 @@ export const AddWalletComponents: React.FC<any> = ({ addWallet }: any) => {
   return (
     <StyleAddWallet>
       <TitleWrapper>
-        <Heading color={theme.gray400}>{t('Add new wallet')}</Heading>
+        <Heading color={theme.textColor}>{t('Add new wallet')}</Heading>
       </TitleWrapper>
 
       {addedWallet ? (

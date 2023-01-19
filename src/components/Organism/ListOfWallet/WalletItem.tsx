@@ -13,13 +13,13 @@ const ParagraphList = styled.p`
   font-family: 'Roboto-Regular', 'Roboto-Bold', 'Roboto-Italic', 'Roboto-Light', sans-serif;
   font-size: 16px;
   font-weight: ${theme.bold};
-  color: ${({ color }) => (color ? color : theme.gray400)};
+  color: ${({ color }) => (color ? color : theme.textColor)};
   word-wrap: break-word;
 `;
 
 const LinkOfWallet = styled.a`
   cursor: pointer;
-  color: ${theme.gray400};
+  color: ${theme.textColor};
   text-decoration: none;
 
   &.active {

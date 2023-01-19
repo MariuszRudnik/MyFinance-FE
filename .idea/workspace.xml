@@ -4,16 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="I created Accordion.tsx Component">
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="I created  content AddBudgetCategory.tsx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/MainPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Wallet/CategoryPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Wallet/CategoryPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Atoms/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/Button/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Atoms/ButtonIconSidebar/ButtonIconSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/ButtonIconSidebar/ButtonIconSidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Atoms/Input/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/Input/Input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Atoms/Paragraph/Paragraph.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/Paragraph/Paragraph.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Atoms/SelectOption/SelectOption.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/SelectOption/SelectOption.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Molecules/Accordion/Accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Accordion/Accordion.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddBudgetCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddBudgetCategory.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Content/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Content/Content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Navbar/style/navbar.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Navbar/style/navbar.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/AddWallet/style/StyleAddWallet.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/AddWallet/style/StyleAddWallet.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/AddWallet/style/addWallet.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/AddWallet/style/addWallet.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsWallet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsWallet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/ListOfWallet/ListOfWallet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/ListOfWallet/ListOfWallet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/ListOfWallet/WalletItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/ListOfWallet/WalletItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Login/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Register/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Register/Register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/mainTheme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/mainTheme.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +89,7 @@
       <recent name="$PROJECT_DIR$/src/Redux/initialState" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.storybook">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -178,7 +190,7 @@
       <workItem from="1672683871418" duration="29000" />
       <workItem from="1672683993122" duration="10927000" />
       <workItem from="1672946788467" duration="49406000" />
-      <workItem from="1673632541959" duration="16843000" />
+      <workItem from="1673632541959" duration="22049000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -404,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673180516318</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="I created  content AddBudgetCategory.tsx">
+      <created>1674163055147</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1674163055147</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,7 +441,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="I was created Button" />
     <MESSAGE value="Merge remote-tracking branch 'origin/Develop' into Develop" />
     <MESSAGE value="I fixed Error with Eslint and install StoryBook" />
     <MESSAGE value="I created Atoms" />
@@ -447,6 +465,7 @@
     <MESSAGE value="fixed BudgetCategoryList.tsx" />
     <MESSAGE value="continuation BudgetCategoryList.tsx" />
     <MESSAGE value="I created Accordion.tsx Component" />
-    <option name="LAST_COMMIT_MESSAGE" value="I created Accordion.tsx Component" />
+    <MESSAGE value="I created  content AddBudgetCategory.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="I created  content AddBudgetCategory.tsx" />
   </component>
 </project>

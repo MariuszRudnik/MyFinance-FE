@@ -26,7 +26,7 @@ const LoginWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: start;
-  background-color: ${theme.white};
+  background-color: ${theme.secondary};
   flex-direction: column;
   gap: 10px;
 `;

@@ -23,10 +23,10 @@ export const FlexDiv = styled.button`
   background: none;
 
   &:hover {
-    background-color: ${({ theme }) => theme.white};
+    background-color: ${({ theme }) => theme.secondary};
   }
   &:focus {
-    background-color: ${({ theme }) => theme.white};
+    background-color: ${({ theme }) => theme.secondary};
   }
   &:hover + div {
     display: block;
@@ -41,7 +41,7 @@ export const MenuItem = styled.li`
   font-family: 'Roboto-Regular', 'Roboto-Bold', 'Roboto-Italic', 'Roboto-Light', sans-serif;
   font-size: 18px;
   font-weight: bold;
-  color: ${theme.gray400};
+  color: ${theme.textColor};
 `;
 export const ArrowStyles = styled.img`
   width: 24px;
