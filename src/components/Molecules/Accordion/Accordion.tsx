@@ -5,11 +5,14 @@ declare module 'react' {
   }
 }
 import Paragraph from '../../Atoms/Paragraph/Paragraph';
-import { AddBudgetCategory } from '../AddBudgetCategory/AddBudgetCategory';
 import React, { useState } from 'react';
 import expandLess from '../../Assets/icons/expand-less.svg';
-import { BudgetCategoryList } from '../BudgetCategoryList/BudgetCategoryList';
 import styled from 'styled-components/macro';
+
+type PropsType = {
+  name: string;
+  components: string;
+};
 
 const Wrapper = styled.div`
   border: 2px solid ${({ theme }) => theme.white300};
@@ -35,22 +38,7 @@ const ActiveIcon = styled.img`
   transform: rotate(180deg);
   transition: all 0.4s ease-in-out;
 `;
-export const Accordion = () => {
-  const data = [
-    {
-      name: 'Category List',
-      components: <BudgetCategoryList />
-    },
-    {
-      name: 'Add Parent Budget Category',
-      components: <AddBudgetCategory />
-    },
-    {
-      name: 'Add Budget Category',
-      components: <AddBudgetCategory />
-    }
-  ];
-
+export const Accordion = ({ data }: any) => {
   const [selected, setSelected]: any = useState(0);
   const toggle = (index: number) => {
     if (selected == index) {
@@ -61,18 +49,17 @@ export const Accordion = () => {
 
   return (
     <Wrapper>
-      {data.map((item, index) => (
+      {data.map((item: PropsType, index: number) => (
         <div key={item.name}>
           <NameWrapper onClick={() => toggle(index)}>
             <Paragraph>{item.name}</Paragraph>
-
             <ActiveIcon
               css={
                 selected == index
                   ? `
                   transform: rotate(0deg);
                   transition: all 0.4s ease-in-out;
-                `
+                  `
                   : null
               }
               src={expandLess}

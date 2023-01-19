@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="continuation BudgetCategoryList.tsx">
-      <change afterPath="$PROJECT_DIR$/src/components/Molecules/Accordion/Accordeon.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Molecules/Accordion/Accordion.tsx" afterDir="false" />
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="I created Accordion.tsx Component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/MainPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Wallet/CategoryPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Wallet/CategoryPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Accordion/Accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Accordion/Accordion.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddBudgetCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddBudgetCategory.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,30 +37,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Git.Branch.Popup.ShowAllLocals": "false",
-    "Git.Branch.Popup.ShowAllRemotes": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "16.15.1",
-    "javascript.nodejs.core.library.typings.version": "16.18.11",
-    "last_opened_file_path": "/Users/mariusz/Documents/GitHub/NoteBook-FE/src/components/Molecules/Accordion",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "/Users/mariusz/.nvm/versions/node/v16.15.1/bin/node",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/mariusz/Documents/GitHub/NoteBook-FE/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.typescriptcompiler",
-    "ts.external.directory.path": "/Users/mariusz/Documents/GitHub/NoteBook-FE/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Git.Branch.Popup.ShowAllLocals&quot;: &quot;false&quot;,
+    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.15.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.18.11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/src/components/Molecules/Accordion&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;/Users/mariusz/.nvm/versions/node/v16.15.1/bin/node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.typescriptcompiler&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/Molecules/Accordion" />
@@ -76,7 +77,7 @@
       <recent name="$PROJECT_DIR$/src/Redux/initialState" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.storybook">
+  <component name="RunManager" selected="npm.start">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -109,8 +110,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.storybook" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.storybook" />
         <item itemvalue="npm.start:db" />
         <item itemvalue="npm.storybook" />
         <item itemvalue="npm.start" />
@@ -176,7 +177,8 @@
       <workItem from="1672567460762" duration="6092000" />
       <workItem from="1672683871418" duration="29000" />
       <workItem from="1672683993122" duration="10927000" />
-      <workItem from="1672946788467" duration="44751000" />
+      <workItem from="1672946788467" duration="49406000" />
+      <workItem from="1673632541959" duration="16843000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -395,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673120843805</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="I created Accordion.tsx Component">
+      <created>1673180516317</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1673180516318</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,6 +446,7 @@
     <MESSAGE value="I created BudgetCategoryList.tsx" />
     <MESSAGE value="fixed BudgetCategoryList.tsx" />
     <MESSAGE value="continuation BudgetCategoryList.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="continuation BudgetCategoryList.tsx" />
+    <MESSAGE value="I created Accordion.tsx Component" />
+    <option name="LAST_COMMIT_MESSAGE" value="I created Accordion.tsx Component" />
   </component>
 </project>

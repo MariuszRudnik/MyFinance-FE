@@ -1,3 +1,9 @@
+// @types/react/index.d.ts
+declare module 'react' {
+  interface Attributes {
+    css?: any;
+  }
+}
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import './components/Assets/i18next/i18next';
@@ -7,6 +13,9 @@ import { Provider } from 'react-redux';
 import store from './Redux/store';
 import { LoadingElements } from './components/Atoms/LoadingElements/LoadingElements';
 import { QueryClient, QueryClientProvider } from 'react-query';
+import 'styled-components/macro';
+import 'react-toastify/dist/ReactToastify.css';
+import { toast, ToastContainer } from 'react-toastify';
 
 const queryClient = new QueryClient();
 
@@ -17,6 +26,7 @@ root.render(
       <QueryClientProvider client={queryClient}>
         <Suspense fallback={<LoadingElements />}>
           <Root />
+          <ToastContainer />
         </Suspense>
       </QueryClientProvider>
     </Provider>

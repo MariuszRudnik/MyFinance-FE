@@ -1,25 +1,28 @@
 import React, { useState } from 'react';
-// @types/react/index.d.ts
-declare module 'react' {
-  interface Attributes {
-    css?: any;
-  }
-}
-import {
-  ButtonWrapper,
-  StyleAddWallet,
-  StylForm,
-  TitleWrapper
-} from '../../Organism/AddWallet/style/StyleAddWallet.style';
-import Heading from '../../Atoms/Heading/Heading';
-import { theme } from '../../../theme/mainTheme';
-import { ErrorMessage, Field, Form, Formik } from 'formik';
+import { ButtonWrapper, StylForm } from '../../Organism/AddWallet/style/StyleAddWallet.style';
+import { ErrorMessage, Field, Form, Formik, useFormik } from 'formik';
 import Paragraph from '../../Atoms/Paragraph/Paragraph';
 import Button from '../../Atoms/Button/Button';
 import { useTranslation } from 'react-i18next';
 import * as Yup from 'yup';
 import Input from '../../Atoms/Input/Input';
 import styled from 'styled-components/macro';
+import { useMutation } from 'react-query';
+import { UrlAddress } from '../../../types/UrlAddress';
+import { useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
+
+type addCategoryType = {
+  name: string;
+  plannedBudget: string | null;
+};
+interface addCategory {
+  id: number | string | undefined;
+  values: {
+    name: string;
+    plannedBudget: string | null;
+  };
+}
 
 const DivWrapper = styled.div`
   padding: 5px;
@@ -29,19 +32,46 @@ const DivWrapper = styled.div`
   flex-direction: column;
 `;
 
+const addCategory = async (data: addCategory) => {
+  if (data.values.plannedBudget == '') {
+    data.values.plannedBudget = null;
+  }
+  const res = await fetch(`${UrlAddress.GetParentCategory}add/${data.id}`, {
+    method: 'POST',
+    body: JSON.stringify(data.values),
+    credentials: 'include',
+    headers: { 'Content-Type': 'application/json' }
+  });
+  return await res.json();
+};
+
 export const AddBudgetCategory = () => {
+  const { id } = useParams();
   const { t, i18n } = useTranslation();
   const [plannedCategory, setPlannedCategory] = useState(true);
-  const [addedWallet, setAddedWallet] = useState(false);
+  const { mutate } = useMutation(addCategory);
+
+  const notify = () =>
+    toast.success(`${t('Congratulations! Parent categories added.')}`, {
+      position: 'top-right',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'light'
+    });
 
   const SignupSchema = Yup.object().shape({
-    initialState: Yup.number().required('Must be number')
+    name: Yup.string().required(t('Required field.'))
   });
-  const initialValues: any = {
-    nameOfWallet: '',
-    typeOfCurrency: 'PlN',
-    initialState: 0
+
+  const initialValues: addCategoryType = {
+    name: '',
+    plannedBudget: ''
   };
+
   const onChangeValue = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.value == 'no') {
       setPlannedCategory(false);
@@ -57,29 +87,24 @@ export const AddBudgetCategory = () => {
           initialValues={initialValues}
           validationSchema={SignupSchema}
           onSubmit={(values, actions) => {
-            const { initialState } = values;
-            const value = {
-              ...values,
-              initialState: Number(initialState)
-            };
-
-            setAddedWallet(true);
+            mutate({ values, id });
+            notify();
             actions.setSubmitting(false);
+            actions.resetForm();
           }}>
           <StylForm as={Form}>
             <label htmlFor="categories">
               <DivWrapper>
                 <Paragraph textAlign="center">{t('Parent categories name :')}</Paragraph>
                 <Input
-                  textAlign="center"
                   margin="5px auto"
-                  widthInput={'220px'}
                   as={Field}
                   type="text"
                   placeholder="Name"
-                  name="parentCategoryName"
-                  id="parentCategoryName"
+                  name="name"
+                  id="name"
                 />
+                <ErrorMessage name="parentCategoryName"></ErrorMessage>
                 <Paragraph textAlign="center">{t('Do you want to specify a budget ?')}</Paragraph>
                 <div
                   css={`
@@ -104,17 +129,18 @@ export const AddBudgetCategory = () => {
                   <DivWrapper>
                     <Paragraph textAlign="center">{t('Planned category budget :')}</Paragraph>
                     <Input
-                      textAlign="center"
                       margin="5px auto"
                       as={Field}
-                      widthInput={'220px'}
                       type="number"
+                      step="0.01"
                       placeholder="Value"
-                      name="plannedCategoryBudget"
-                      id="plannedCategoryBudget"
+                      name="plannedBudget"
+                      id="plannedBudget"
                     />
+                    <ErrorMessage name="plannedBudget"></ErrorMessage>
                   </DivWrapper>
                 ) : null}
+
                 <ButtonWrapper>
                   <Button secondary={false} type="submit">
                     {t('Save')}
