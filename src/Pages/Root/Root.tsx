@@ -51,7 +51,7 @@ function Root({ login, loginAccess, userAccess, walletList }: any) {
       <React.Suspense fallback={<LoadingElements />}>
         <MainTemplate>
           {access ? (
-            <UserPageTemplates activeColor={theme.secondary}>
+            <UserPageTemplates activeColor={theme.primary}>
               <Routes>
                 <Route path="/" element={<MainPage />} />
                 <Route path={`/${UrlTypes.AddWallet}`} element={<AddWallet />} />

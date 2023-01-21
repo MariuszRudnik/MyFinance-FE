@@ -8,20 +8,19 @@ type Props = {
 };
 
 const Button = styled.button<Props>`
-  background-color: ${({ theme }) => theme.blue100};
+  background-color: ${({ theme }) => theme.primary};
   width: ${({ width }) => width || '220px'};
   height: 47px;
   border: none;
   border-radius: 50px;
-  font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
-  color: ${theme.white200};
+  color: ${theme.secondary};
   transition: color, background 0.5s;
   font-weight: bold;
   &:hover {
-    background-color: ${theme.navy200};
-    color: ${theme.white};
+    background-color: ${theme.approve};
+    color: ${theme.secondary};
   }
 
   ${({ secondary }) =>
@@ -32,11 +31,11 @@ const Button = styled.button<Props>`
       height: 30px;
       transition: color, background 0.5s;
       font-size: 10px;
-      color: ${theme.gray400};
+      color: ${theme.secondary};
 
       &:hover {
-        background-color: ${theme.navy200};
-        color: ${theme.white};
+        background-color: ${theme.approve};
+        color: ${theme.secondary};
       }
     `}
 `;

@@ -1,11 +1,14 @@
 export const theme = {
-  primary: 'hsl(49, 100%, 67%)',
-  secondary: 'hsl(196, 83%, 75%)',
-  tertiary: 'hsl(106, 47%, 64%)',
-  grey100: 'hsl(0, 0%, 96%)',
-  grey200: 'hsl(0, 0%, 90%)',
-  grey300: 'hsl(0, 0%, 70%)',
-  black: 'hsl(0, 0%, 0%)',
+  primary: 'rgb(52, 85, 247)',
+  secondary: 'rgb(255, 255, 255)',
+  tertiary: 'rgba(237,239,242,0.8)',
+  textColor: '#6B7A99',
+  approve: 'rgb(86, 194, 64)',
+  error: 'rgb(207, 56, 47)',
+  background: '#f7f8fa',
+  //accent: 'hsl(0, 0%, 96%)',
+  //grey100: 'hsl(0, 0%, 96%)',
+
   light: 300,
   bold: 600,
   fontSize: {
@@ -16,16 +19,8 @@ export const theme = {
     l: '2.4rem',
     xl: '4rem'
   },
-  background: '#F7F8FA',
-  white: '#FFFFFF',
-  white200: '#EDEFF2',
-  white300: 'rgba(237,239,242,0.8)',
   violet: '#8833FF',
-  gray400: '#6B7A99',
-  navy200: 'rgb(31,38,55)',
-  blue100: 'rgb(52, 85, 247)',
-  blue200: '#33BFFF',
   blue300: 'rgba(51,97,255,0.1)',
   pink100: 'rgba(230,46,123,0.15)',
-  green100: 'rgba(41,204,57,0.15)'
+  navy200: 'rgb(31,38,55)'
 };

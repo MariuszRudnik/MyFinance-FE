@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { theme } from '../../../../theme/mainTheme';
 
 export const StyleAddWallet = styled.div`
-  background-color: ${theme.white};
+  background-color: ${theme.secondary};
   width: 100%;
   margin: 0 50px 0 0;
   border-radius: 10px;
@@ -20,7 +20,7 @@ export const StylForm = styled.div`
   margin: 0 auto;
 `;
 export const TitleWrapper = styled.div`
-  border-bottom: 2px solid ${theme.white200};
+  border-bottom: 2px solid ${theme.background};
   padding: 0 30px;
   width: 100%;
 `;

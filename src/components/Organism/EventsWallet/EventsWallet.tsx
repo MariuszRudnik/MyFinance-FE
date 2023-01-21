@@ -34,7 +34,7 @@ export const EventsWallet = () => {
         <Paragraph>50zł</Paragraph>
       </OperationWrapper>
       <OperationWrapper>
-        <ButtonIcon color={theme.green100} icon={twiter}></ButtonIcon>
+        <ButtonIcon color={theme.textColor} icon={twiter}></ButtonIcon>
         <DescriptionStyle>
           <Paragraph>Wydatek</Paragraph>
         </DescriptionStyle>

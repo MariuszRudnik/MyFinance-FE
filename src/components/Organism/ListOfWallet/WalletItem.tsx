@@ -13,13 +13,13 @@ const ParagraphList = styled.p`
   font-family: 'Roboto-Regular', 'Roboto-Bold', 'Roboto-Italic', 'Roboto-Light', sans-serif;
   font-size: 16px;
   font-weight: ${theme.bold};
-  color: ${({ color }) => (color ? color : theme.gray400)};
+  color: ${({ color }) => (color ? color : theme.textColor)};
   word-wrap: break-word;
 `;
 
 const LinkOfWallet = styled.a`
   cursor: pointer;
-  color: ${theme.gray400};
+  color: ${theme.textColor};
   text-decoration: none;
 
   &.active {
@@ -32,15 +32,16 @@ export const WalletItems = ({ numberWalletUser }: any) => {
     <>
       <ul>
         <>
-          <LiWallet key={numberWalletUser}>
+          <LiWallet>
             <ParagraphList>
               <LinkOfWallet
                 as={NavLink}
-                to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/wallet`}>
-                Wallet
+                to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/add-wallet`}>
+                Add transaction
               </LinkOfWallet>
             </ParagraphList>
           </LiWallet>
+
           <LiWallet>
             <ParagraphList>
               <LinkOfWallet
@@ -50,12 +51,12 @@ export const WalletItems = ({ numberWalletUser }: any) => {
               </LinkOfWallet>
             </ParagraphList>
           </LiWallet>
-          <LiWallet>
+          <LiWallet key={numberWalletUser}>
             <ParagraphList>
               <LinkOfWallet
                 as={NavLink}
-                to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/add-wallet`}>
-                Add transaction
+                to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/wallet`}>
+                Wallet
               </LinkOfWallet>
             </ParagraphList>
           </LiWallet>

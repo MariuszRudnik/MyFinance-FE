@@ -13,9 +13,11 @@ const state: any = {
     }
   },
   wallet: {
-    walletList: []
+    walletList: [],
+    category: [],
+    parentCategory: []
   },
-  //wallet: { numberWalletUser: 1, nameOfWallet: 'Wallet', typeOfCurrency: 'PLN' },
+
   walletOperations: [
     {
       id: 1,

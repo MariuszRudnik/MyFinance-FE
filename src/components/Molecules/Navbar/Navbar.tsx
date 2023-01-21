@@ -27,12 +27,11 @@ const Image = styled.div`
   height: 40px;
   background-image: url(${logo});
   background-repeat: no-repeat;
-
   background-position: center;
   border: none;
   border-radius: 10px;
   background-size: cover;
-  box-shadow: 1px 1px 2px ${theme.gray400};
+  box-shadow: 1px 1px 2px ${theme.textColor};
 `;
 const MenuWrapper = styled.div`
   position: relative;
@@ -52,7 +51,7 @@ const MenuNavWrapperBar = styled.div`
   }
 `;
 const MenuNavBar = styled.div`
-  background-color: ${theme.white};
+  background-color: ${theme.secondary};
   margin-top: 10px;
   width: 282px;
   min-height: 100px;
@@ -81,7 +80,7 @@ export const Navbar = () => {
     <NavWrapper>
       <StyleDiv>
         <ButtonIcon icon={apps} color="white" />
-        <Heading big={'18px'} color={theme.gray400}>
+        <Heading big={'18px'} color={theme.textColor}>
           My Finance
         </Heading>
         <Menu>

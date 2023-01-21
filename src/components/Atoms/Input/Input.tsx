@@ -4,22 +4,24 @@ import magnifierIcon from '../../Assets/icons/magnifier.svg';
 type Props = {
   search?: boolean;
   widthInput?: string;
+  textAlign?: string;
+  margin?: string;
 };
 
 const Input = styled.input<Props>`
   padding: 15px 30px;
   font-size: ${({ theme }) => theme.fontSize.s};
   font-weight: ${({ theme }) => theme.regular};
-  background-color: ${({ theme }) => theme.grey100};
+  background-color: ${({ theme }) => theme.background};
   border: none;
   border-radius: 50px;
-  margin: 5px;
+  margin: ${({ margin }) => (margin ? margin : '5px')};
   width: ${({ widthInput }) => (widthInput ? widthInput : '')};
+  text-align: ${({ textAlign }) => (textAlign ? textAlign : 'start')};
 
   ::placeholder {
-    text-transform: uppercase;
     letter-spacing: 1px;
-    color: ${({ theme }) => theme.gray400};
+    color: ${({ theme }) => theme.textColor};
   }
   ${({ search }) =>
     search &&

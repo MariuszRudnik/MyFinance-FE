@@ -26,7 +26,7 @@ const SidebarWrapper = styled.div`
   flex-direction: column;
   width: 310px;
   min-height: 200px;
-  border: 2px solid ${theme.white200};
+  border: 2px solid ${theme.tertiary};
   border-radius: 20px;
   margin: 0 50px;
 `;

@@ -8,7 +8,7 @@ type Style = {
 };
 
 const StyleContentWrapper = styled.div<Style>`
-  background-color: ${theme.white};
+  background-color: ${theme.secondary};
   width: 100%;
   margin: 0 50px 0 0;
   border-radius: 10px;
@@ -16,7 +16,7 @@ const StyleContentWrapper = styled.div<Style>`
   max-width: ${({ widthStyle }) => (widthStyle ? widthStyle : '800px')};
 `;
 const TitleWrapper = styled.div`
-  border-bottom: 2px solid ${theme.white200};
+  border-bottom: 2px solid ${theme.secondary};
   padding: 0 30px;
   width: 100%;
 `;
@@ -31,7 +31,7 @@ export const Content = ({ heading, widthContent, children }: Props) => {
     <>
       <StyleContentWrapper widthStyle={widthContent}>
         <TitleWrapper>
-          <Heading color={theme.gray400} big={'18px'}>
+          <Heading color={theme.textColor} big={'18px'}>
             {heading}
           </Heading>
         </TitleWrapper>
