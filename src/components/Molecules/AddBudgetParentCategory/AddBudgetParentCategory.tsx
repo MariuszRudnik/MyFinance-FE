@@ -12,6 +12,8 @@ import { UrlAddress } from '../../../types/UrlAddress';
 import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
+import { ErrorTextMessage } from '../../Atoms/ErrorTextMessage/ErrorTextMessage';
+
 type addCategoryType = {
   name: string;
   plannedBudget: string | null;
@@ -45,7 +47,7 @@ const addCategory = async (data: addCategory) => {
   return await res.json();
 };
 
-export const AddBudgetCategory = () => {
+export const AddBudgetParentCategory = () => {
   const { id } = useParams();
   const { t, i18n } = useTranslation();
   const [plannedCategory, setPlannedCategory] = useState(true);
@@ -64,7 +66,10 @@ export const AddBudgetCategory = () => {
     });
 
   const SignupSchema = Yup.object().shape({
-    name: Yup.string().required(t('Required field.'))
+    name: Yup.string()
+      .required(t('Required field.'))
+      .min(2, t('Too Short!'))
+      .trim('The field cannot contain blank spaces')
   });
 
   const initialValues: addCategoryType = {
@@ -104,7 +109,10 @@ export const AddBudgetCategory = () => {
                   name="name"
                   id="name"
                 />
-                <ErrorMessage name="parentCategoryName"></ErrorMessage>
+                <ErrorTextMessage>
+                  <ErrorMessage name="name"></ErrorMessage>
+                </ErrorTextMessage>
+
                 <Paragraph textAlign="center">{t('Do you want to specify a budget ?')}</Paragraph>
                 <div
                   css={`

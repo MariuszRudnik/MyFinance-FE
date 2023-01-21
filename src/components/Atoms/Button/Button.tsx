@@ -31,7 +31,7 @@ const Button = styled.button<Props>`
       height: 30px;
       transition: color, background 0.5s;
       font-size: 10px;
-      color: ${theme.textColor};
+      color: ${theme.secondary};
 
       &:hover {
         background-color: ${theme.approve};

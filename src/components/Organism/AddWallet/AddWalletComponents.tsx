@@ -1,4 +1,5 @@
 import * as React from 'react';
+import styled from 'styled-components/macro';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import Input from '../../Atoms/Input/Input';
 import Button from '../../Atoms/Button/Button';
@@ -7,6 +8,7 @@ import { theme } from '../../../theme/mainTheme';
 import Paragraph from '../../Atoms/Paragraph/Paragraph';
 import cssStyle from './style/addWallet.module.css';
 import * as Yup from 'yup';
+
 import {
   ButtonWrapper,
   ButtonWrapperStyle,
@@ -16,7 +18,6 @@ import {
   TitleWrapper
 } from './style/StyleAddWallet.style';
 import { useState } from 'react';
-import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 
 interface MyFormValues {
