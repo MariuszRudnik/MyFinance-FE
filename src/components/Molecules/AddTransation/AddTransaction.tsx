@@ -23,9 +23,11 @@ const DivWrapper = styled.div`
   flex-direction: column;
 `;
 
-export const AddTransaction = () => {
+export const AddTransaction = (props: any) => {
   const { id } = useParams();
   const { t, i18n } = useTranslation();
+  const [idParentCategory, setIdParentCategory] = useState('');
+  let filterCategory = [];
   const {
     data: dataParentCategory,
     error: errorParentCategory,
@@ -36,6 +38,11 @@ export const AddTransaction = () => {
     error: errorCategory,
     isLoading: loadingCategory
   } = useQuery(['category', { id }], getCategory);
+
+  if (!loadingCategory && idParentCategory != '') {
+    filterCategory = dataCategory.filter((item: any) => item.parentCategory == idParentCategory);
+    console.log(filterCategory);
+  }
 
   const notify = () =>
     toast.success(`${t('Congratulations! Categories added.')}`, {
@@ -59,10 +66,8 @@ export const AddTransaction = () => {
   const initialValues = {
     nameTransaction: '',
     parentCategoryId: '',
+    categoryId: '',
     price: 0
-  };
-  const log = (e: React.ChangeEvent<FormikValues>) => {
-    console.log(e.target.value);
   };
 
   return (
@@ -72,6 +77,7 @@ export const AddTransaction = () => {
         validationSchema={SignupSchema}
         onSubmit={(values, actions) => {
           // notify();
+          values.parentCategoryId = idParentCategory;
           console.log(values);
           actions.setSubmitting(false);
           actions.resetForm();
@@ -122,11 +128,10 @@ export const AddTransaction = () => {
                   margin: 0 auto;
                 `}>
                 <Paragraph textAlign="center">{t('Select parent categories :')}</Paragraph>
-                <Field
-                  as="select"
+                <select
                   name="parentCategoryId"
                   id="parentCategoryId"
-                  onChange={(e: React.ChangeEvent) => log(e)}
+                  onChange={(e: React.ChangeEvent<any>) => setIdParentCategory(e.target.value)}
                   className={style.select}>
                   {dataParentCategory
                     ? dataParentCategory.map((item: any, index: number) => (
@@ -135,27 +140,27 @@ export const AddTransaction = () => {
                         </option>
                       ))
                     : null}
-                </Field>
+                </select>
               </label>
               <label
-                htmlFor="parentCategoryId"
+                htmlFor="categoryId"
                 css={`
                   margin: 0 auto;
                 `}>
-                <Paragraph textAlign="center">{t('Select  categories :')}</Paragraph>
-                <Field
-                  as="select"
-                  name="parentCategoryId"
-                  id="parentCategoryId"
-                  className={style.select}>
-                  {dataCategory
-                    ? dataCategory.map((item: any, index: number) => (
-                        <option key={item.id} value={item.id}>
-                          {item.name}
-                        </option>
-                      ))
-                    : null}
-                </Field>
+                {filterCategory.length != 0 ? (
+                  <>
+                    <Paragraph textAlign="center">{t('Select  categories :')}</Paragraph>
+                    <Field as="select" name="categoryId" id="categoryId" className={style.select}>
+                      {filterCategory.length != 0
+                        ? filterCategory.map((item: any, index: number) => (
+                            <option key={item.id} value={item.id}>
+                              {item.name}
+                            </option>
+                          ))
+                        : null}
+                    </Field>
+                  </>
+                ) : null}
               </label>
               <ButtonWrapper>
                 <Button secondary={false} type="submit">
