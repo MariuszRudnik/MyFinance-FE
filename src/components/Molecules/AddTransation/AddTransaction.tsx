@@ -27,6 +27,8 @@ export const AddTransaction = (props: any) => {
   const { id } = useParams();
   const { t, i18n } = useTranslation();
   const [idParentCategory, setIdParentCategory] = useState('');
+  const [newData, setNewData] = useState(new Date().toJSON().slice(0, 10).replace(/-/g, '-'));
+  const [kindOfOperation, setKindOfOperation] = useState('expenditure');
   let filterCategory = [];
   const {
     data: dataParentCategory,
@@ -39,9 +41,22 @@ export const AddTransaction = (props: any) => {
     isLoading: loadingCategory
   } = useQuery(['category', { id }], getCategory);
 
-  if (!loadingCategory && idParentCategory != '') {
-    filterCategory = dataCategory.filter((item: any) => item.parentCategory == idParentCategory);
-    console.log(filterCategory);
+  if (!loadingParentCategory) {
+    dataParentCategory.sort((a: any, b: any) => {
+      if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
+      return 1;
+    });
+    console.log(dataParentCategory[0].id);
+    
+  }
+
+  if (!loadingCategory) {
+    filterCategory = dataCategory
+      .filter((item: any) => item.parentCategory == idParentCategory)
+      .sort((a: any, b: any) => {
+        if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
+        return 1;
+      });
   }
 
   const notify = () =>
@@ -67,17 +82,24 @@ export const AddTransaction = (props: any) => {
     nameTransaction: '',
     parentCategoryId: '',
     categoryId: '',
-    price: 0
+    price: 0,
+    operation: '',
+    data: ''
   };
 
+  const onChangeValue = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setKindOfOperation(e.target.value);
+  };
   return (
     <div>
       <Formik
         initialValues={initialValues}
         validationSchema={SignupSchema}
         onSubmit={(values, actions) => {
-          // notify();
+          notify();
           values.parentCategoryId = idParentCategory;
+          values.operation = kindOfOperation;
+          values.data = newData;
           console.log(values);
           actions.setSubmitting(false);
           actions.resetForm();
@@ -122,6 +144,25 @@ export const AddTransaction = (props: any) => {
                   <ErrorMessage name="price"></ErrorMessage>
                 </ErrorTextMessage>
               </label>
+              <div
+                css={`
+                  margin: 0 auto;
+                `}>
+                <label>
+                  <Input
+                    type="radio"
+                    value="expenditure"
+                    name="choice"
+                    onChange={onChangeValue}
+                    checked={kindOfOperation == 'expenditure'}
+                  />
+                  Expenditure
+                </label>
+                <label>
+                  <Input type="radio" value="influence" name="choice" onChange={onChangeValue} />
+                  Influence
+                </label>
+              </div>
               <label
                 htmlFor="parentCategoryId"
                 css={`
@@ -161,6 +202,22 @@ export const AddTransaction = (props: any) => {
                     </Field>
                   </>
                 ) : null}
+              </label>
+              <label
+                htmlFor="nameTransaction"
+                css={`
+                  margin: 0 auto;
+                `}>
+                <Paragraph textAlign="center">{t('Data :')}</Paragraph>
+                <Input
+                  margin="5px auto"
+                  as={Field}
+                  type="date"
+                  name="data"
+                  id="data"
+                  value={newData}
+                  onChange={(e: React.ChangeEvent<any>) => setNewData(e.target.value)}
+                />
               </label>
               <ButtonWrapper>
                 <Button secondary={false} type="submit">

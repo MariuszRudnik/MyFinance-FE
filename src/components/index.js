@@ -17,3 +17,4 @@ import { Register } from './Organism/Register/Register.stories';
 import { SelectOption } from './Atoms/SelectOption/SelectOption.stories';
 import { ListOfWallet } from './Organism/ListOfWallet/ListOfWallet.stories';
 import { Accoredon } from './Molecules/Accordion/Accordeon.stories';
+import { Selected } from './Molecules/SelectedIcon/Accordeon.stories';

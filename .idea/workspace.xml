@@ -5,10 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="I work on Add Transaction">
+      <change afterPath="$PROJECT_DIR$/src/components/Assets/CategoryIcon/box.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Assets/CategoryIcon/bus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Assets/CategoryIcon/car.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Assets/CategoryIcon/clean.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Assets/CategoryIcon/dog.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Assets/CategoryIcon/drink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Assets/CategoryIcon/eat.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Assets/CategoryIcon/empty.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Assets/CategoryIcon/energy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Assets/CategoryIcon/home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Assets/CategoryIcon/mood.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Assets/CategoryIcon/other.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Assets/CategoryIcon/phone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Assets/CategoryIcon/shirt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Assets/CategoryIcon/sport.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Assets/CategoryIcon/taxi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Molecules/SelectedIcon/Accordeon.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Molecules/SelectedIcon/SelectedIcon.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/initialState/state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/initialState/state.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddBudgetParentCategory/AddBudgetParentCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddBudgetParentCategory/AddBudgetParentCategory.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddTransation/AddTransaction.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddTransation/AddTransaction.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +59,7 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "16.15.1",
     "javascript.nodejs.core.library.typings.version": "16.18.11",
-    "last_opened_file_path": "/Users/mariusz/Documents/GitHub/NoteBook-FE/src/components/css",
+    "last_opened_file_path": "/Users/mariusz/Documents/GitHub/NoteBook-FE/src/components/Assets/CategoryIcon",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -57,11 +76,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Assets/CategoryIcon" />
+      <recent name="$PROJECT_DIR$/src/components/Molecules/SelectedIcon" />
       <recent name="$PROJECT_DIR$/src/components/css" />
       <recent name="$PROJECT_DIR$/src/components/Molecules/Accordion" />
       <recent name="$PROJECT_DIR$/src/components/Molecules/BudgetCategoryList" />
-      <recent name="$PROJECT_DIR$/img" />
-      <recent name="$PROJECT_DIR$/src/components/Organism/Register" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/Assets" />
@@ -176,7 +195,7 @@
       <workItem from="1674312974928" duration="10933000" />
       <workItem from="1674540333298" duration="233000" />
       <workItem from="1674713756957" duration="186000" />
-      <workItem from="1674718707585" duration="11026000" />
+      <workItem from="1674718707585" duration="24232000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -423,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674728366428</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="I work on Add Transaction">
+      <created>1674740340318</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1674740340318</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

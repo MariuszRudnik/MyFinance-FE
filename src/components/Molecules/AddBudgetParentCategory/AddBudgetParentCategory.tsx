@@ -114,25 +114,7 @@ export const AddBudgetParentCategory = () => {
                 <ErrorTextMessage>
                   <ErrorMessage name="name"></ErrorMessage>
                 </ErrorTextMessage>
-                {/* <label */}
-                {/*   htmlFor="icoCategory" */}
-                {/*   css={` */}
-                {/*     text-align: center; */}
-                {/*   `}> */}
-                {/* <Paragraph textAlign="center">{t('Icon Category :')}</Paragraph> */}
-                {/* <Field */}
-                {/*   margin="5px auto" */}
-                {/*   as="select" */}
-                {/*   placeholder="Value" */}
-                {/*   name="plannedBudget" */}
-                {/*   id="plannedBudget" */}
-                {/*   className={style.select}> */}
-                {/*   <option data-content key="ss" value="ss"> */}
-                {/*     <img src={app} alt="" /> */}
-                {/*   </option> */}
-                {/* </Field> */}
-                {/*   <ErrorMessage name="icoCategory"></ErrorMessage> */}
-                {/* </label> */}
+
                 <Paragraph textAlign="center">{t('Do you want to specify a budget ?')}</Paragraph>
                 <div
                   css={`
