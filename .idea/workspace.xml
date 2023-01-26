@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Fixed name color ;-)">
-      <change afterPath="$PROJECT_DIR$/src/components/Assets/css/addWallet.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Atoms/ErrorTextMessage/ErrorTextMessage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddCategory.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/Wallet/AddTransactionPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Molecules/AddTransation/AddTransaction.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Wallet/CategoryPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Wallet/CategoryPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Atoms/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/Button/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddBudgetCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddBudgetParentCategory/AddBudgetParentCategory.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddCategory.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddBudgetParentCategory/AddBudgetParentCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddBudgetParentCategory/AddBudgetParentCategory.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Content/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Content/Content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Utils/featchHelper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Utils/featchHelper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Utils/formatCurrency.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Utils/formatCurrency.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,30 +37,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Git.Branch.Popup.ShowAllLocals": "false",
-    "Git.Branch.Popup.ShowAllRemotes": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "16.15.1",
-    "javascript.nodejs.core.library.typings.version": "16.18.11",
-    "last_opened_file_path": "/Users/mariusz/Documents/GitHub/NoteBook-FE/src/components/css",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "/Users/mariusz/.nvm/versions/node/v16.15.1/bin/node",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/mariusz/Documents/GitHub/NoteBook-FE/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.typescriptcompiler",
-    "ts.external.directory.path": "/Users/mariusz/Documents/GitHub/NoteBook-FE/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Git.Branch.Popup.ShowAllLocals&quot;: &quot;false&quot;,
+    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.15.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.18.11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/src/components/css&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;/Users/mariusz/.nvm/versions/node/v16.15.1/bin/node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.typescriptcompiler&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/css" />
@@ -180,6 +180,9 @@
       <workItem from="1672946788467" duration="49406000" />
       <workItem from="1673632541959" duration="34143000" />
       <workItem from="1674312974928" duration="10933000" />
+      <workItem from="1674540333298" duration="233000" />
+      <workItem from="1674713756957" duration="186000" />
+      <workItem from="1674718707585" duration="5648000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>

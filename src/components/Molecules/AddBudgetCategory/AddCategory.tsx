@@ -52,7 +52,7 @@ export const AddCategory = () => {
     data: dataParentCategory,
     error,
     isLoading: loadingParentCategory
-  }: any = useQuery(['prentCategory', { id }], getParentCategory);
+  }: any = useQuery(['parentCategory', { id }], getParentCategory);
 
   const notify = () =>
     toast.success(`${t('Congratulations! Categories added.')}`, {

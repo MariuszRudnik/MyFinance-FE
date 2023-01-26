@@ -13,6 +13,7 @@ import { LoadingElements } from '../../components/Atoms/LoadingElements/LoadingE
 import { theme } from '../../theme/mainTheme';
 import { UserPageTemplates } from '../../templates/UserPageTemplates';
 import { CategoryPage } from '../Wallet/CategoryPage';
+import { AddTransactionPage } from '../Wallet/AddTransactionPage';
 
 function Root({ login, loginAccess, userAccess, walletList }: any) {
   let access = null;
@@ -56,6 +57,10 @@ function Root({ login, loginAccess, userAccess, walletList }: any) {
                 <Route path="/" element={<MainPage />} />
                 <Route path={`/${UrlTypes.AddWallet}`} element={<AddWallet />} />
                 <Route path={`/${UrlTypes.ListOfWallet}/:id/*`} element={<ListOfWallet />} />
+                <Route
+                  path={`/${UrlTypes.ListOfWallet}/:id/add-wallet`}
+                  element={<AddTransactionPage />}
+                />
                 <Route path={`/${UrlTypes.ListOfWallet}/:id/category`} element={<CategoryPage />} />
                 <Route path={`/${UrlTypes.Setting}`} element={<Setting />} />
                 <Route path={`/${UrlTypes.Login}`} element={<LoginPage />} />

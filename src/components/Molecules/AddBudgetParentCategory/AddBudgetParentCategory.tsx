@@ -11,8 +11,10 @@ import { useMutation } from 'react-query';
 import { UrlAddress } from '../../../types/UrlAddress';
 import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import app from '../../Assets/icons/wallet.svg';
 
 import { ErrorTextMessage } from '../../Atoms/ErrorTextMessage/ErrorTextMessage';
+import style from '../../Assets/css/addWallet.module.css';
 
 type addCategoryType = {
   name: string;
@@ -112,7 +114,25 @@ export const AddBudgetParentCategory = () => {
                 <ErrorTextMessage>
                   <ErrorMessage name="name"></ErrorMessage>
                 </ErrorTextMessage>
-
+                {/* <label */}
+                {/*   htmlFor="icoCategory" */}
+                {/*   css={` */}
+                {/*     text-align: center; */}
+                {/*   `}> */}
+                {/* <Paragraph textAlign="center">{t('Icon Category :')}</Paragraph> */}
+                {/* <Field */}
+                {/*   margin="5px auto" */}
+                {/*   as="select" */}
+                {/*   placeholder="Value" */}
+                {/*   name="plannedBudget" */}
+                {/*   id="plannedBudget" */}
+                {/*   className={style.select}> */}
+                {/*   <option data-content key="ss" value="ss"> */}
+                {/*     <img src={app} alt="" /> */}
+                {/*   </option> */}
+                {/* </Field> */}
+                {/*   <ErrorMessage name="icoCategory"></ErrorMessage> */}
+                {/* </label> */}
                 <Paragraph textAlign="center">{t('Do you want to specify a budget ?')}</Paragraph>
                 <div
                   css={`
