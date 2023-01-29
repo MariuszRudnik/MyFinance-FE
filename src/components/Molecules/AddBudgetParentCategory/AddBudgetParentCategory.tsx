@@ -137,7 +137,7 @@ export const AddBudgetParentCategory = () => {
                 </div>
                 {plannedCategory ? (
                   <DivWrapper>
-                    <Paragraph textAlign="center">{t('Planned category budget :')}</Paragraph>
+                    <Paragraph textAlign="center">{t('Planned Category budget :')}</Paragraph>
                     <Input
                       margin="5px auto"
                       as={Field}

@@ -168,7 +168,7 @@ export const AddCategory = () => {
   if (dataParentCategory != undefined && dataParentCategory.length === 0) {
     return (
       <>
-        <h1>{t("You can't create a category if you don't have a parent category.")}</h1>
+        <h1>{t("You can't create a Category if you don't have a parent Category.")}</h1>
       </>
     );
   }

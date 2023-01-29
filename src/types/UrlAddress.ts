@@ -6,6 +6,6 @@ export const UrlAddress = {
   Register: Url + 'api/register',
   Logout: Url + 'api/logout',
   AddWallet: Url + 'api/wallet',
-  GetCategory: Url + 'api/wallet/category/',
+  GetCategory: Url + 'api/wallet/Category/',
   GetParentCategory: Url + 'api/wallet/parentCategory/'
 };

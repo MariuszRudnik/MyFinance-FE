@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ButtonWrapper, StylForm } from '../../Organism/AddWallet/style/StyleAddWallet.style';
 import { ErrorMessage, Field, Form, Formik, FormikValues } from 'formik';
 import Paragraph from '../../Atoms/Paragraph/Paragraph';
@@ -13,7 +13,8 @@ import { toast } from 'react-toastify';
 import * as Yup from 'yup';
 import styled from 'styled-components/macro';
 import { getCategory, getParentCategory } from '../../Utils/featchHelper';
-import { values } from 'lodash';
+import { Category, ParentCategory } from '../../../types/Category/GetCategory';
+import { PostCategory } from '../../../types/Category/PostCategory';
 
 const DivWrapper = styled.div`
   padding: 5px;
@@ -22,42 +23,64 @@ const DivWrapper = styled.div`
   align-content: center;
   flex-direction: column;
 `;
+interface Proto {
+  parentCategory: ParentCategory[];
+  category: Category[];
+  parentCategoryLoading: boolean;
+  categoryLoading: boolean;
+}
 
-export const AddTransaction = (props: any) => {
+export const AddTransaction = ({
+  parentCategory,
+  category,
+  parentCategoryLoading,
+  categoryLoading
+}: Proto) => {
   const { id } = useParams();
   const { t, i18n } = useTranslation();
   const [idParentCategory, setIdParentCategory] = useState('');
+  const [idCategory, setIdCategory] = useState('');
   const [newData, setNewData] = useState(new Date().toJSON().slice(0, 10).replace(/-/g, '-'));
   const [kindOfOperation, setKindOfOperation] = useState('expenditure');
-  let filterCategory = [];
-  const {
-    data: dataParentCategory,
-    error: errorParentCategory,
-    isLoading: loadingParentCategory
-  } = useQuery(['parentCategory', { id }], getParentCategory);
-  const {
-    data: dataCategory,
-    error: errorCategory,
-    isLoading: loadingCategory
-  } = useQuery(['category', { id }], getCategory);
 
-  if (!loadingParentCategory) {
-    dataParentCategory.sort((a: any, b: any) => {
+  let filterCategory: Category[] | [] = [];
+
+  if (!parentCategoryLoading) {
+    parentCategory.sort((a: ParentCategory, b: ParentCategory) => {
       if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
       return 1;
     });
-    console.log(dataParentCategory[0].id);
-    
   }
+  useEffect(() => {
+    if (!parentCategoryLoading) {
+      const parentCategoryData = parentCategory.sort((a: ParentCategory, b: ParentCategory) => {
+        if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
+        return 1;
+      });
+      setIdParentCategory(parentCategoryData[0].id);
+    }
+  }, [!parentCategoryLoading]);
 
-  if (!loadingCategory) {
-    filterCategory = dataCategory
-      .filter((item: any) => item.parentCategory == idParentCategory)
-      .sort((a: any, b: any) => {
+  if (!categoryLoading) {
+    filterCategory = category
+      .filter((item: Category) => item.parentCategory == idParentCategory)
+      .sort((a, b) => {
         if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
         return 1;
       });
   }
+
+  useEffect(() => {
+    if (idParentCategory != '') {
+      const categoryData = category
+        .filter((item: Category) => item.parentCategory == idParentCategory)
+        .sort((a, b) => {
+          if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
+          return 1;
+        });
+      setIdCategory(categoryData[0].id);
+    }
+  }, [idParentCategory != '']);
 
   const notify = () =>
     toast.success(`${t('Congratulations! Categories added.')}`, {
@@ -78,18 +101,16 @@ export const AddTransaction = (props: any) => {
       .trim('The field cannot contain blank spaces')
   });
 
-  const initialValues = {
+  const initialValues: PostCategory = {
     nameTransaction: '',
     parentCategoryId: '',
-    categoryId: '',
+    categoryId: idCategory,
     price: 0,
     operation: '',
-    data: ''
+    data: '',
+    description: ''
   };
 
-  const onChangeValue = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setKindOfOperation(e.target.value);
-  };
   return (
     <div>
       <Formik
@@ -100,6 +121,9 @@ export const AddTransaction = (props: any) => {
           values.parentCategoryId = idParentCategory;
           values.operation = kindOfOperation;
           values.data = newData;
+          if (values.categoryId == '') {
+            values.categoryId = idCategory;
+          }
           console.log(values);
           actions.setSubmitting(false);
           actions.resetForm();
@@ -153,13 +177,18 @@ export const AddTransaction = (props: any) => {
                     type="radio"
                     value="expenditure"
                     name="choice"
-                    onChange={onChangeValue}
+                    onChange={(e) => setKindOfOperation(e.target.value)}
                     checked={kindOfOperation == 'expenditure'}
                   />
                   Expenditure
                 </label>
                 <label>
-                  <Input type="radio" value="influence" name="choice" onChange={onChangeValue} />
+                  <Input
+                    type="radio"
+                    value="influence"
+                    name="choice"
+                    onChange={(e) => setKindOfOperation(e.target.value)}
+                  />
                   Influence
                 </label>
               </div>
@@ -172,10 +201,12 @@ export const AddTransaction = (props: any) => {
                 <select
                   name="parentCategoryId"
                   id="parentCategoryId"
-                  onChange={(e: React.ChangeEvent<any>) => setIdParentCategory(e.target.value)}
+                  onChange={(e: React.ChangeEvent<FormikValues>) =>
+                    setIdParentCategory(e.target.value)
+                  }
                   className={style.select}>
-                  {dataParentCategory
-                    ? dataParentCategory.map((item: any, index: number) => (
+                  {parentCategory
+                    ? parentCategory.map((item: ParentCategory, index: number) => (
                         <option key={item.id} value={item.id}>
                           {item.name}
                         </option>
@@ -193,7 +224,7 @@ export const AddTransaction = (props: any) => {
                     <Paragraph textAlign="center">{t('Select  categories :')}</Paragraph>
                     <Field as="select" name="categoryId" id="categoryId" className={style.select}>
                       {filterCategory.length != 0
-                        ? filterCategory.map((item: any, index: number) => (
+                        ? filterCategory.map((item: Category, index: number) => (
                             <option key={item.id} value={item.id}>
                               {item.name}
                             </option>
@@ -204,7 +235,7 @@ export const AddTransaction = (props: any) => {
                 ) : null}
               </label>
               <label
-                htmlFor="nameTransaction"
+                htmlFor="data"
                 css={`
                   margin: 0 auto;
                 `}>
@@ -216,8 +247,16 @@ export const AddTransaction = (props: any) => {
                   name="data"
                   id="data"
                   value={newData}
-                  onChange={(e: React.ChangeEvent<any>) => setNewData(e.target.value)}
+                  onChange={(e: React.ChangeEvent<FormikValues>) => setNewData(e.target.value)}
                 />
+              </label>
+              <label
+                htmlFor="data"
+                css={`
+                  margin: 0 auto;
+                `}>
+                <Paragraph textAlign="center">{t('Description :')}</Paragraph>
+                <Field as="textarea" name="description" id="description" />
               </label>
               <ButtonWrapper>
                 <Button secondary={false} type="submit">
