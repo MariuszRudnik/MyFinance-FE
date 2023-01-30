@@ -14,7 +14,7 @@ import { toast } from 'react-toastify';
 import app from '../../Assets/icons/wallet.svg';
 
 import { ErrorTextMessage } from '../../Atoms/ErrorTextMessage/ErrorTextMessage';
-import style from '../../Assets/css/addWallet.module.css';
+import style from '../../Assets/css/style.module.css';
 
 type addCategoryType = {
   name: string;

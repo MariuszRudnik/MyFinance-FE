@@ -2,6 +2,7 @@ import React from 'react';
 import { Sidebar } from '../components/Organism/Sliderbar/Sidebar';
 import { Navbar } from '../components/Molecules/Navbar/Navbar';
 import styled from 'styled-components';
+import Modal from '../components/Modal/Modal';
 
 type TypeProps = {
   children: React.ReactNode;

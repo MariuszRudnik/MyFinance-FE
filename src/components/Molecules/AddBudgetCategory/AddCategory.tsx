@@ -13,7 +13,7 @@ import { UrlAddress } from '../../../types/UrlAddress';
 import { useMutation, useQuery } from 'react-query';
 import styled from 'styled-components/macro';
 import loadingImage from '../../Assets/icons/login.svg';
-import style from '../../Assets/css/addWallet.module.css';
+import style from '../../Assets/css/style.module.css';
 
 const DivWrapper = styled.div`
   padding: 5px;

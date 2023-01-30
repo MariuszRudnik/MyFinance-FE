@@ -55,8 +55,8 @@ export const WalletItems = ({ numberWalletUser }: any) => {
             <ParagraphList>
               <LinkOfWallet
                 as={NavLink}
-                to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/wallet`}>
-                Wallet
+                to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/operations`}>
+                Operations
               </LinkOfWallet>
             </ParagraphList>
           </LiWallet>

@@ -1,9 +1,13 @@
 export interface PostCategory {
-  nameTransaction: string;
-  parentCategoryId: string;
-  categoryId: string;
+  name: string;
+  parentCategory: string;
+  category: string;
   price: number;
-  operation: string;
   data: string;
   description: string;
+  operations: string;
+}
+export interface PostTransactionType {
+  values: PostCategory[];
+  id: string;
 }

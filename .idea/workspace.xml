@@ -4,16 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="I work on Add Transaction">
-      <change afterPath="$PROJECT_DIR$/src/types/Category/GetCategory.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/Category/PostCategory.ts" afterDir="false" />
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Clear code Add Transaction">
+      <change afterPath="$PROJECT_DIR$/src/components/Assets/css/style.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Assets/icons/payments.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Assets/icons/puzle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Atoms/Input2/Input.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Atoms/Input2/Input2.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Modal/Modal.css.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Modal/Modal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Molecules/AddTransation/AddTransactionComponent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/locales/en/translate.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/locales/en/translate.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Wallet/AddTransactionPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Wallet/AddTransactionPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/ListOfWallet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/ListOfWallet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Wallet/AddTransactionPage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Assets/css/addWallet.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Assets/icons/pen.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Assets/icons/pen.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddCategory.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddBudgetParentCategory/AddBudgetParentCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddBudgetParentCategory/AddBudgetParentCategory.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddTransation/AddTransaction.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddTransation/AddTransaction.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/ListOfWallet/WalletItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/ListOfWallet/WalletItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/UserPageTemplates.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/UserPageTemplates.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/mainTheme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/mainTheme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/Category/PostCategory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/Category/PostCategory.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/UrlAddress.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/UrlAddress.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +61,7 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "16.15.1",
     "javascript.nodejs.core.library.typings.version": "16.18.11",
-    "last_opened_file_path": "/Users/mariusz/Documents/GitHub/NoteBook-FE/src/components/Assets/CategoryIcon",
+    "last_opened_file_path": "/Users/mariusz/Documents/GitHub/NoteBook-FE/src/components/Atoms/Input2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -63,18 +78,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Atoms/Input2" />
+      <recent name="$PROJECT_DIR$/src/components/Atoms" />
       <recent name="$PROJECT_DIR$/src/components/Assets/CategoryIcon" />
       <recent name="$PROJECT_DIR$/src/components/Molecules/SelectedIcon" />
       <recent name="$PROJECT_DIR$/src/components/css" />
-      <recent name="$PROJECT_DIR$/src/components/Molecules/Accordion" />
-      <recent name="$PROJECT_DIR$/src/components/Molecules/BudgetCategoryList" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Molecules/AddTransation" />
+      <recent name="$PROJECT_DIR$/src/components/Assets/icons" />
       <recent name="$PROJECT_DIR$/src/components/Assets" />
       <recent name="$PROJECT_DIR$/src/Pages/Access" />
       <recent name="$PROJECT_DIR$/img" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/Pages/Root" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -182,7 +197,7 @@
       <workItem from="1674312974928" duration="10933000" />
       <workItem from="1674540333298" duration="233000" />
       <workItem from="1674713756957" duration="186000" />
-      <workItem from="1674718707585" duration="41071000" />
+      <workItem from="1674718707585" duration="61691000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -443,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674764005508</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Clear code Add Transaction">
+      <created>1674991464037</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1674991464038</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,7 +483,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="I created Atoms" />
     <MESSAGE value="Create Sidebar" />
     <MESSAGE value="Create New Icon" />
     <MESSAGE value="Create SidebarV2.tsx" />
@@ -486,6 +507,7 @@
     <MESSAGE value="I created  content AddBudgetCategory.tsx" />
     <MESSAGE value="Fixed name color ;-)" />
     <MESSAGE value="I work on Add Transaction" />
-    <option name="LAST_COMMIT_MESSAGE" value="I work on Add Transaction" />
+    <MESSAGE value="Clear code Add Transaction" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clear code Add Transaction" />
   </component>
 </project>

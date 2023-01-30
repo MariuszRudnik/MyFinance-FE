@@ -6,6 +6,8 @@ export const theme = {
   approve: 'rgb(86, 194, 64)',
   error: 'rgb(207, 56, 47)',
   background: '#f7f8fa',
+  shadow: 'rgba(0,0,0,0.25)',
+  colorDark1: 'rgb(31,38,55)',
   //accent: 'hsl(0, 0%, 96%)',
   //grey100: 'hsl(0, 0%, 96%)',
 

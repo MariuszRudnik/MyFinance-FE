@@ -1,4 +1,6 @@
 // @types/react/index.d.ts
+import Modal from './components/Modal/Modal';
+
 declare module 'react' {
   interface Attributes {
     css?: any;
