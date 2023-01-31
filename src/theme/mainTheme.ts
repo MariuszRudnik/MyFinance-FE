@@ -2,6 +2,7 @@ export const theme = {
   primary: 'rgb(52, 85, 247)',
   secondary: 'rgb(255, 255, 255)',
   tertiary: 'rgba(237,239,242,0.8)',
+  quaternary: 'rgba(247,198,69)',
   textColor: '#6B7A99',
   approve: 'rgb(86, 194, 64)',
   error: 'rgb(207, 56, 47)',

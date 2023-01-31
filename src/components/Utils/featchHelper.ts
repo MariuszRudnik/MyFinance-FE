@@ -31,3 +31,14 @@ export const getCategory = async (key: any) => {
   if (res.status !== 200) throw new Error('Something went wrong');
   return await res.json();
 };
+
+export const getOperations = async (key: any) => {
+  const { id } = key.queryKey[1];
+  const res = await fetch(UrlAddress.Transaction + id, {
+    method: 'GET',
+    credentials: 'include',
+    headers: { 'Content-Type': 'application/json' }
+  });
+  if (res.status !== 200) throw new Error('Something went wrong');
+  return await res.json();
+};

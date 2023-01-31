@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 280px;
   min-height: 50px;
-  background-color: ${({ theme }) => theme.white};
+  background-color: ${({ theme }) => theme.secondary};
   border-radius: 15px;
   padding: 15px 5px;
   margin: 10px;
@@ -87,7 +87,7 @@ export const ListOfWallet = ({ title, walletList }: any | string) => {
     <Wrapper>
       <NavigateOfWallet
         as={NavLink}
-        to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/wallet`}
+        to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/operations`}
         onClick={() => activeWallet(numberWalletUser)}>
         <TitleWrapper>
           <HeadlinesWrapper>

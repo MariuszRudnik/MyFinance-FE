@@ -6,7 +6,7 @@ import { Setting } from '../Setting';
 import { UrlTypes } from '../../types/UrlTypes';
 import { LoginPage } from '../Access/LoginPage';
 import { AddWallet } from '../AddWallet';
-import { ListOfWallet } from '../ListOfWallet';
+import { Operations } from '../Operations';
 import { UrlAddress } from '../../types/UrlAddress';
 import { RegisterPage } from '../Access/Register';
 import { LoadingElements } from '../../components/Atoms/LoadingElements/LoadingElements';
@@ -59,7 +59,7 @@ function Root({ login, loginAccess, userAccess, walletList }: any) {
                 <Route path={`/${UrlTypes.AddWallet}`} element={<AddWallet />} />
                 <Route
                   path={`/${UrlTypes.ListOfWallet}/:id/operations/*`}
-                  element={<ListOfWallet />}
+                  element={<Operations />}
                 />
                 <Route
                   path={`/${UrlTypes.ListOfWallet}/:id/add-wallet`}

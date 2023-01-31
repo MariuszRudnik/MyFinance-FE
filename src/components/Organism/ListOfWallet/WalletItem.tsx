@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { UrlTypes } from '../../../types/UrlTypes';
 import styled from 'styled-components';
 import { theme } from '../../../theme/mainTheme';
+import { useTranslation } from 'react-i18next';
 
 const LiWallet = styled.li`
   list-style-type: none;
@@ -28,35 +29,55 @@ const LinkOfWallet = styled.a`
 `;
 
 export const WalletItems = ({ numberWalletUser }: any) => {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <ul>
         <>
-          <LiWallet>
-            <ParagraphList>
-              <LinkOfWallet
-                as={NavLink}
-                to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/add-wallet`}>
-                Add transaction
-              </LinkOfWallet>
-            </ParagraphList>
-          </LiWallet>
-
-          <LiWallet>
-            <ParagraphList>
-              <LinkOfWallet
-                as={NavLink}
-                to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/category`}>
-                Category
-              </LinkOfWallet>
-            </ParagraphList>
-          </LiWallet>
           <LiWallet key={numberWalletUser}>
             <ParagraphList>
               <LinkOfWallet
                 as={NavLink}
                 to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/operations`}>
                 Operations
+              </LinkOfWallet>
+            </ParagraphList>
+          </LiWallet>
+
+          {/* <LiWallet> */}
+          {/*   <ParagraphList> */}
+          {/*     <LinkOfWallet */}
+          {/*       as={NavLink} */}
+          {/*       to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/overview`}> */}
+          {/*       {t('Overview')} */}
+          {/*     </LinkOfWallet> */}
+          {/*   </ParagraphList> */}
+          {/* </LiWallet> */}
+          {/* <LiWallet> */}
+          {/*   <ParagraphList> */}
+          {/*     <LinkOfWallet */}
+          {/*       as={NavLink} */}
+          {/*       to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/summary`}> */}
+          {/*       {t('Summary')} */}
+          {/*     </LinkOfWallet> */}
+          {/*   </ParagraphList> */}
+          {/* </LiWallet> */}
+          {/* <LiWallet> */}
+          {/*   <ParagraphList> */}
+          {/*     <LinkOfWallet */}
+          {/*       as={NavLink} */}
+          {/*       to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/reports`}> */}
+          {/*       {t('Reports')} */}
+          {/*     </LinkOfWallet> */}
+          {/*   </ParagraphList> */}
+          {/* </LiWallet> */}
+
+          <LiWallet>
+            <ParagraphList>
+              <LinkOfWallet
+                as={NavLink}
+                to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/category`}>
+                {t('Category')}
               </LinkOfWallet>
             </ParagraphList>
           </LiWallet>
