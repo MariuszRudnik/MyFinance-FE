@@ -7,7 +7,7 @@ import penIcon from '../../Assets//icons/pen.svg';
 import plusIcon from '../../Assets/icons/plus.svg';
 import twitterIcon from '../../Assets/icons/add.svg';
 import apps from '../../Assets/icons/apps.svg';
-import ButtonIcon from './ButtonIcon';
+import CircleIcon from './CircleIcon';
 
 const Background = styled.div`
   display: flex;
@@ -18,11 +18,11 @@ const Background = styled.div`
   height: 500px;
 `;
 
-storiesOf('Attoms/ButtonIcon', module)
+storiesOf('Attoms/ButtonPlus', module)
   .addDecorator((story) => <Background>{story()}</Background>)
-  .add('Apps', () => <ButtonIcon icon={apps} color="white" />)
-  .add('Active', () => <ButtonIcon active icon={bulbIcon} />)
-  .add('Logout', () => <ButtonIcon icon={logoutIcon} />)
-  .add('Pen', () => <ButtonIcon icon={penIcon} />)
-  .add('Plus', () => <ButtonIcon icon={plusIcon} />)
-  .add('Twitter', () => <ButtonIcon icon={twitterIcon} />);
+  .add('Apps', () => <CircleIcon icon={apps} color="white" />)
+  .add('Active', () => <CircleIcon active icon={bulbIcon} />)
+  .add('Logout', () => <CircleIcon icon={logoutIcon} />)
+  .add('Pen', () => <CircleIcon icon={penIcon} />)
+  .add('Plus', () => <CircleIcon icon={plusIcon} />)
+  .add('Twitter', () => <CircleIcon icon={twitterIcon} />);

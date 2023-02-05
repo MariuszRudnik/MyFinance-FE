@@ -6,13 +6,15 @@ import { Setting } from '../Setting';
 import { UrlTypes } from '../../types/UrlTypes';
 import { LoginPage } from '../Access/LoginPage';
 import { AddWallet } from '../AddWallet';
-import { ListOfWallet } from '../ListOfWallet';
+import { Operations } from '../Operations';
 import { UrlAddress } from '../../types/UrlAddress';
 import { RegisterPage } from '../Access/Register';
 import { LoadingElements } from '../../components/Atoms/LoadingElements/LoadingElements';
 import { theme } from '../../theme/mainTheme';
 import { UserPageTemplates } from '../../templates/UserPageTemplates';
 import { CategoryPage } from '../Wallet/CategoryPage';
+import { AddTransaction } from '../../components/Molecules/AddTransation/AddTransaction';
+import Modal from '../../components/Modal/Modal';
 
 function Root({ login, loginAccess, userAccess, walletList }: any) {
   let access = null;
@@ -55,7 +57,14 @@ function Root({ login, loginAccess, userAccess, walletList }: any) {
               <Routes>
                 <Route path="/" element={<MainPage />} />
                 <Route path={`/${UrlTypes.AddWallet}`} element={<AddWallet />} />
-                <Route path={`/${UrlTypes.ListOfWallet}/:id/*`} element={<ListOfWallet />} />
+                <Route
+                  path={`/${UrlTypes.ListOfWallet}/:id/operations/*`}
+                  element={<Operations />}
+                />
+                <Route
+                  path={`/${UrlTypes.ListOfWallet}/:id/add-wallet`}
+                  element={<AddTransaction />}
+                />
                 <Route path={`/${UrlTypes.ListOfWallet}/:id/category`} element={<CategoryPage />} />
                 <Route path={`/${UrlTypes.Setting}`} element={<Setting />} />
                 <Route path={`/${UrlTypes.Login}`} element={<LoginPage />} />

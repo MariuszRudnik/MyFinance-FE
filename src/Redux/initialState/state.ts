@@ -22,9 +22,9 @@ const state: any = {
     {
       id: 1,
       typeOfOperation: 'expenditure',
-      title: 'Bread',
+      icon: 'Bread',
       price: 25,
-      icon: '',
+
       data: '2022-12-12',
       category: 'Eat',
       description: 'opis'
@@ -32,9 +32,9 @@ const state: any = {
     {
       id: 2,
       typeOfOperation: 'income',
-      title: 'payment',
+      icon: 'payment',
       price: 25,
-      icon: '',
+
       data: '2022-12-12',
       category: 'Eat',
       description: 'opis'
@@ -42,9 +42,9 @@ const state: any = {
     {
       id: 1,
       typeOfOperation: 'expenditure',
-      title: 'Bread',
+      icon: 'Bread',
       price: 25,
-      icon: '',
+
       data: '2022-12-12',
       category: 'Eat',
       description: 'opis'

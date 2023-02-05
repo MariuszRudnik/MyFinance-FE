@@ -16,7 +16,7 @@ const StyleContentWrapper = styled.div<Style>`
   max-width: ${({ widthStyle }) => (widthStyle ? widthStyle : '800px')};
 `;
 const TitleWrapper = styled.div`
-  border-bottom: 2px solid ${theme.secondary};
+  border-bottom: 2px solid ${theme.tertiary};
   padding: 0 30px;
   width: 100%;
 `;

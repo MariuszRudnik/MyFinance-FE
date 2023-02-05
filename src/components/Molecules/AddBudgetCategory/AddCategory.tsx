@@ -13,7 +13,7 @@ import { UrlAddress } from '../../../types/UrlAddress';
 import { useMutation, useQuery } from 'react-query';
 import styled from 'styled-components/macro';
 import loadingImage from '../../Assets/icons/login.svg';
-import style from '../../Assets/css/addWallet.module.css';
+import style from '../../Assets/css/style.module.css';
 
 const DivWrapper = styled.div`
   padding: 5px;
@@ -52,7 +52,7 @@ export const AddCategory = () => {
     data: dataParentCategory,
     error,
     isLoading: loadingParentCategory
-  }: any = useQuery(['prentCategory', { id }], getParentCategory);
+  }: any = useQuery(['parentCategory', { id }], getParentCategory);
 
   const notify = () =>
     toast.success(`${t('Congratulations! Categories added.')}`, {
@@ -168,7 +168,7 @@ export const AddCategory = () => {
   if (dataParentCategory != undefined && dataParentCategory.length === 0) {
     return (
       <>
-        <h1>{t("You can't create a category if you don't have a parent category.")}</h1>
+        <h1>{t("You can't create a Category if you don't have a parent Category.")}</h1>
       </>
     );
   }

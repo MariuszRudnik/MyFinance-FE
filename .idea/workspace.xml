@@ -4,16 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="Fixed name color ;-)">
-      <change afterPath="$PROJECT_DIR$/src/components/Assets/css/addWallet.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Atoms/ErrorTextMessage/ErrorTextMessage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddCategory.tsx" afterDir="false" />
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="I was working on Operations.tsx">
+      <change afterPath="$PROJECT_DIR$/src/components/Atoms/Button/Button.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Atoms/ButtonIcon/ButtonIcon.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Context/SelectProviderIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddCategory.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Molecules/SelectedIcon/SelectedIcon.css.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Organism/D3/d3.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Tester.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Utils/renderWithProvider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Wallet/CategoryPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Wallet/CategoryPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Atoms/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/Button/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddBudgetCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddBudgetParentCategory/AddBudgetParentCategory.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Operations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Operations.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Atoms/ButtonIcon/CircleIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/ButtonIcon/CircleIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Atoms/ButtonPlus/ButtonPlus.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/ButtonPlus/ButtonPlus.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Atoms/Paragraph/Paragraph.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/Paragraph/Paragraph.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddBudgetParentCategory/AddBudgetParentCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddBudgetParentCategory/AddBudgetParentCategory.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddTransation/AddTransactionComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddTransation/AddTransactionComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/SelectedIcon/Accordeon.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/SelectedIcon/Accordeon.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/SelectedIcon/SelectedIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/SelectedIcon/SelectedIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsOperations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsOperations.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Utils/featchHelper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Utils/featchHelper.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/UserPageTemplates.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/UserPageTemplates.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +39,7 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Develop" />
+        <entry key="$PROJECT_DIR$" value="feat#10_add_category" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,62 +52,93 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Git.Branch.Popup.ShowAllLocals": "false",
-    "Git.Branch.Popup.ShowAllRemotes": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "16.15.1",
-    "javascript.nodejs.core.library.typings.version": "16.18.11",
-    "last_opened_file_path": "/Users/mariusz/Documents/GitHub/NoteBook-FE/src/components/css",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "/Users/mariusz/.nvm/versions/node/v16.15.1/bin/node",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/mariusz/Documents/GitHub/NoteBook-FE/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.typescriptcompiler",
-    "ts.external.directory.path": "/Users/mariusz/Documents/GitHub/NoteBook-FE/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.15.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.18.11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/src/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/node_modules/react-scripts&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;/Users/mariusz/.nvm/versions/node/v16.15.1/bin/node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.typescriptcompiler&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/css" />
-      <recent name="$PROJECT_DIR$/src/components/Molecules/Accordion" />
-      <recent name="$PROJECT_DIR$/src/components/Molecules/BudgetCategoryList" />
-      <recent name="$PROJECT_DIR$/img" />
-      <recent name="$PROJECT_DIR$/src/components/Organism/Register" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/components/Atoms" />
+      <recent name="$PROJECT_DIR$/src/components/Atoms/Input2" />
+      <recent name="$PROJECT_DIR$/src/components/Assets/CategoryIcon" />
+      <recent name="$PROJECT_DIR$/src/components/Molecules/SelectedIcon" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/components/Assets/icons" />
       <recent name="$PROJECT_DIR$/src/components/Assets" />
-      <recent name="$PROJECT_DIR$/src/Pages/Access" />
-      <recent name="$PROJECT_DIR$/img" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/Pages/Root" />
+      <recent name="$PROJECT_DIR$/src/components/Atoms" />
+      <recent name="$PROJECT_DIR$/src/components/Molecules/AddTransation" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
+    <configuration name="Testing button (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddCategory.test.tsx" />
+      <test-names>
+        <test-name value="Testing button" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Testing button.should renders the component (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddCategory.test.tsx" />
+      <test-names>
+        <test-name value="Testing button" />
+        <test-name value="should renders the component" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Testing button.should renders the component" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/Atoms/ButtonIcon/ButtonIcon.test.tsx" />
+      <test-names>
+        <test-name value="Testing button" />
+        <test-name value="should renders the component" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="start" />
-      </scripts>
-      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v16.15.1/bin/node" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="start:db" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start:db" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -104,7 +150,7 @@
       <scripts>
         <script value="storybook" />
       </scripts>
-      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v16.15.1/bin/node" />
+      <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
@@ -112,9 +158,9 @@
       <list>
         <item itemvalue="npm.start" />
         <item itemvalue="npm.storybook" />
-        <item itemvalue="npm.start:db" />
-        <item itemvalue="npm.storybook" />
-        <item itemvalue="npm.start" />
+        <item itemvalue="Jest.Testing button (1)" />
+        <item itemvalue="Jest.Testing button.should renders the component (1)" />
+        <item itemvalue="Jest.Testing button.should renders the component" />
       </list>
     </recent_temporary>
   </component>
@@ -180,6 +226,10 @@
       <workItem from="1672946788467" duration="49406000" />
       <workItem from="1673632541959" duration="34143000" />
       <workItem from="1674312974928" duration="10933000" />
+      <workItem from="1674540333298" duration="233000" />
+      <workItem from="1674713756957" duration="186000" />
+      <workItem from="1674718707585" duration="117179000" />
+      <workItem from="1675580978758" duration="3661000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -419,7 +469,49 @@
       <option name="project" value="LOCAL" />
       <updated>1674168402444</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="I work on Add Transaction">
+      <created>1674728366427</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1674728366428</updated>
+    </task>
+    <task id="LOCAL-00036" summary="I work on Add Transaction">
+      <created>1674740340318</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1674740340318</updated>
+    </task>
+    <task id="LOCAL-00037" summary="I work on Add Transaction">
+      <created>1674764005508</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1674764005508</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Clear code Add Transaction">
+      <created>1674991464037</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1674991464038</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Add Modal.tsx">
+      <created>1675105675728</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1675105675728</updated>
+    </task>
+    <task id="LOCAL-00040" summary="I was working on Operations.tsx">
+      <created>1675176243892</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1675176243892</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,10 +529,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="I fixed Error with Eslint and install StoryBook" />
-    <MESSAGE value="I created Atoms" />
-    <MESSAGE value="Create Sidebar" />
-    <MESSAGE value="Create New Icon" />
     <MESSAGE value="Create SidebarV2.tsx" />
     <MESSAGE value="Create Login.tsx" />
     <MESSAGE value="Add Formik" />
@@ -462,6 +550,10 @@
     <MESSAGE value="I created Accordion.tsx Component" />
     <MESSAGE value="I created  content AddBudgetCategory.tsx" />
     <MESSAGE value="Fixed name color ;-)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed name color ;-)" />
+    <MESSAGE value="I work on Add Transaction" />
+    <MESSAGE value="Clear code Add Transaction" />
+    <MESSAGE value="Add Modal.tsx" />
+    <MESSAGE value="I was working on Operations.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="I was working on Operations.tsx" />
   </component>
 </project>

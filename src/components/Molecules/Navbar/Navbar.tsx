@@ -1,10 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
-import apps from '../../Assets/icons/apps.svg';
-import ButtonIcon from '../../Atoms/ButtonIcon/ButtonIcon';
+import pig from '../../Assets/icons/pig.svg';
+import CircleIcon from '../../Atoms/ButtonIcon/CircleIcon';
 import Paragraph from '../../Atoms/Paragraph/Paragraph';
 import Heading from '../../Atoms/Heading/Heading';
 import { theme } from '../../../theme/mainTheme';
+import styled from 'styled-components/macro';
 import bell from '../../Assets/icons/bell.svg';
 import monitoring from '../../Assets/icons/monitoring.svg';
 import logo from '../../Assets/iconsLogo/people.jpg';
@@ -16,8 +16,6 @@ import ButtonIconsSidebar from '../../Atoms/ButtonIconSidebar/ButtonIconSidebar'
 import { NavLink } from 'react-router-dom';
 import { UrlTypes } from '../../../types/UrlTypes';
 import { ContentButton } from '../../Atoms/ButtonIconSidebar/content/ContentButton';
-import addIcon from '../../Assets/icons/add.svg';
-import wallet from '../../Assets/icons/wallet.svg';
 import settings from '../../Assets/icons/settings.svg';
 import logout from '../../Assets/icons/logout.svg';
 import { fetchLogout } from '../../../Redux/reducers/loginRedux';
@@ -79,20 +77,37 @@ export const Navbar = () => {
   return (
     <NavWrapper>
       <StyleDiv>
-        <ButtonIcon icon={apps} color="white" />
+        <img
+          src={pig}
+          css={`
+            margin: 10px 0 15px 15px;
+            position: relative;
+            left: 25px;
+          `}
+        />
         <Heading big={'18px'} color={theme.textColor}>
           My Finance
         </Heading>
-        <Menu>
-          <MenuItem>Blog</MenuItem>
-          <MenuItem>Posts</MenuItem>
-          <MenuItem>News</MenuItem>
-          <MenuItem>Tips</MenuItem>
-        </Menu>
+        <p
+          css={`
+            color: red;
+            font-size: 12px;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+          `}>
+          alpha-01
+        </p>
+        {/* <Menu> */}
+        {/*   <MenuItem>Blog</MenuItem> */}
+        {/*   <MenuItem>Posts</MenuItem> */}
+        {/*   <MenuItem>News</MenuItem> */}
+        {/*   <MenuItem>Tips</MenuItem> */}
+        {/* </Menu> */}
       </StyleDiv>
       <StyleDiv>
-        <ButtonIcon icon={monitoring}></ButtonIcon>
-        <ButtonIcon icon={bell}></ButtonIcon>
+        <CircleIcon icon={monitoring}></CircleIcon>
+        <CircleIcon icon={bell}></CircleIcon>
         <MenuWrapper>
           <FlexDiv>
             <Image />

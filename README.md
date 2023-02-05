@@ -51,7 +51,7 @@ Użyte paczki
     <li><a href="https://styled-components.com/">Styled Components</a></li>
     <li><a href="https://www.i18next.com/">i18next React</a></li>
 <li><a href="https://lodash.com/">Lodash </a></li>
-<li><a href="https://www.npmjs.com/package/json-server">JSON Server </a></li><li><a href="https://www.npmjs.com/package/react-toastify">React-Toastify </a></li><li><a href="https://react-query-v3.tanstack.com/">React Query </a></li>
+<li><a href="https://www.npmjs.com/package/json-server">JSON Server </a></li><li><a href="https://www.npmjs.com/package/react-toastify">React-Toastify </a></li><li><a href="https://react-query-v3.tanstack.com/">React Query </a></li><li><a href="https://www.downshift-js.com/">Downshift </a></li>
   </ul>
 
   Strona serwera

@@ -5,7 +5,7 @@ import { linkTo } from '@storybook/addon-links';
 import { Button } from './Atoms/Button/Button.stories';
 import { Paragraph } from './Atoms/Paragraph/Paragraph.stories';
 import { Input } from './Atoms/Input/Input.stories';
-import { ButtonIcon } from './Atoms/ButtonIcon/ButtonIcon.stories';
+import { CircleIcon } from './Atoms/ButtonIcon/ButtonIcon.stories';
 import { Heading } from './Atoms/Heading/Heading.stories';
 
 import { SidebarV2 } from './Organism/Sliderbar/Sidebar.stories';
@@ -17,3 +17,5 @@ import { Register } from './Organism/Register/Register.stories';
 import { SelectOption } from './Atoms/SelectOption/SelectOption.stories';
 import { ListOfWallet } from './Organism/ListOfWallet/ListOfWallet.stories';
 import { Accoredon } from './Molecules/Accordion/Accordeon.stories';
+import { Selected } from './Molecules/SelectedIcon/Accordeon.stories';
+import { Icon } from './Atoms/Input2/Input.stories';
