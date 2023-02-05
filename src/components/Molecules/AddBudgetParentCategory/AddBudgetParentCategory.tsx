@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { ButtonWrapper, StylForm } from '../../Organism/AddWallet/style/StyleAddWallet.style';
 import { ErrorMessage, Field, Form, Formik, useFormik } from 'formik';
 import Paragraph from '../../Atoms/Paragraph/Paragraph';
@@ -14,11 +14,14 @@ import { toast } from 'react-toastify';
 import app from '../../Assets/icons/wallet.svg';
 
 import { ErrorTextMessage } from '../../Atoms/ErrorTextMessage/ErrorTextMessage';
-import style from '../../Assets/css/style.module.css';
+
+import { SelectedIcon } from '../SelectedIcon/SelectedIcon';
+import { ContextIcon } from '../../Context/SelectProviderIcon';
 
 type addCategoryType = {
   name: string;
   plannedBudget: string | null;
+  icon: string;
 };
 interface addCategory {
   id: number | string | undefined;
@@ -50,9 +53,11 @@ const addCategory = async (data: addCategory) => {
 };
 
 export const AddBudgetParentCategory = () => {
+  const { selectIcon } = useContext(ContextIcon);
   const { id } = useParams();
   const { t, i18n } = useTranslation();
   const [plannedCategory, setPlannedCategory] = useState(true);
+
   const { mutate } = useMutation(addCategory);
 
   const notify = () =>
@@ -76,7 +81,8 @@ export const AddBudgetParentCategory = () => {
 
   const initialValues: addCategoryType = {
     name: '',
-    plannedBudget: ''
+    plannedBudget: '',
+    icon: selectIcon.value
   };
 
   const onChangeValue = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -94,6 +100,7 @@ export const AddBudgetParentCategory = () => {
           initialValues={initialValues}
           validationSchema={SignupSchema}
           onSubmit={(values, actions) => {
+            values.icon = selectIcon.value;
             mutate({ values, id });
             notify();
             actions.setSubmitting(false);
@@ -114,7 +121,13 @@ export const AddBudgetParentCategory = () => {
                 <ErrorTextMessage>
                   <ErrorMessage name="name"></ErrorMessage>
                 </ErrorTextMessage>
-
+                <div
+                  css={`
+                    margin: 0 auto;
+                    position: static;
+                  `}>
+                  <SelectedIcon />
+                </div>
                 <Paragraph textAlign="center">{t('Do you want to specify a budget ?')}</Paragraph>
                 <div
                   css={`

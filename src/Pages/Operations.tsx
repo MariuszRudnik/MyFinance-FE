@@ -14,12 +14,13 @@ import { navigate } from '@storybook/addon-links';
 import CircleIcon from '../components/Atoms/ButtonIcon/CircleIcon';
 import plus from '../components/Assets/icons/plus.svg';
 import { ButtonPlus } from '../components/Atoms/ButtonPlus/ButtonPlus';
+import { D3 } from '../components/Organism/D3/d3';
 
 const ImgCenter = styled.img`
   margin: 0 auto;
 `;
 const AddButton = styled.div`
-  position: absolute;
+  position: fixed;
   bottom: 10%;
   right: 10%;
 `;
@@ -28,9 +29,9 @@ export const Operations = () => {
   const navigation = useNavigate();
   return (
     <>
-      {/* <Content heading="Chart Wallet"> */}
-      {/*   <ImgCenter src={charge} /> */}
-      {/* </Content> */}
+      <Content heading="Chart Wallet">
+        <D3 />
+      </Content>
       <Content heading="Wallet operations" widthContent={'530px'}>
         <EventsOperations />
       </Content>

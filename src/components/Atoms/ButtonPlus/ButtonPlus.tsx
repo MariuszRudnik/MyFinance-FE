@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { theme } from '../../../theme/mainTheme';
 
 type Props = {
   icon: string;
@@ -18,6 +19,7 @@ export const ButtonPlus = styled.button<Props>`
   background-size: 40%;
   cursor: pointer;
   border: none;
+  box-shadow: 0 1px 6px ${theme.shadow};
   background-color: ${({ color }) => (color ? color : 'transparent')};
   // &.active {
   //   background-color: ${({ color }) => (color ? color : 'white')};

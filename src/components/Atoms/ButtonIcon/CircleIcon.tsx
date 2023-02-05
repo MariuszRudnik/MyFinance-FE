@@ -19,6 +19,7 @@ const CircleIcon = styled.div<Props>`
   background-size: 60%;
   border: none;
   background-color: ${({ color }) => (color ? color : 'transparent')};
+
   // &.active {
   //   background-color: ${({ color }) => (color ? color : 'white')};
   // }

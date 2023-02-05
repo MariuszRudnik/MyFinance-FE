@@ -12,7 +12,7 @@ import style from '../../Assets/css/style.module.css';
 import Button from '../../Atoms/Button/Button';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { useMutation, useQuery } from 'react-query';
+import { useMutation, useQuery, useQueryClient } from 'react-query';
 import { toast } from 'react-toastify';
 import * as Yup from 'yup';
 import styled from 'styled-components/macro';
@@ -54,14 +54,26 @@ export const AddTransactionCategory = ({
   parentCategoryLoading,
   categoryLoading
 }: Proto) => {
+  const queryClient = useQueryClient();
   const { id } = useParams();
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
   const [idParentCategory, setIdParentCategory] = useState('');
   const [idCategory, setIdCategory] = useState('');
   const [newData, setNewData] = useState(new Date().toJSON().slice(0, 10).replace(/-/g, '-'));
+  const notify = () =>
+    toast.success(`${t('Congratulations! Categories added.')}`, {
+      position: 'top-right',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'light'
+    });
   const [kindOfOperation, setKindOfOperation] = useState('expenditure');
-  const { mutate } = useMutation(addTransactionComponent);
+
   let filterCategory: Category[] | [] = [];
 
   if (!parentCategoryLoading) {
@@ -101,17 +113,12 @@ export const AddTransactionCategory = ({
     }
   }, [idParentCategory != '']);
 
-  const notify = () =>
-    toast.success(`${t('Congratulations! Categories added.')}`, {
-      position: 'top-right',
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: 'light'
-    });
+  const { mutate } = useMutation(addTransactionComponent, {
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['operations', { id }] });
+      notify();
+    }
+  });
 
   const SignupSchema = Yup.object().shape({
     name: Yup.string()
@@ -141,7 +148,6 @@ export const AddTransactionCategory = ({
         initialValues={initialValues}
         validationSchema={SignupSchema}
         onSubmit={(values, actions) => {
-          notify();
           values.parentCategory = idParentCategory;
           values.operations = kindOfOperation;
           values.data = newData;

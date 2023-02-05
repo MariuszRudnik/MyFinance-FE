@@ -1,5 +1,5 @@
 // @types/react/index.d.ts
-import Modal from './components/Modal/Modal';
+import { ProviderIcon } from './components/Context/SelectProviderIcon';
 
 declare module 'react' {
   interface Attributes {
@@ -32,10 +32,12 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <QueryClientProvider client={queryClient}>
-        <Suspense fallback={<LoadingElements />}>
-          <Root />
-          <ToastContainer />
-        </Suspense>
+        <ProviderIcon>
+          <Suspense fallback={<LoadingElements />}>
+            <Root />
+            <ToastContainer />
+          </Suspense>
+        </ProviderIcon>
       </QueryClientProvider>
     </Provider>
   </React.StrictMode>

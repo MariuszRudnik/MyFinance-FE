@@ -33,8 +33,11 @@ export const getCategory = async (key: any) => {
 };
 
 export const getOperations = async (key: any) => {
+  const pageNumber = key.queryKey[2];
+
   const { id } = key.queryKey[1];
-  const res = await fetch(UrlAddress.Transaction + id, {
+
+  const res = await fetch(`${UrlAddress.Transaction}${id}/${pageNumber}`, {
     method: 'GET',
     credentials: 'include',
     headers: { 'Content-Type': 'application/json' }

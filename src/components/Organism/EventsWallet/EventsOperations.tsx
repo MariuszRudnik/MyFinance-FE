@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CircleIcon from '../../Atoms/ButtonIcon/CircleIcon';
 import smile from '../../Assets/icons/smile.svg';
 import { theme } from '../../../theme/mainTheme';
@@ -41,12 +41,13 @@ const Text = styled.p`
 
 export const EventsOperations = () => {
   const { id } = useParams();
-  const { data, isLoading, error } = useQuery(['operations', { id }], getOperations);
-  console.log(data);
+  const [pageNumber, setPageNumber] = useState(0);
+  const { data, isLoading, error } = useQuery(['operations', { id }, pageNumber], getOperations);
 
   let transaction = [];
   if (data != undefined) {
-    transaction = data.map((input: Operations) => (
+    const { transactionItems, pagesCount } = data;
+    transaction = transactionItems.map((input: Operations) => (
       <div key={input.id}>
         <OperationsWrapper>
           <OperationWrapper>
