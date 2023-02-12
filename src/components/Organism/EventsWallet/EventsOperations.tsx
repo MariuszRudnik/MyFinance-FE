@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useReducer, useState } from 'react';
 import CircleIcon from '../../Atoms/ButtonIcon/CircleIcon';
 import smile from '../../Assets/icons/smile.svg';
 import { theme } from '../../../theme/mainTheme';
@@ -9,6 +9,9 @@ import { useParams } from 'react-router-dom';
 import { getOperations } from '../../Utils/featchHelper';
 import { Operations } from '../../../types/Category/GetOperations';
 import { formatCurrency } from '../../Utils/formatCurrency';
+interface ReducerType {
+  type: string;
+}
 
 const OperationWrapper = styled.div`
   display: flex;
@@ -38,11 +41,46 @@ const Text = styled.p`
   font-size: ${theme.fontSize.s};
   text-transform: capitalize;
 `;
+const ChangePageDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+const actionType = {
+  add: 'ADD',
+  subtraction: 'SUBTRACTION'
+};
 
 export const EventsOperations = () => {
   const { id } = useParams();
-  const [pageNumber, setPageNumber] = useState(0);
-  const { data, isLoading, error } = useQuery(['operations', { id }, pageNumber], getOperations);
+  const [pageNumberQuery, setPageNumberQuery] = useState(0);
+  const { data, isLoading, error } = useQuery(
+    ['operations', { id }, pageNumberQuery],
+    getOperations
+  );
+
+  const reducer = (state: number, action: ReducerType) => {
+    switch (action.type) {
+      case actionType.add:
+        if (state >= data.pagesCount) {
+          state = data.pagesCount;
+          return state;
+        }
+        state++;
+        setPageNumberQuery(state - 1);
+        return state;
+      case actionType.subtraction:
+        if (state <= 1) {
+          state = 1;
+          return state;
+        }
+        state--;
+        setPageNumberQuery(state - 1);
+        return state;
+    }
+    return state;
+  };
+  const [state, dispatch] = useReducer(reducer, 1);
 
   let transaction = [];
   if (data != undefined) {
@@ -70,5 +108,14 @@ export const EventsOperations = () => {
     ));
   }
 
-  return <>{transaction}</>;
+  return (
+    <>
+      {transaction}
+      <ChangePageDiv>
+        <button onClick={() => dispatch({ type: actionType.subtraction })}> - </button>
+        <p> {state} </p>
+        <button onClick={() => dispatch({ type: actionType.add })}> + </button>
+      </ChangePageDiv>
+    </>
+  );
 };

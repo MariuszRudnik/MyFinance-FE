@@ -4,20 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="I was adding icon for category.">
-      <change afterPath="$PROJECT_DIR$/src/components/Atoms/DarkModeCheckbox/Checkbox.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Atoms/DarkModeCheckbox/Heading.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Context/MainProvider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theme/GlobalDarkStyle.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theme/darkTheme.ts" afterDir="false" />
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="I was created dark moder">
+      <change afterPath="$PROJECT_DIR$/src/components/Organism/D3/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Organism/D3test/d3.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Organism/D3test/data/buildings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Wallet/CategoryPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Wallet/CategoryPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Context/SelectProviderIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Context/SelectProviderIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/MainTemplate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/MainTemplate.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/GlobalStyle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/GlobalStyle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/D3/d3.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/D3/d3.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsOperations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsOperations.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Utils/featchHelper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Utils/featchHelper.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +46,7 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "16.15.1",
     "javascript.nodejs.core.library.typings.version": "16.18.11",
-    "last_opened_file_path": "/Users/mariusz/Documents/GitHub/NoteBook-FE/src/theme",
+    "last_opened_file_path": "/Users/mariusz/Documents/GitHub/NoteBook-FE/src/components/Organism",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -68,21 +65,21 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Organism" />
+      <recent name="$PROJECT_DIR$/src/components/Organism/D3" />
       <recent name="$PROJECT_DIR$/src/theme" />
       <recent name="$PROJECT_DIR$/src/components/Atoms/DarkModeCheckbox" />
       <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/src/components/Atoms" />
-      <recent name="$PROJECT_DIR$/src/components/Atoms/Input2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Organism/D3" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/components/Assets/icons" />
       <recent name="$PROJECT_DIR$/src/components/Assets" />
       <recent name="$PROJECT_DIR$/src/components/Atoms" />
-      <recent name="$PROJECT_DIR$/src/components/Molecules/AddTransation" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.storybook">
+  <component name="RunManager" selected="npm.start">
     <configuration name="Testing button (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -146,8 +143,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.storybook" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.storybook" />
         <item itemvalue="Jest.Testing button (1)" />
         <item itemvalue="Jest.Testing button.should renders the component (1)" />
         <item itemvalue="Jest.Testing button.should renders the component" />
@@ -219,7 +216,10 @@
       <workItem from="1674540333298" duration="233000" />
       <workItem from="1674713756957" duration="186000" />
       <workItem from="1674718707585" duration="117179000" />
-      <workItem from="1675580978758" duration="11790000" />
+      <workItem from="1675580978758" duration="20542000" />
+      <workItem from="1675795688204" duration="5546000" />
+      <workItem from="1675849766564" duration="18610000" />
+      <workItem from="1676039082963" duration="15970000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -508,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675587556522</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="I was created dark moder">
+      <created>1675595858854</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1675595858854</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -526,7 +533,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create Login.tsx" />
     <MESSAGE value="Add Formik" />
     <MESSAGE value="Interface" />
     <MESSAGE value="Create AddWalletComponents.tsx" />
@@ -551,6 +557,7 @@
     <MESSAGE value="Add Modal.tsx" />
     <MESSAGE value="I was working on Operations.tsx" />
     <MESSAGE value="I was adding icon for category." />
-    <option name="LAST_COMMIT_MESSAGE" value="I was adding icon for category." />
+    <MESSAGE value="I was created dark moder" />
+    <option name="LAST_COMMIT_MESSAGE" value="I was created dark moder" />
   </component>
 </project>
