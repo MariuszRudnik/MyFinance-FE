@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="I created a chart">
-      <change afterPath="$PROJECT_DIR$/src/components/Molecules/SelectorsMonthAndYear/Selectors.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Molecules/SelectorsMonthAndYear/SelectorsMonthAndYear.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Molecules/BarChart/BarChart.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Molecules/BarChart/BarChart.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Organism/ChartModule/chartModule.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddTransation/AddTransactionComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddTransation/AddTransactionComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Organism/D3/d3.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/D3/d3.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Operations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Operations.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/SelectorsMonthAndYear/SelectorsMonthAndYear.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/SelectorsMonthAndYear/SelectorsMonthAndYear.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/D3/d3.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/D3/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/ChartModule/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/D3test/d3.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/D3test/data/buildings.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,14 +72,41 @@
       <recent name="$PROJECT_DIR$/src/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Molecules/BarChart" />
       <recent name="$PROJECT_DIR$/src/components/Molecules/SelectorsMonthAndYear" />
       <recent name="$PROJECT_DIR$/src/components/Organism/D3" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/components/Assets/icons" />
-      <recent name="$PROJECT_DIR$/src/components/Assets" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.Selectors.disables years before 2020 and after 2023">
+  <component name="RunManager" selected="Jest.renders a bar chart">
+    <configuration name="BarChart" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/components/Molecules/BarChart/BarChart.test.tsx" />
+      <test-names>
+        <test-name value="BarChart" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="BarChart.should render without crashing" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/Molecules/BarChart/BarChart.test.tsx" />
+      <test-names>
+        <test-name value="BarChart" />
+        <test-name value="should render without crashing" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="Selectors" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -85,19 +117,6 @@
       <test-file value="$PROJECT_DIR$/src/components/Molecules/SelectorsMonthAndYear/Selectors.test.tsx" />
       <test-names>
         <test-name value="Selectors" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="SelectorsMonthAndYear" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/components/Molecules/SelectorsMonthAndYear/Selectors.test.tsx" />
-      <test-names>
-        <test-name value="SelectorsMonthAndYear" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -115,33 +134,26 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
+    <configuration name="renders a bar chart" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="storybook" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="storybook" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/Molecules/BarChart/BarChart.test.tsx" />
+      <test-names>
+        <test-name value="renders a bar chart" />
+      </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.renders a bar chart" />
+        <item itemvalue="Jest.BarChart.should render without crashing" />
+        <item itemvalue="Jest.BarChart" />
         <item itemvalue="Jest.Selectors.disables years before 2020 and after 2023" />
         <item itemvalue="Jest.Selectors" />
-        <item itemvalue="Jest.SelectorsMonthAndYear" />
-        <item itemvalue="npm.start" />
-        <item itemvalue="npm.storybook" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +225,7 @@
       <workItem from="1675580978758" duration="20542000" />
       <workItem from="1675795688204" duration="5546000" />
       <workItem from="1675849766564" duration="18610000" />
-      <workItem from="1676039082963" duration="57646000" />
+      <workItem from="1676039082963" duration="65121000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -516,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676194264776</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="I created a chart">
+      <created>1676475429624</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1676475429624</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

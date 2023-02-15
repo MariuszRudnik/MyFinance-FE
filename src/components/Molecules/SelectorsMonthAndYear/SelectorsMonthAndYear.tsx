@@ -12,11 +12,20 @@ const Selected = styled.select`
   border-radius: 50px;
   margin: 5px;
 `;
+const SearchWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+`;
+const Wrapper = styled.div`
+  margin: 5px 0 15px 0;
+`;
 
 export const SelectorsMonthAndYear = ({ theNewDate, theOldestDate, setMonth, setYear }: any) => {
   const oldestDate = new Date(theOldestDate);
   const newDay = new Date(theNewDate);
-  const min = new Date(oldestDate.getFullYear(), oldestDate.getMonth(), 1);
+  const min = new Date(oldestDate.getFullYear(), oldestDate.getMonth() - 1, 1);
   const max = new Date(newDay.getFullYear(), newDay.getMonth(), 30);
 
   const [selectedMonth, setSelectedMonth] = useState(new Date().getMonth());
@@ -57,38 +66,40 @@ export const SelectorsMonthAndYear = ({ theNewDate, theOldestDate, setMonth, set
   ];
 
   return (
-    <div>
+    <SearchWrapper>
       <Paragraph>You select the year and month that give you want to check.</Paragraph>
+      <Wrapper>
+        <Selected id="year-select" value={selectedYear} onChange={handleYearChange}>
+          {years.map((year) => (
+            <option
+              key={year}
+              value={year}
+              disabled={
+                new Date(year, selectedMonth) < min || new Date(year, selectedMonth, 31) > max
+              }>
+              {year}
+            </option>
+          ))}
+        </Selected>
 
-      <Selected id="year-select" value={selectedYear} onChange={handleYearChange}>
-        {years.map((year) => (
-          <option
-            key={year}
-            value={year}
-            disabled={
-              new Date(year, selectedMonth) < min || new Date(year, selectedMonth, 31) > max
-            }>
-            {year}
-          </option>
-        ))}
-      </Selected>
+        <Selected id="month-select" value={selectedMonth} onChange={handleMonthChange}>
+          {months.map((month) => (
+            <option
+              key={month.value}
+              value={month.value}
+              disabled={
+                new Date(selectedYear, month.value) < min ||
+                new Date(selectedYear, month.value) > max
+              }>
+              {month.label}
+            </option>
+          ))}
+        </Selected>
 
-      <Selected id="month-select" value={selectedMonth} onChange={handleMonthChange}>
-        {months.map((month) => (
-          <option
-            key={month.value}
-            value={month.value}
-            disabled={
-              new Date(selectedYear, month.value) < min || new Date(selectedYear, month.value) > max
-            }>
-            {month.label}
-          </option>
-        ))}
-      </Selected>
-
-      <Button secondary={true} onClick={handleClick}>
-        Search
-      </Button>
-    </div>
+        <Button secondary={true} onClick={handleClick}>
+          Search
+        </Button>
+      </Wrapper>
+    </SearchWrapper>
   );
 };

@@ -14,7 +14,7 @@ import { navigate } from '@storybook/addon-links';
 import CircleIcon from '../components/Atoms/ButtonIcon/CircleIcon';
 import plus from '../components/Assets/icons/plus.svg';
 import { ButtonPlus } from '../components/Atoms/ButtonPlus/ButtonPlus';
-import { D3 } from '../components/Organism/D3/d3';
+import { ChartModule } from '../components/Organism/ChartModule/chartModule';
 
 const ImgCenter = styled.img`
   margin: 0 auto;
@@ -30,7 +30,7 @@ export const Operations = () => {
   return (
     <>
       <Content heading="Chart Wallet">
-        <D3 />
+        <ChartModule />
       </Content>
       <Content heading="Wallet operations" widthContent={'530px'}>
         <EventsOperations />
