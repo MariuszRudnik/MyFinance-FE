@@ -116,6 +116,7 @@ export const AddTransactionCategory = ({
   const { mutate } = useMutation(addTransactionComponent, {
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['operations', { id }] });
+      queryClient.invalidateQueries({ queryKey: 'sumTransaction' });
       notify();
     }
   });

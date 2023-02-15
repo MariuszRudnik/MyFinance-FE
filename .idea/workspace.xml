@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="I was created dark moder">
-      <change afterPath="$PROJECT_DIR$/src/components/Organism/D3/data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Organism/D3test/d3.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Organism/D3test/data/buildings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="I created a chart">
+      <change afterPath="$PROJECT_DIR$/src/components/Molecules/SelectorsMonthAndYear/Selectors.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Molecules/SelectorsMonthAndYear/SelectorsMonthAndYear.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddTransation/AddTransactionComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddTransation/AddTransactionComponent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Organism/D3/d3.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/D3/d3.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsOperations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsOperations.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Utils/featchHelper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Utils/featchHelper.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +20,7 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feat#11_add_transaction" />
+        <entry key="$PROJECT_DIR$" value="feat#12_dark_mode" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -72,52 +67,51 @@
       <recent name="$PROJECT_DIR$/src/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Molecules/SelectorsMonthAndYear" />
       <recent name="$PROJECT_DIR$/src/components/Organism/D3" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/components/Assets/icons" />
       <recent name="$PROJECT_DIR$/src/components/Assets" />
-      <recent name="$PROJECT_DIR$/src/components/Atoms" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
-    <configuration name="Testing button (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.Selectors.disables years before 2020 and after 2023">
+    <configuration name="Selectors" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddCategory.test.tsx" />
+      <test-file value="$PROJECT_DIR$/src/components/Molecules/SelectorsMonthAndYear/Selectors.test.tsx" />
       <test-names>
-        <test-name value="Testing button" />
+        <test-name value="Selectors" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Testing button.should renders the component (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="SelectorsMonthAndYear" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/components/Molecules/SelectorsMonthAndYear/Selectors.test.tsx" />
+      <test-names>
+        <test-name value="SelectorsMonthAndYear" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Selectors.disables years before 2020 and after 2023" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddCategory.test.tsx" />
+      <test-file value="$PROJECT_DIR$/src/components/Molecules/SelectorsMonthAndYear/Selectors.test.tsx" />
       <test-names>
-        <test-name value="Testing button" />
-        <test-name value="should renders the component" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Testing button.should renders the component" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/Atoms/ButtonIcon/ButtonIcon.test.tsx" />
-      <test-names>
-        <test-name value="Testing button" />
-        <test-name value="should renders the component" />
+        <test-name value="Selectors" />
+        <test-name value="disables years before 2020 and after 2023" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -143,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.Selectors.disables years before 2020 and after 2023" />
+        <item itemvalue="Jest.Selectors" />
+        <item itemvalue="Jest.SelectorsMonthAndYear" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.storybook" />
-        <item itemvalue="Jest.Testing button (1)" />
-        <item itemvalue="Jest.Testing button.should renders the component (1)" />
-        <item itemvalue="Jest.Testing button.should renders the component" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +213,7 @@
       <workItem from="1675580978758" duration="20542000" />
       <workItem from="1675795688204" duration="5546000" />
       <workItem from="1675849766564" duration="18610000" />
-      <workItem from="1676039082963" duration="15970000" />
+      <workItem from="1676039082963" duration="57646000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -515,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675595858854</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="I created a chart">
+      <created>1676194264776</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1676194264776</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +534,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add Formik" />
     <MESSAGE value="Interface" />
     <MESSAGE value="Create AddWalletComponents.tsx" />
     <MESSAGE value="Work at List of Wallet" />
@@ -558,6 +558,7 @@
     <MESSAGE value="I was working on Operations.tsx" />
     <MESSAGE value="I was adding icon for category." />
     <MESSAGE value="I was created dark moder" />
-    <option name="LAST_COMMIT_MESSAGE" value="I was created dark moder" />
+    <MESSAGE value="I created a chart" />
+    <option name="LAST_COMMIT_MESSAGE" value="I created a chart" />
   </component>
 </project>
