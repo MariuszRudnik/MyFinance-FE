@@ -4,17 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="I created a chart">
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="I fixed a chart">
       <change afterPath="$PROJECT_DIR$/src/components/Molecules/BarChart/BarChart.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Molecules/BarChart/BarChart.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Organism/ChartModule/chartModule.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Molecules/EditTransaction/EditTransaction.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Molecules/EditTransaction/edit.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Operations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Operations.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Molecules/SelectorsMonthAndYear/SelectorsMonthAndYear.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/SelectorsMonthAndYear/SelectorsMonthAndYear.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Organism/D3/d3.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Organism/D3/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/ChartModule/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Organism/D3test/d3.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Organism/D3test/data/buildings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/ChartModule/chartModule.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/ChartModule/chartModule.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsOperations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsOperations.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Utils/featchHelper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Utils/featchHelper.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +223,7 @@
       <workItem from="1675580978758" duration="20542000" />
       <workItem from="1675795688204" duration="5546000" />
       <workItem from="1675849766564" duration="18610000" />
-      <workItem from="1676039082963" duration="65121000" />
+      <workItem from="1676039082963" duration="72887000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -535,7 +533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676475429624</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="I fixed a chart">
+      <created>1676487767165</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1676487767165</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,7 +558,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Interface" />
     <MESSAGE value="Create AddWalletComponents.tsx" />
     <MESSAGE value="Work at List of Wallet" />
     <MESSAGE value="Fixed Redux" />
@@ -578,6 +582,7 @@
     <MESSAGE value="I was adding icon for category." />
     <MESSAGE value="I was created dark moder" />
     <MESSAGE value="I created a chart" />
-    <option name="LAST_COMMIT_MESSAGE" value="I created a chart" />
+    <MESSAGE value="I fixed a chart" />
+    <option name="LAST_COMMIT_MESSAGE" value="I fixed a chart" />
   </component>
 </project>

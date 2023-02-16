@@ -42,7 +42,6 @@ export const SelectorsMonthAndYear = ({ theNewDate, theOldestDate, setMonth, set
   const handleClick = () => {
     setMonth(selectedMonth + 1);
     setYear(selectedYear);
-    console.log(selectedYear, selectedMonth + 1);
   };
 
   const years = [];

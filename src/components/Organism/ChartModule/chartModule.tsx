@@ -35,9 +35,7 @@ const NewParagraph = styled(Paragraph)`
 export const ChartModule = () => {
   const toDay = new Date();
   const { id } = useParams();
-  const [month, setMonth] = useState(
-    toDay.getMonth() <= 9 ? `0${toDay.getMonth() + 1}` : `${toDay.getMonth() + 1}`
-  );
+  const [month, setMonth] = useState(toDay.getMonth() + 1);
   const [year, setYear] = useState(toDay.getFullYear());
   const { data, isLoading } = useQuery(['sumTransaction', id, month, year], getSumOperationsMonth);
 

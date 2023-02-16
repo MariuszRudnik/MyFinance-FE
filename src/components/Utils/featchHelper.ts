@@ -65,9 +65,16 @@ export const getSumOperationsMonth = async (key: any) => {
   const id = key.queryKey[1];
   const month = key.queryKey[2];
   const year = key.queryKey[3];
+  let fullMonth = '';
+  if (month <= 9) {
+    fullMonth = '0' + month;
+  } else {
+    fullMonth = month;
+  }
+
   const { data } = await axios({
     method: 'get',
-    url: `${process.env.REACT_APP_SUM_TRANSACTION_MONTH}${id}/${month}/${year}`,
+    url: `${process.env.REACT_APP_SUM_TRANSACTION_MONTH}${id}/${fullMonth}/${year}`,
     withCredentials: true,
     headers: { 'Content-Type': 'application/json' }
   });
