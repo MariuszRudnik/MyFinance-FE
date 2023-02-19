@@ -1,7 +1,25 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
+import Button from '../../Atoms/Button/Button';
+import styled from 'styled-components/macro';
+import Paragraph from '../../Atoms/Paragraph/Paragraph';
+import { theme } from '../../../theme/mainTheme';
+import { useMutation, useQuery, useQueryClient } from 'react-query';
+import axios from 'axios';
+import { deleteTransaction, getCategory, getParentCategory } from '../../Utils/featchHelper';
+import SelectForm from '../SelecteInlut/SelectForm';
 
+interface ParentCategoryData {
+  icon: string;
+  id: string;
+  name: string;
+  plannedBudget: string;
+}
+interface Transaction {
+  id: string;
+  transaction: string;
+}
 interface Values {
   category: string;
   date: string;
@@ -11,84 +29,62 @@ interface Values {
   parentCategory: string;
   price: number;
 }
+const WrapperForm = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
+const NewButton = styled(Button)`
+  background-color: ${theme.error};
+  &:hover {
+    background-color: ${theme.error};
+    border: 3px solid ${theme.approve};
+  }
+`;
 
-const initialValues: Values = {
-  category: '',
-  date: '',
-  description: '',
-  name: '',
-  operations: '',
-  parentCategory: '',
-  price: 0
-};
-export const EditTransaction = () => {
-  const { idTransaction } = useParams();
-  const onSubmit = (values: Values) => {
-    console.log(values);
-  };
-  const FormComponent = () => (
-    <Formik initialValues={initialValues} onSubmit={onSubmit}>
-      {({ isSubmitting }) => (
-        <Form>
-          <div>
-            <label htmlFor="name">Name</label>
-            <Field type="text" name="name" />
-            <ErrorMessage name="name" />
-          </div>
-
-          <div>
-            <label htmlFor="description">Description</label>
-            <Field type="text" name="description" />
-            <ErrorMessage name="description" />
-          </div>
-
-          <div>
-            <label htmlFor="price">Price</label>
-            <Field type="number" name="price" />
-            <ErrorMessage name="price" />
-          </div>
-
-          <div>
-            <label htmlFor="date">Date</label>
-            <Field type="date" name="date" />
-            <ErrorMessage name="date" />
-          </div>
-
-          <div>
-            <label htmlFor="category">Category</label>
-            <Field as="select" name="category">
-              <option value="">Select a category</option>
-              <option value="krowa">Krowa</option>
-              <option value="miasto">Miasto</option>
-              <option value="jedzenie">Jedzenie</option>
-            </Field>
-            <ErrorMessage name="category" />
-          </div>
-
-          <div>
-            <label htmlFor="parentCategory">Parent Category</label>
-            <Field as="select" name="parentCategory">
-              <option value="">Select a parent category</option>
-              <option value="krowa">Krowa</option>
-              <option value="miasto">Miasto</option>
-              <option value="jedzenie">Jedzenie</option>
-            </Field>
-            <ErrorMessage name="parentCategory" />
-          </div>
-
-          <div>
-            <label htmlFor="operations">Operations</label>
-            <Field type="text" name="operations" />
-            <ErrorMessage name="operations" />
-          </div>
-
-          <button type="submit" disabled={isSubmitting}>
-            Submit
-          </button>
-        </Form>
-      )}
-    </Formik>
+export const EditTransaction = ({ data }: any) => {
+  const { id, idTransaction }: any = useParams();
+  const queryClient = useQueryClient();
+  const navigate = useNavigate();
+  const { data: dataParentCategory, isLoading: loadingParentCategory }: any = useQuery(
+    ['parentCategory', { id }],
+    getParentCategory
+  );
+  const { data: categories, isLoading: loadingCategory }: any = useQuery(
+    ['category', { id }],
+    getCategory
   );
 
-  return <>{<FormComponent />}</>;
+  const { mutate, isLoading, isError, isSuccess } = useMutation(deleteTransaction, {
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['operations', { id }] });
+      queryClient.invalidateQueries({ queryKey: 'sumTransaction' });
+    }
+  });
+  const handleDelete = (transaction: Transaction) => {
+    mutate([transaction.id, transaction.transaction]);
+    navigate('../');
+  };
+
+  return (
+    <WrapperForm>
+      <div>
+        <Paragraph>Edit transactions :</Paragraph>
+        {!loadingCategory && !loadingParentCategory ? (
+          <SelectForm
+            categories={categories}
+            parentCategories={dataParentCategory}
+            data={data}></SelectForm>
+        ) : null}
+      </div>
+      <div>
+        <Paragraph>Click button if you want delete transaction.</Paragraph>
+        <NewButton
+          secondary={true}
+          onClick={() => handleDelete({ id, transaction: idTransaction })}>
+          Delete
+        </NewButton>
+      </div>
+    </WrapperForm>
+  );
 };

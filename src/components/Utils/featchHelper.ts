@@ -81,3 +81,9 @@ export const getSumOperationsMonth = async (key: any) => {
 
   return data;
 };
+
+export const deleteTransaction = async ([id, transaction]: [string, string]): Promise<any> => {
+  const url = `${process.env.REACT_APP_SUM_TRANSACTION_DELETE}${id}/${transaction}`;
+  const response = await axios.delete(url, { withCredentials: true });
+  return response.data;
+};

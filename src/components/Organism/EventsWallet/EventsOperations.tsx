@@ -85,8 +85,10 @@ export const EventsOperations = () => {
     ['operations', { id }, pageNumberQuery],
     getOperations
   );
+  const [transactionData, setTransactionData] = useState([]);
 
   const editTransaction = (item: any) => {
+    setTransactionData(item);
     navigate(`./edit/${item.id}`);
   };
 
@@ -120,7 +122,18 @@ export const EventsOperations = () => {
       <div key={item.id}>
         <OperationsWrapper>
           <OperationWrapper
-            onClick={() => editTransaction({ id: item.id, operations: item.operations })}>
+            onClick={() =>
+              editTransaction({
+                id: item.id,
+                operations: item.operations,
+                category: item.category,
+                data: item.date,
+                description: item.description,
+                name: item.name,
+                parentCategory: item.parentCategory,
+                price: item.price
+              })
+            }>
             <div>
               <CircleIcon
                 color={item.operations == 'expenditure' ? theme.quaternary : theme.approve}
@@ -156,7 +169,7 @@ export const EventsOperations = () => {
           path={`/edit/:idTransaction`}
           element={
             <Modal>
-              <EditTransaction />
+              <EditTransaction data={transactionData} />
             </Modal>
           }></Route>
       </Routes>
