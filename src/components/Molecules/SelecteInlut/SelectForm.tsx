@@ -40,7 +40,6 @@ const SelectedWrapper = styled.select`
   background-repeat: no-repeat;
   background-size: 15px;
 `;
-
 const ItemWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -48,7 +47,6 @@ const ItemWrapper = styled.div`
   justify-content: center;
   gap: 2px;
 `;
-
 const RadioWrapper = styled.div`
   margin: 10px;
 `;

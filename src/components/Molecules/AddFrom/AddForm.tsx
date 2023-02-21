@@ -6,6 +6,10 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { UrlAddress } from '../../../types/UrlAddress';
 import { useTranslation } from 'react-i18next';
 import { toast } from 'react-toastify';
+import Button from '../../Atoms/Button/Button';
+import { InputX } from '../../Atoms/Input2/Input2';
+import styled from 'styled-components/macro';
+import { theme } from '../../../theme/mainTheme';
 
 type Category = {
   id: string;
@@ -14,20 +18,50 @@ type Category = {
   plannedBudgetValue: number | null;
   parentCategory: string;
 };
-
 type ParentCategory = {
   id: string;
   name: string;
   plannedBudget: number | null;
   icon: string;
 };
-
 interface SelectFormProps {
   categories: Category[];
   parentCategories: ParentCategory[];
 }
+const SelectedWrapper = styled.select`
+  padding: 10px 20px 10px 40px;
+  font-size: ${({ theme }) => theme.fontSize.x};
+  font-weight: ${({ theme }) => theme.regular};
+  background-color: ${({ theme }) => theme.background};
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  width: 220px;
+  height: 50px;
+  background-position: 15px 50%;
+  background-repeat: no-repeat;
+  background-size: 15px;
+`;
+const ItemWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+`;
+const RadioWrapper = styled.div`
+  margin: 10px;
+`;
+const LabelParagraph = styled.label`
+  font-family: 'Roboto-Regular', 'Roboto-Bold', 'Roboto-Italic', 'Roboto-Light', sans-serif;
+  font-size: ${theme.fontSize.s};
+  font-weight: ${theme.bold};
+  color: ${({ color }) => (color ? color : theme.textColor)};
+  word-wrap: break-word;
+  position: relative;
+`;
+
 const addTransactionComponent = async (data: any) => {
-  console.log(data[1]);
   const res = await fetch(`${UrlAddress.Transaction}add/${data[0]}`, {
     method: 'POST',
     body: JSON.stringify(data[1]),
@@ -88,42 +122,9 @@ export const AddForm: React.FC<SelectFormProps> = ({ categories, parentCategorie
 
   return (
     <form onSubmit={formik.handleSubmit}>
-      <div>
-        <label htmlFor="parentCategory">Parent Category:</label>
-        <select
-          id="parentCategory"
-          name="parentCategory"
-          onChange={(e) => {
-            setParentCategory(e.target.value);
-            formik.setFieldValue('parentCategory', e.target.value);
-          }}
-          onBlur={formik.handleBlur}
-          value={formik.values.parentCategory}>
-          {parentCategories.map((parentCategory) => (
-            <option key={parentCategory.id} value={parentCategory.id}>
-              {parentCategory.name}
-            </option>
-          ))}
-        </select>
-      </div>
-      <div>
-        <label htmlFor="category">Category:</label>
-        <select
-          id="category"
-          name="category"
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          value={formik.values.category}>
-          {filteredCategories.map((category) => (
-            <option key={category.id} value={category.id}>
-              {category.name}
-            </option>
-          ))}
-        </select>
-      </div>
-      <div>
-        <label htmlFor="name">Name:</label>
-        <input
+      <ItemWrapper>
+        <LabelParagraph htmlFor="name">Name:</LabelParagraph>
+        <InputX
           type="text"
           id="name"
           name="name"
@@ -132,21 +133,10 @@ export const AddForm: React.FC<SelectFormProps> = ({ categories, parentCategorie
           value={formik.values.name}
         />
         {formik.touched.name && formik.errors.name ? <div>{formik.errors.name}</div> : null}
-      </div>
-      <div>
-        <label htmlFor="description">Description:</label>
-        <input
-          type="text"
-          id="description"
-          name="description"
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          value={formik.values.description}
-        />
-      </div>
-      <div>
-        <label htmlFor="price">Price:</label>
-        <input
+      </ItemWrapper>
+      <ItemWrapper>
+        <LabelParagraph htmlFor="price">Price:</LabelParagraph>
+        <InputX
           type="number"
           id="price"
           name="price"
@@ -156,10 +146,10 @@ export const AddForm: React.FC<SelectFormProps> = ({ categories, parentCategorie
           step="0.01"
           min="0"
         />
-      </div>
-      <div>
-        <label htmlFor="date">Date:</label>
-        <input
+      </ItemWrapper>
+      <ItemWrapper>
+        <LabelParagraph htmlFor="date">Date:</LabelParagraph>
+        <InputX
           type="date"
           id="data"
           name="data"
@@ -167,7 +157,7 @@ export const AddForm: React.FC<SelectFormProps> = ({ categories, parentCategorie
           onBlur={formik.handleBlur}
           value={formik.values.data}
         />
-      </div>
+      </ItemWrapper>
       <div role="group">
         <label>
           <input
@@ -190,7 +180,54 @@ export const AddForm: React.FC<SelectFormProps> = ({ categories, parentCategorie
           Expenditure
         </label>
       </div>
-      <button type="submit">Submit</button>
+      <ItemWrapper>
+        <LabelParagraph htmlFor="parentCategory">Parent Category:</LabelParagraph>
+        <SelectedWrapper
+          id="parentCategory"
+          name="parentCategory"
+          onChange={(e) => {
+            setParentCategory(e.target.value);
+            formik.setFieldValue('parentCategory', e.target.value);
+          }}
+          onBlur={formik.handleBlur}
+          value={formik.values.parentCategory}>
+          {parentCategories.map((parentCategory) => (
+            <option key={parentCategory.id} value={parentCategory.id}>
+              {parentCategory.name}
+            </option>
+          ))}
+        </SelectedWrapper>
+      </ItemWrapper>
+      <ItemWrapper>
+        <LabelParagraph htmlFor="category">Category:</LabelParagraph>
+        <SelectedWrapper
+          id="category"
+          name="category"
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.category}>
+          {filteredCategories.map((category) => (
+            <option key={category.id} value={category.id}>
+              {category.name}
+            </option>
+          ))}
+        </SelectedWrapper>
+      </ItemWrapper>
+      <ItemWrapper>
+        <LabelParagraph htmlFor="description">Description:</LabelParagraph>
+        <InputX
+          type="text"
+          id="description"
+          name="description"
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.description}
+        />
+      </ItemWrapper>
+
+      <Button secondary={true} type="submit">
+        Submit
+      </Button>
     </form>
   );
 };

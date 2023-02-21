@@ -29,7 +29,10 @@ MyFinances to projekt powstały ...
 ### :camera: Screenshoty
 
 <div align="center">
-  <img src="./img/screen2.png" alt="" />
+  <img src="./img/4.png" alt="" />
+  <img src="./img/3.png" alt="" />
+  <img src="./img/2.png" alt="" />
+  <img src="./img/1.png" alt="" />
   <img src="./img/screen1.png" alt="" />
 </div>
 
