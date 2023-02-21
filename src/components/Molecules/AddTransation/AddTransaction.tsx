@@ -34,14 +34,6 @@ export const AddTransaction = () => {
     return (
       <>
         <React.Suspense>
-          {/* {!loadingCategory ? ( */}
-          {/*   <AddTransactionCategory */}
-          {/*     parentCategory={dataParentCategory} */}
-          {/*     category={dataCategory} */}
-          {/*     parentCategoryLoading={loadingParentCategory} */}
-          {/*     categoryLoading={loadingCategory} */}
-          {/*   /> */}
-          {/* ) : null} */}
           {!loadingParentCategory && !loadingCategory ? (
             <AddForm categories={dataCategory} parentCategories={dataParentCategory} />
           ) : null}

@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
-import { useFormik } from 'formik';
+import { ErrorMessage, useFormik } from 'formik';
+import * as Yup from 'yup';
+import { useMutation, useQueryClient } from 'react-query';
+import { useNavigate, useParams } from 'react-router-dom';
+import { UrlAddress } from '../../../types/UrlAddress';
+import { useTranslation } from 'react-i18next';
+import { toast } from 'react-toastify';
 
 type Category = {
   id: string;
@@ -20,32 +26,63 @@ interface SelectFormProps {
   categories: Category[];
   parentCategories: ParentCategory[];
 }
+const addTransactionComponent = async (data: any) => {
+  console.log(data[1]);
+  const res = await fetch(`${UrlAddress.Transaction}add/${data[0]}`, {
+    method: 'POST',
+    body: JSON.stringify(data[1]),
+    credentials: 'include',
+    headers: { 'Content-Type': 'application/json' }
+  });
+  return await res.json();
+};
 
 export const AddForm: React.FC<SelectFormProps> = ({ categories, parentCategories }) => {
+  const { id } = useParams();
+  const queryClient = useQueryClient();
+  const navigate = useNavigate();
+  const { t, i18n } = useTranslation();
+
   const [parentCategory, setParentCategory] = useState(parentCategories[0].id);
   const filteredCategories = categories.filter(
     (category) => category.parentCategory === parentCategory
   );
-  const userData = new Date();
-
+  const userDate = new Date();
+  const { mutate } = useMutation(addTransactionComponent, {
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['operations', { id }] });
+      queryClient.invalidateQueries({ queryKey: 'sumTransaction' });
+    }
+  });
+  const notify = () =>
+    toast.success(`${t('Congratulations! Categories added.')}`, {
+      position: 'top-right',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'light'
+    });
   const formik = useFormik({
     initialValues: {
-      category: filteredCategories[0].id,
-      parentCategory: parentCategories[0].id,
       name: '',
-      description: '',
       price: '',
-      date: userData.toISOString().substr(0, 10)
+      data: userDate.toISOString().substr(0, 10),
+      operations: 'expenditure',
+      description: '',
+      parentCategory: parentCategories[0].id,
+      category: filteredCategories[0].id
     },
+    validationSchema: Yup.object().shape({
+      name: Yup.string().min(3, 'Name must be at least 3 characters').required('Name is required')
+    }),
     onSubmit: (values) => {
-      const date = new Date(values.date);
-      const day = date.getDate();
-      const month = date.getMonth() + 1;
-      const year = date.getFullYear();
-      const formattedDate = `${day < 10 ? '0' + day : day}-${
-        month < 10 ? '0' + month : month
-      }-${year}`;
-      console.log({ ...values, date: formattedDate });
+      const date = new Date(values.data);
+      mutate([id, { ...values, data: date }]);
+      notify();
+      navigate('../');
     }
   });
 
@@ -62,7 +99,6 @@ export const AddForm: React.FC<SelectFormProps> = ({ categories, parentCategorie
           }}
           onBlur={formik.handleBlur}
           value={formik.values.parentCategory}>
-          <option value="">Select a parent category</option>
           {parentCategories.map((parentCategory) => (
             <option key={parentCategory.id} value={parentCategory.id}>
               {parentCategory.name}
@@ -78,7 +114,6 @@ export const AddForm: React.FC<SelectFormProps> = ({ categories, parentCategorie
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.category}>
-          <option value="">Select a category</option>
           {filteredCategories.map((category) => (
             <option key={category.id} value={category.id}>
               {category.name}
@@ -96,6 +131,7 @@ export const AddForm: React.FC<SelectFormProps> = ({ categories, parentCategorie
           onBlur={formik.handleBlur}
           value={formik.values.name}
         />
+        {formik.touched.name && formik.errors.name ? <div>{formik.errors.name}</div> : null}
       </div>
       <div>
         <label htmlFor="description">Description:</label>
@@ -117,18 +153,42 @@ export const AddForm: React.FC<SelectFormProps> = ({ categories, parentCategorie
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.price}
-        />{' '}
+          step="0.01"
+          min="0"
+        />
       </div>
       <div>
         <label htmlFor="date">Date:</label>
         <input
           type="date"
-          id="date"
-          name="date"
+          id="data"
+          name="data"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
-          value={formik.values.date}
+          value={formik.values.data}
         />
+      </div>
+      <div role="group">
+        <label>
+          <input
+            type="radio"
+            name="operations"
+            value="influence"
+            checked={formik.values.operations === 'influence'}
+            onChange={formik.handleChange}
+          />
+          Influence
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="operations"
+            value="expenditure"
+            checked={formik.values.operations === 'expenditure'}
+            onChange={formik.handleChange}
+          />
+          Expenditure
+        </label>
       </div>
       <button type="submit">Submit</button>
     </form>

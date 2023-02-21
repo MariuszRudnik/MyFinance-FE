@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="added new functions in transactions">
-      <change afterPath="$PROJECT_DIR$/dadaa.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Molecules/AddFrom/AddForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Molecules/AddFrom/Clock.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Molecules/BarChart/BarChart.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Molecules/SelecteInlut/SelectForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="fixed error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddFrom/AddForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddFrom/AddForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddTransation/AddTransaction.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddTransation/AddTransaction.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Molecules/EditTransaction/EditTransaction.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/EditTransaction/EditTransaction.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsOperations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsOperations.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Utils/featchHelper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Utils/featchHelper.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +218,7 @@
       <workItem from="1676039082963" duration="76800000" />
       <workItem from="1676723276062" duration="10671000" />
       <workItem from="1676783475315" duration="176000" />
-      <workItem from="1676784987300" duration="22586000" />
+      <workItem from="1676784987300" duration="29237000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -552,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676570714485</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="fixed error">
+      <created>1676835807287</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1676835807288</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -570,7 +567,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Work at List of Wallet" />
     <MESSAGE value="Fixed Redux" />
     <MESSAGE value="Fixed Redux new" />
     <MESSAGE value="Authentication with backend" />
@@ -595,6 +591,7 @@
     <MESSAGE value="I created a chart" />
     <MESSAGE value="I fixed a chart" />
     <MESSAGE value="added new functions in transactions" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new functions in transactions" />
+    <MESSAGE value="fixed error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed error" />
   </component>
 </project>
