@@ -19,16 +19,36 @@ import {
 } from './style/StyleAddWallet.style';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useMutation, useQueryClient } from 'react-query';
+import { UrlAddress } from '../../../types/UrlAddress';
+import axios from 'axios';
 
 interface MyFormValues {
   nameOfWallet: string;
   initialState: number;
   typeOfCurrency: string;
 }
+const addWalletRes = async (data: any) => {
+  try {
+    const res = await axios.post(`${process.env.REACT_APP_GET_WALLET}`, data, {
+      withCredentials: true,
+      headers: { 'Content-Type': 'application/json' }
+    });
+    return res.data;
+  } catch (error) {
+    console.error(error);
+  }
+};
 
 export const AddWalletComponents: React.FC<any> = ({ addWallet }: any) => {
   const { t, i18n } = useTranslation();
   const [addedWallet, setAddedWallet] = useState(false);
+  const queryClient = useQueryClient();
+  const { mutate } = useMutation(addWalletRes, {
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: 'getWallet' });
+    }
+  });
   const SignupSchema = Yup.object().shape({
     initialState: Yup.number().required('Must be number')
   });
@@ -64,7 +84,7 @@ export const AddWalletComponents: React.FC<any> = ({ addWallet }: any) => {
             };
 
             setAddedWallet(true);
-            addWallet(values);
+            mutate(values);
             actions.setSubmitting(false);
           }}>
           <StylForm as={Form}>

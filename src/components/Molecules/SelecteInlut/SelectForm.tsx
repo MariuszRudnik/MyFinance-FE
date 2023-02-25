@@ -4,6 +4,11 @@ import { InputX } from '../../Atoms/Input2/Input2';
 import Button from '../../Atoms/Button/Button';
 import styled from 'styled-components/macro';
 import { theme } from '../../../theme/mainTheme';
+import { useNavigate, useParams } from 'react-router-dom';
+import { useMutation, useQueryClient } from 'react-query';
+import { useTranslation } from 'react-i18next';
+import axios from 'axios';
+import { UrlAddress } from '../../../types/UrlAddress';
 
 type Category = {
   id: string;
@@ -58,9 +63,40 @@ const LabelParagraph = styled.label`
   word-wrap: break-word;
   position: relative;
 `;
+const editTransactionComponent = async (data: any) => {
+  try {
+    const res = await axios.patch(
+      `${process.env.REACT_APP_SUM_TRANSACTION_PATCH}${data[0]}/${data[1].id}`,
+      data[1],
+      {
+        withCredentials: true,
+        headers: { 'Content-Type': 'application/json' }
+      }
+    );
+    return res.data;
+  } catch (error) {
+    console.error(error);
+  }
+};
 
 const SelectForm: React.FC<SelectFormProps> = ({ categories, parentCategories, data }) => {
-  const [parentCategory, setParentCategory] = useState('');
+  const { id } = useParams();
+  const queryClient = useQueryClient();
+  const navigate = useNavigate();
+  const { t, i18n } = useTranslation();
+
+  const { mutate } = useMutation(editTransactionComponent, {
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['operations', { id }] });
+      queryClient.invalidateQueries({ queryKey: 'sumTransaction' });
+    }
+  });
+
+  const [parentCategory, setParentCategory] = useState(data.parentCategory);
+
+  const filteredCategories = categories.filter(
+    (category) => category.parentCategory === parentCategory
+  );
 
   const userData = new Date(data.data);
   const dateString = userData.toISOString().substr(0, 10);
@@ -78,14 +114,11 @@ const SelectForm: React.FC<SelectFormProps> = ({ categories, parentCategories, d
       date: newDateString,
       operations: data.operations
     },
-    onSubmit: (values) => {
-      console.log(values);
+    onSubmit: (values: any) => {
+      const editId: any = data.id;
+      mutate([id, { ...values, id: editId }]);
     }
   });
-
-  const filteredCategories = categories.filter(
-    (category) => category.parentCategory === parentCategory
-  );
 
   return (
     <div>
@@ -159,7 +192,6 @@ const SelectForm: React.FC<SelectFormProps> = ({ categories, parentCategories, d
             }}
             onBlur={formik.handleBlur}
             value={formik.values.parentCategory}>
-            <option value="">Select a parent category</option>
             {parentCategories.map((parentCategory) => (
               <option key={parentCategory.id} value={parentCategory.id}>
                 {parentCategory.name}
@@ -175,7 +207,6 @@ const SelectForm: React.FC<SelectFormProps> = ({ categories, parentCategories, d
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.category}>
-            <option value="">Select a category</option>
             {filteredCategories.map((category) => (
               <option key={category.id} value={category.id}>
                 {category.name}

@@ -4,19 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="new form">
-      <change afterPath="$PROJECT_DIR$/img/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/4.png" afterDir="false" />
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="fixed error">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dadaa.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddFrom/AddForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddFrom/AddForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddFrom/Clock.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddTransation/AddTransaction.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddTransation/AddTransaction.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddTransation/AddTransactionComponent.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Molecules/SelecteInlut/SelectForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/SelecteInlut/SelectForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/ListOfWallet/ListOfWallet.stories.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/ListOfWallet/ListOfWallet.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/ListOfWallet/WalletItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/WalletItem/WalletItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,18 +66,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Molecules" />
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/src/components/Organism" />
       <recent name="$PROJECT_DIR$/src/components/Organism/D3" />
       <recent name="$PROJECT_DIR$/src/theme" />
-      <recent name="$PROJECT_DIR$/src/components/Atoms/DarkModeCheckbox" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Molecules" />
       <recent name="$PROJECT_DIR$/src/components/Molecules/BarChart" />
       <recent name="$PROJECT_DIR$/src/components/Molecules/SelectorsMonthAndYear" />
       <recent name="$PROJECT_DIR$/src/components/Organism/D3" />
       <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/src/components/Assets/icons" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -227,7 +226,7 @@
       <workItem from="1676039082963" duration="76800000" />
       <workItem from="1676723276062" duration="10671000" />
       <workItem from="1676783475315" duration="176000" />
-      <workItem from="1676784987300" duration="30789000" />
+      <workItem from="1676784987300" duration="44935000" />
     </task>
     <task id="LOCAL-00001" summary="I was created Button">
       <created>1661597097473</created>
@@ -565,7 +564,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677004561352</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="new form">
+      <created>1677006272819</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1677006272819</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -606,20 +612,8 @@
     <MESSAGE value="I created a chart" />
     <MESSAGE value="I fixed a chart" />
     <MESSAGE value="added new functions in transactions" />
-    <MESSAGE value="fixed error" />
     <MESSAGE value="new form" />
-    <option name="LAST_COMMIT_MESSAGE" value="new form" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/Molecules/AddFrom/AddForm.tsx</url>
-          <line>63</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="fixed error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed error" />
   </component>
 </project>
