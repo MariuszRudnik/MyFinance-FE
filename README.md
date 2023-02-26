@@ -21,7 +21,7 @@
 <!-- Wstęp -->
 ## :pushpin: Wstęp
 
-MyFinances to projekt powstały z chęci stworzenia aplikacji  której sam potrzebowałem oraz  z której chętnie będę korzystać. Aplikacja służy do zapisywania wydatków, dodawania ich do odpowiednich kategorii i analizy poniesionych wydatków.
+MyFinances to projekt powstały z chęci stworzenia aplikacji,  której sam potrzebowałem oraz  z której chętnie będę korzystać. Aplikacja służy do zapisywania wydatków, dodawania ich do odpowiednich kategorii i analizy poniesionych wydatków.
 
 <!-- Screenshoty -->
 ### :camera: Screenshoty
@@ -88,16 +88,15 @@ Użyte paczki po stronie serwera
 ### :dart: Funkcjonalności
 
 - Rejestrowanie użytkowników 
-- Zaimplemetowanie autoryzacji i autentykacji przy użyciu JWT
-- Zaimplementowanie powiadomień mailowych z użyciem cron
+- Zaimplementowanie autoryzacji i autentykacji przy użyciu JWT
 - Dodawanie portfeli, do których można dodawać wydatki i przychody
-- Zaimplemetowany wykres z wydatkami i przychodami
-- Dodawani kategorii i pod kategorii wydatków i przychodów
+- Zaimplementowany wykres z wydatkami i przychodami
+- Dodawani kategorii i podkategorii wydatków i przychodów
 
 <!-- Konfiguracja projektu -->
 ### :key: Konfiguracja projektu
 
-W celu prawidłowego skonfigurowania projektu i połączenia z bazą danych należy odpowiednio wypełnić pola w zmiennej lokalnej znajdującej się w pliku ormconfig.ts
+W celu prawidłowego skonfigurowania projektu i połączenia z bazą danych, należy odpowiednio wypełnić pola w zmiennej lokalnej znajdującej się w pliku ormconfig.ts
 
 
 <!-- Uruchomienie projektu -->
@@ -131,7 +130,7 @@ Zbudowanie wersji produkcyjnej aplikacji
 <!-- Przeznaczenie projektu -->
 ## :eyes: Przeznaczenie projektu
 
-Aplikacja pozwala w prosty sposób  na dodawani wydatków i przychodów oraz ich analizę.
+Aplikacja pozwala w prosty sposób  na dodawanie wydatków i przychodów oraz ich analizę.
 
 
 <!-- Endpointy -->
@@ -143,7 +142,7 @@ Aplikacja pozwala w prosty sposób  na dodawani wydatków i przychodów oraz ich
 
 * [ ] widok RWD
 * [ ] poprawienie dark mode
-* [ ] poprawienie polskie wersji językowej
+* [ ] poprawienie polskiej wersji językowej
 * [ ] dodanie brakujących wykresów
 * [ ] naprawa błędów
 * [ ] PWA
