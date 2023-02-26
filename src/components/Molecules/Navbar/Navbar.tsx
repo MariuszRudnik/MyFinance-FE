@@ -19,6 +19,7 @@ import { ContentButton } from '../../Atoms/ButtonIconSidebar/content/ContentButt
 import settings from '../../Assets/icons/settings.svg';
 import logout from '../../Assets/icons/logout.svg';
 import { fetchLogout } from '../../../Redux/reducers/loginRedux';
+import { DarkModeCheckbox } from '../../Atoms/DarkModeCheckbox/Checkbox';
 
 const Image = styled.div`
   width: 40px;
@@ -66,6 +67,9 @@ const StyledLinksList = styled.ul`
     display: block;
   }
 `;
+const NewParagraph = styled(Paragraph)`
+  text-transform: capitalize;
+`;
 
 export const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -106,14 +110,14 @@ export const Navbar = () => {
         {/* </Menu> */}
       </StyleDiv>
       <StyleDiv>
-        <CircleIcon icon={monitoring}></CircleIcon>
         <CircleIcon icon={bell}></CircleIcon>
+        <DarkModeCheckbox />
         <MenuWrapper>
           <FlexDiv>
             <Image />
-            <Paragraph>
+            <NewParagraph>
               {t('Hello')} {data.firstName} {data.lastName} !
-            </Paragraph>
+            </NewParagraph>
             <ArrowStyles src={arrow} />
           </FlexDiv>
           <MenuNavWrapperBar>

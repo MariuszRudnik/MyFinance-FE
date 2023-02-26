@@ -18,6 +18,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import 'styled-components/macro';
 import 'react-toastify/dist/ReactToastify.css';
 import { toast, ToastContainer } from 'react-toastify';
+import { MainProvider } from './components/Context/MainProvider';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -32,12 +33,12 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <QueryClientProvider client={queryClient}>
-        <ProviderIcon>
+        <MainProvider>
           <Suspense fallback={<LoadingElements />}>
             <Root />
             <ToastContainer />
           </Suspense>
-        </ProviderIcon>
+        </MainProvider>
       </QueryClientProvider>
     </Provider>
   </React.StrictMode>

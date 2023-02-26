@@ -1,11 +1,9 @@
 import React from 'react';
-
-import { Content } from '../Content/Content';
 import { useTranslation } from 'react-i18next';
-import { AddTransactionCategory } from './AddTransactionComponent';
 import { useQuery } from 'react-query';
 import { getCategory, getParentCategory } from '../../Utils/featchHelper';
 import { useParams } from 'react-router-dom';
+import { AddForm } from '../AddFrom/AddForm';
 
 export const AddTransaction = () => {
   const { id } = useParams();
@@ -32,13 +30,8 @@ export const AddTransaction = () => {
     return (
       <>
         <React.Suspense>
-          {!loadingCategory ? (
-            <AddTransactionCategory
-              parentCategory={dataParentCategory}
-              category={dataCategory}
-              parentCategoryLoading={loadingParentCategory}
-              categoryLoading={loadingCategory}
-            />
+          {!loadingParentCategory && !loadingCategory ? (
+            <AddForm categories={dataCategory} parentCategories={dataParentCategory} />
           ) : null}
         </React.Suspense>
       </>

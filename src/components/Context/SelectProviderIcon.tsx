@@ -3,8 +3,13 @@ import empty from '../Assets/CategoryIcon/empty.svg';
 
 export const ContextIcon = createContext<any>(null);
 
-export const ProviderIcon = (props: any) => {
-  const [selectIcon, setSelectIcon] = useState<any>({ value: 'empty', icon: empty });
+interface IconType {
+  value: string;
+  icon: string;
+}
+
+export const ProviderIcon = (props: PropsWithChildren) => {
+  const [selectIcon, setSelectIcon] = useState<IconType>({ value: 'empty', icon: empty });
   return (
     <ContextIcon.Provider value={{ selectIcon, setSelectIcon }}>
       {props.children}

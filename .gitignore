@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 /src/components/Tester.test.tsx
+/src/components/Organism/D3test
 
 # testing
 /coverage

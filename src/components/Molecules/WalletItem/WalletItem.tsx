@@ -48,7 +48,7 @@ export const WalletItems = ({ numberWalletUser }: any) => {
           {/*   <ParagraphList> */}
           {/*     <LinkOfWallet */}
           {/*       as={NavLink} */}
-          {/*       to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/overview`}> */}
+          {/*       to={`/${UrlTypes.WalletItem}/${numberWalletUser}/overview`}> */}
           {/*       {t('Overview')} */}
           {/*     </LinkOfWallet> */}
           {/*   </ParagraphList> */}
@@ -57,7 +57,7 @@ export const WalletItems = ({ numberWalletUser }: any) => {
           {/*   <ParagraphList> */}
           {/*     <LinkOfWallet */}
           {/*       as={NavLink} */}
-          {/*       to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/summary`}> */}
+          {/*       to={`/${UrlTypes.WalletItem}/${numberWalletUser}/summary`}> */}
           {/*       {t('Summary')} */}
           {/*     </LinkOfWallet> */}
           {/*   </ParagraphList> */}
@@ -66,7 +66,7 @@ export const WalletItems = ({ numberWalletUser }: any) => {
           {/*   <ParagraphList> */}
           {/*     <LinkOfWallet */}
           {/*       as={NavLink} */}
-          {/*       to={`/${UrlTypes.ListOfWallet}/${numberWalletUser}/reports`}> */}
+          {/*       to={`/${UrlTypes.WalletItem}/${numberWalletUser}/reports`}> */}
           {/*       {t('Reports')} */}
           {/*     </LinkOfWallet> */}
           {/*   </ParagraphList> */}

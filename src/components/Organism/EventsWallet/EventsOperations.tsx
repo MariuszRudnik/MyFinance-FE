@@ -1,14 +1,20 @@
-import React, { useState } from 'react';
+import React, { useReducer, useState } from 'react';
 import CircleIcon from '../../Atoms/ButtonIcon/CircleIcon';
 import smile from '../../Assets/icons/smile.svg';
 import { theme } from '../../../theme/mainTheme';
 import styled from 'styled-components/macro';
 import Paragraph from '../../Atoms/Paragraph/Paragraph';
 import { useQuery } from 'react-query';
-import { useParams } from 'react-router-dom';
+import { Link, Route, Routes, useNavigate, useParams } from 'react-router-dom';
 import { getOperations } from '../../Utils/featchHelper';
 import { Operations } from '../../../types/Category/GetOperations';
 import { formatCurrency } from '../../Utils/formatCurrency';
+import Modal from '../../Modal/Modal';
+import { AddTransaction } from '../../Molecules/AddTransation/AddTransaction';
+import { EditTransaction } from '../../Molecules/EditTransaction/EditTransaction';
+interface ReducerType {
+  type: string;
+}
 
 const OperationWrapper = styled.div`
   display: flex;
@@ -16,6 +22,16 @@ const OperationWrapper = styled.div`
   height: 80px;
   justify-content: space-between;
   align-items: center;
+  padding: 15px;
+
+  &:hover {
+    background-color: ${theme.textColor};
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  &:hover div p {
+    color: ${theme.secondary};
+  }
 `;
 const OperationsWrapper = styled.div`
   display: flex;
@@ -38,31 +54,100 @@ const Text = styled.p`
   font-size: ${theme.fontSize.s};
   text-transform: capitalize;
 `;
+const ChangePageDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+const NextButton = styled.button`
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  margin: 10px;
+  background: ${theme.tertiary};
+
+  &:active {
+    background: ${theme.textColor};
+  }
+`;
+
+const actionType = {
+  add: 'ADD',
+  subtraction: 'SUBTRACTION'
+};
 
 export const EventsOperations = () => {
+  const navigate = useNavigate();
   const { id } = useParams();
-  const [pageNumber, setPageNumber] = useState(0);
-  const { data, isLoading, error } = useQuery(['operations', { id }, pageNumber], getOperations);
+  const [pageNumberQuery, setPageNumberQuery] = useState(0);
+  const { data, isLoading, error } = useQuery(
+    ['operations', { id }, pageNumberQuery],
+    getOperations
+  );
+  const [transactionData, setTransactionData] = useState([]);
+
+  const editTransaction = (item: any) => {
+    setTransactionData(item);
+    navigate(`./edit/${item.id}`);
+  };
+
+  const reducer = (state: number, action: ReducerType) => {
+    switch (action.type) {
+      case actionType.add:
+        if (state >= data.pagesCount) {
+          state = data.pagesCount;
+          return state;
+        }
+        state++;
+        setPageNumberQuery(state - 1);
+        return state;
+      case actionType.subtraction:
+        if (state <= 1) {
+          state = 1;
+          return state;
+        }
+        state--;
+        setPageNumberQuery(state - 1);
+        return state;
+    }
+    return state;
+  };
+  const [state, dispatch] = useReducer(reducer, 1);
 
   let transaction = [];
   if (data != undefined) {
     const { transactionItems, pagesCount } = data;
-    transaction = transactionItems.map((input: Operations) => (
-      <div key={input.id}>
+    transaction = transactionItems.map((item: Operations) => (
+      <div key={item.id}>
         <OperationsWrapper>
-          <OperationWrapper>
-            <CircleIcon
-              color={input.operations == 'expenditure' ? theme.quaternary : theme.approve}
-              icon={smile}></CircleIcon>
+          <OperationWrapper
+            onClick={() =>
+              editTransaction({
+                id: item.id,
+                operations: item.operations,
+                category: item.category,
+                data: item.date,
+                description: item.description,
+                name: item.name,
+                parentCategory: item.parentCategory,
+                price: item.price
+              })
+            }>
+            <div>
+              <CircleIcon
+                color={item.operations == 'expenditure' ? theme.quaternary : theme.approve}
+                icon={smile}></CircleIcon>
+            </div>
             <DescriptionStyle>
-              <Text key={input.id}>{input.name}</Text>
-              <Text>{`${new Date(input.date).toLocaleString('pl', { dateStyle: 'long' })}`}</Text>
+              <Text key={item.id}>{item.name}</Text>
+              <Text>{`${new Date(item.date).toLocaleString('en', { dateStyle: 'long' })}`}</Text>
             </DescriptionStyle>
             <Paragraph
-              color={input.operations == 'expenditure' ? theme.error : theme.approve}
-              key={input.id}>
-              {input.operations == 'expenditure' ? '-' : ' '}
-              {formatCurrency(`${input.price}`)}
+              color={item.operations == 'expenditure' ? theme.error : theme.approve}
+              key={item.id}>
+              {item.operations == 'expenditure' ? '-' : ' '}
+              {formatCurrency(`${item.price}`)}
             </Paragraph>
           </OperationWrapper>
         </OperationsWrapper>
@@ -70,5 +155,24 @@ export const EventsOperations = () => {
     ));
   }
 
-  return <>{transaction}</>;
+  return (
+    <>
+      {transaction}
+      <ChangePageDiv>
+        <NextButton onClick={() => dispatch({ type: actionType.subtraction })}> - </NextButton>
+        <p> {state} </p>
+        <NextButton onClick={() => dispatch({ type: actionType.add })}> + </NextButton>
+      </ChangePageDiv>
+
+      <Routes>
+        <Route
+          path={`/edit/:idTransaction`}
+          element={
+            <Modal>
+              <EditTransaction data={transactionData} />
+            </Modal>
+          }></Route>
+      </Routes>
+    </>
+  );
 };

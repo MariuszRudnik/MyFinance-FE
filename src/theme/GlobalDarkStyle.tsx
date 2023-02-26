@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 62.5%;
   }
   body {
-     background-color: ${theme.background};
+    background-color: rgb(27,32,45);
     font-size: 1.6rem;
     font-family: "Roboto-Regular", sans-serif;
   }

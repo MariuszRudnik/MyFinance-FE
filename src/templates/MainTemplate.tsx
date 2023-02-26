@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from '../theme/GlobalStyle';
-import { theme } from '../theme/mainTheme';
+import { MainContext } from '../components/Context/MainProvider';
+import GlobalDarkStyle from '../theme/GlobalDarkStyle';
 type Props = {
   children: JSX.Element;
 };
 
 export const MainTemplate: React.FC<Props> = ({ children }) => {
+  const { darkOrLight } = useContext(MainContext);
   return (
     <>
-      <GlobalStyle />
-      <ThemeProvider theme={theme}>
+      {darkOrLight.value == 'light' ? <GlobalStyle /> : <GlobalDarkStyle />}
+      <ThemeProvider theme={darkOrLight.theme}>
         <>{children}</>
       </ThemeProvider>
     </>
