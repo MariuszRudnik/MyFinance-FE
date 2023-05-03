@@ -14,6 +14,7 @@ import { useMutation, useQuery } from 'react-query';
 import styled from 'styled-components/macro';
 import loadingImage from '../../Assets/icons/login.svg';
 import style from '../../Assets/css/style.module.css';
+// eslint-disable-next-line react/no-unknown-property
 
 const DivWrapper = styled.div`
   padding: 5px;

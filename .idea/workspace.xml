@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="fixed error">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddCategory.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,13 +222,7 @@
       <workItem from="1682931960880" duration="2696000" />
       <workItem from="1682947301069" duration="14000" />
       <workItem from="1683052272769" duration="7190000" />
-    </task>
-    <task id="LOCAL-00004" summary="I created Atoms">
-      <created>1661878512359</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1661878512359</updated>
+      <workItem from="1683127625394" duration="444000" />
     </task>
     <task id="LOCAL-00005" summary="Create Sidebar">
       <created>1661942186694</created>
@@ -565,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683117118402</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="fixed error">
+      <created>1683127641935</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1683127641936</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
