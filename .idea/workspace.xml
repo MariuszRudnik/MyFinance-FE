@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="fixed error">
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="eslinter">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddCategory.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,14 +219,7 @@
       <workItem from="1682931960880" duration="2696000" />
       <workItem from="1682947301069" duration="14000" />
       <workItem from="1683052272769" duration="7190000" />
-      <workItem from="1683127625394" duration="444000" />
-    </task>
-    <task id="LOCAL-00005" summary="Create Sidebar">
-      <created>1661942186694</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1661942186694</updated>
+      <workItem from="1683127625394" duration="576000" />
     </task>
     <task id="LOCAL-00006" summary="Create New Icon">
       <created>1663009875823</created>
@@ -567,7 +557,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683127641936</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="eslinter">
+      <created>1683128146406</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1683128146406</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -585,7 +582,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed Redux new" />
     <MESSAGE value="Authentication with backend" />
     <MESSAGE value="I Created Login and Logout" />
     <MESSAGE value="I wrote README.md and created register." />
@@ -610,6 +606,7 @@
     <MESSAGE value="added new functions in transactions" />
     <MESSAGE value="new form" />
     <MESSAGE value="fixed error" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed error" />
+    <MESSAGE value="eslinter" />
+    <option name="LAST_COMMIT_MESSAGE" value="eslinter" />
   </component>
 </project>
