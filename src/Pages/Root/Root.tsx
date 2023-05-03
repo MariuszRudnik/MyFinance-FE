@@ -18,20 +18,6 @@ import Modal from '../../components/Modal/Modal';
 
 function Root({ login, loginAccess, userAccess, walletList }: any) {
   let access = null;
-  fetch('https://my-finances-be-mariuszrudnik.vercel.app/api/login', {
-    mode: 'no-cors',
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      email: 'mariusz@ps7.pl',
-      password: '111'
-    })
-  })
-    .then((response) => response.json())
-    .then((data) => console.log(data))
-    .catch((error) => console.error(error));
 
   useEffect(() => {
     const getUser = async () => {

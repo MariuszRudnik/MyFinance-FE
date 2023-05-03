@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="eslinter">
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="test">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,14 +220,7 @@
       <workItem from="1682931960880" duration="2696000" />
       <workItem from="1682947301069" duration="14000" />
       <workItem from="1683052272769" duration="7190000" />
-      <workItem from="1683127625394" duration="576000" />
-    </task>
-    <task id="LOCAL-00006" summary="Create New Icon">
-      <created>1663009875823</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1663009875823</updated>
+      <workItem from="1683127625394" duration="685000" />
     </task>
     <task id="LOCAL-00007" summary="Create SidebarV2.tsx">
       <created>1663334307410</created>
@@ -564,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683128146406</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="test">
+      <created>1683128267540</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1683128267540</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -582,7 +583,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Authentication with backend" />
     <MESSAGE value="I Created Login and Logout" />
     <MESSAGE value="I wrote README.md and created register." />
     <MESSAGE value="I worked on the registers" />
@@ -607,6 +607,7 @@
     <MESSAGE value="new form" />
     <MESSAGE value="fixed error" />
     <MESSAGE value="eslinter" />
-    <option name="LAST_COMMIT_MESSAGE" value="eslinter" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>
