@@ -5,8 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="fixed error">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.storybook/addons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.storybook/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.storybook/preview-head.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.storybook/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/reducers/loginRedux.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/reducers/loginRedux.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Accordion/Accordeon.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Accordion/Accordeon.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Content/Content.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Content/Content.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/SelectedIcon/Accordeon.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/SelectedIcon/Accordeon.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/UrlAddress.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/UrlAddress.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +50,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.15.1&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.18.12&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.18.25&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/img&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -71,10 +84,9 @@
       <recent name="$PROJECT_DIR$/src/components" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.start">
     <configuration name="BarChart" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
-      <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
@@ -87,7 +99,6 @@
     </configuration>
     <configuration name="BarChart.should render without crashing" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
-      <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
@@ -101,7 +112,6 @@
     </configuration>
     <configuration name="renders a bar chart" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
-      <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
@@ -134,8 +144,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
         <item itemvalue="Jest.renders a bar chart" />
         <item itemvalue="Jest.BarChart.should render without crashing" />
         <item itemvalue="Jest.BarChart" />
@@ -216,14 +226,13 @@
       <workItem from="1676784987300" duration="44935000" />
       <workItem from="1677326961516" duration="1099000" />
       <workItem from="1677410887520" duration="1526000" />
-      <workItem from="1677431394795" duration="753000" />
-    </task>
-    <task id="LOCAL-00002" summary="Merge remote-tracking branch 'origin/Develop' into Develop">
-      <created>1661597520993</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1661597520993</updated>
+      <workItem from="1677431394795" duration="1025000" />
+      <workItem from="1677931594370" duration="189000" />
+      <workItem from="1677931800856" duration="8000" />
+      <workItem from="1677932158905" duration="1169000" />
+      <workItem from="1682931960880" duration="2696000" />
+      <workItem from="1682947301069" duration="14000" />
+      <workItem from="1683052272769" duration="5516000" />
     </task>
     <task id="LOCAL-00003" summary="I fixed Error with Eslint and install StoryBook">
       <created>1661601412899</created>
@@ -561,7 +570,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677326976450</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="fixed error">
+      <created>1677433457234</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1677433457235</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

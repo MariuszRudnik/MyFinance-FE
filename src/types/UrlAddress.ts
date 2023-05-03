@@ -1,4 +1,4 @@
-const Url = 'http://localhost:3002/';
+const Url = 'https://my-finances-be-mariuszrudnik.vercel.app/';
 
 export const UrlAddress = {
   Login: Url + 'api/login',

@@ -21,10 +21,11 @@ function Root({ login, loginAccess, userAccess, walletList }: any) {
 
   useEffect(() => {
     const getUser = async () => {
-      await fetch(UrlAddress.User, {
+      await fetch('https://my-finances-be-mariuszrudnik.vercel.app/api/users', {
         method: 'GET',
         headers: { 'Content-Type': 'application/json' },
-        credentials: 'include'
+        credentials: 'include',
+        mode: 'no-cors'
       })
         .then((res) => {
           if (res.status !== 200) throw new Error('Something went wrong or you are not login');

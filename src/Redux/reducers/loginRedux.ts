@@ -22,13 +22,14 @@ export const fetchLogin = (login: any) => {
   return async (dispatch: any) => {
     try {
       dispatch(startRequest());
-      const res = await fetch(UrlAddress.Login, {
+      const res = await fetch('https://my-finances-be-mariuszrudnik.vercel.app/api/login', {
+        mode: 'no-cors',
         method: 'POST',
         body: JSON.stringify(login),
         credentials: 'include',
         headers: { 'Content-Type': 'application/json' }
       });
-      if (res.status !== 201) throw new Error('Something went wrong');
+      // if (res.status !== 201) throw new Error('Something went wrong');
       const data = await res.json();
       await dispatch(finishRequestWithSuccess());
 
@@ -46,6 +47,7 @@ export const fetchLogout = () => {
     try {
       dispatch(startRequest());
       const res = await fetch(UrlAddress.Logout, {
+        mode: 'no-cors',
         method: 'POST',
         credentials: 'include',
         headers: { 'Content-Type': 'application/json' }
@@ -72,6 +74,7 @@ export const fetchRegister = (data: FormValues) => {
     try {
       dispatch(startRequest());
       const res = await fetch(UrlAddress.Register, {
+        mode: 'no-cors',
         method: 'POST',
         credentials: 'include',
         body: JSON.stringify(data),
