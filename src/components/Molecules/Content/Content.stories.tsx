@@ -1,8 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withRouter } from 'storybook-addon-react-router-v6';
+
 import styled from 'styled-components';
 import { Content } from './Content';
+import { withRouter } from 'storybook-addon-react-router-v6/dist/ts/src';
 
 const Background = styled.div`
   width: 100vw;

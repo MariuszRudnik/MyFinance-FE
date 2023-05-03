@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import { useSelect } from 'downshift';
 
 import box from '../../Assets/CategoryIcon/box.svg';
@@ -20,7 +20,7 @@ import taxi from '../../Assets/CategoryIcon/taxi.svg';
 import styled from 'styled-components/macro';
 import { theme } from '../../../theme/mainTheme';
 import Paragraph from '../../Atoms/Paragraph/Paragraph';
-import { ContextIcon, ProviderIcon } from '../../Context/SelectProviderIcon';
+import { ContextIcon } from '../../Context/SelectProviderIcon';
 
 const List = styled.ul`
   display: flex;
@@ -53,7 +53,7 @@ const NewParagraph = styled(Paragraph)`
   padding: 0 5px;
 `;
 
-export const SelectedIcon = (setIcon: any) => {
+export const SelectedIcon = () => {
   const icon = [
     { value: 'box', icon: box },
     { value: 'bus', icon: bus },
@@ -82,15 +82,7 @@ export const SelectedIcon = (setIcon: any) => {
     const funtiItme = (item: any) => {
       setSelectIcon(item);
     };
-    const {
-      isOpen,
-      selectedItem,
-      getToggleButtonProps,
-      getLabelProps,
-      getMenuProps,
-      highlightedIndex,
-      getItemProps
-    } = useSelect({
+    const { isOpen, getToggleButtonProps, getLabelProps, getMenuProps, getItemProps } = useSelect({
       items: icon,
       itemToString
     });

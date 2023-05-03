@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import React, { useState } from 'react';
+import React from 'react';
 import { toast } from 'react-toastify';
 import * as Yup from 'yup';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
@@ -14,6 +14,7 @@ import { useMutation, useQuery } from 'react-query';
 import styled from 'styled-components/macro';
 import loadingImage from '../../Assets/icons/login.svg';
 import style from '../../Assets/css/style.module.css';
+// eslint-disable-next-line react/no-unknown-property
 
 const DivWrapper = styled.div`
   padding: 5px;
@@ -45,14 +46,13 @@ const addCategory = async (data: any) => {
 
 export const AddCategory = () => {
   const { id } = useParams();
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const { mutate } = useMutation(addCategory);
 
-  const {
-    data: dataParentCategory,
-    error,
-    isLoading: loadingParentCategory
-  }: any = useQuery(['parentCategory', { id }], getParentCategory);
+  const { data: dataParentCategory, isLoading: loadingParentCategory }: any = useQuery(
+    ['parentCategory', { id }],
+    getParentCategory
+  );
 
   const notify = () =>
     toast.success(`${t('Congratulations! Categories added.')}`, {
@@ -144,7 +144,7 @@ export const AddCategory = () => {
                       id="parentCategoryId"
                       className={style.select}>
                       {dataParentCategory
-                        ? dataParentCategory.map((item: any, index: number) => (
+                        ? dataParentCategory.map((item: any) => (
                             <option key={item.id} value={item.id}>
                               {item.name}
                             </option>

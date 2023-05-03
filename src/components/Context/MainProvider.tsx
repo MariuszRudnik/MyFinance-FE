@@ -1,4 +1,4 @@
-import React, { createContext, PropsWithChildren, ProviderProps, useState } from 'react';
+import React, { createContext, PropsWithChildren, useState } from 'react';
 
 import { theme } from '../../theme/mainTheme';
 

@@ -5,11 +5,10 @@ import Input from '../../Atoms/Input/Input';
 import Button from '../../Atoms/Button/Button';
 import { Link, useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
-import { Formik, FormikHelpers, FormikProps, Form, Field, FieldProps, ErrorMessage } from 'formik';
-import { UrlAddress } from '../../../types/UrlAddress';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+
 import { useDispatch } from 'react-redux';
 import { fetchRegister } from '../../../Redux/reducers/loginRedux';
-import { navigate } from '@storybook/addon-links';
 
 interface MyFormValues {
   firstName: string;

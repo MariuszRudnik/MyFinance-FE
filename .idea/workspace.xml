@@ -4,9 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="fixed error">
+    <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="test">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/AddWallet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/AddWallet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/MainPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Operations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Operations.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Setting.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Setting.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Wallet/CategoryPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Wallet/CategoryPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Atoms/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/Button/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Atoms/ButtonIconSidebar/ButtonIconSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/ButtonIconSidebar/ButtonIconSidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Context/MainProvider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Context/MainProvider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Context/SelectProviderIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Context/SelectProviderIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddCategory.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddBudgetParentCategory/AddBudgetParentCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddBudgetParentCategory/AddBudgetParentCategory.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddFrom/AddForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddFrom/AddForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddTransation/AddTransaction.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddTransation/AddTransaction.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/EditTransaction/EditTransaction.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/EditTransaction/EditTransaction.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Navbar/style/navbar.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Navbar/style/navbar.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/SelecteInlut/SelectForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/SelecteInlut/SelectForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/SelectedIcon/SelectedIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/SelectedIcon/SelectedIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/WalletItem/WalletItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/WalletItem/WalletItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/ChartModule/chartModule.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/ChartModule/chartModule.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsOperations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsOperations.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Login/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Register/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Register/Register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/UserPageTemplates.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/UserPageTemplates.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/GlobalDarkStyle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/GlobalDarkStyle.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +46,7 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feat#12_dark_mode" />
+        <entry key="$PROJECT_DIR$" value="feat#13_charge_and_operations" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,7 +66,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.15.1&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.18.12&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.18.25&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/mariusz/Documents/GitHub/NoteBook-FE/img&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -74,7 +103,6 @@
   <component name="RunManager" selected="npm.build">
     <configuration name="BarChart" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
-      <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
@@ -87,7 +115,6 @@
     </configuration>
     <configuration name="BarChart.should render without crashing" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
-      <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
@@ -101,7 +128,6 @@
     </configuration>
     <configuration name="renders a bar chart" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
-      <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
@@ -216,56 +242,15 @@
       <workItem from="1676784987300" duration="44935000" />
       <workItem from="1677326961516" duration="1099000" />
       <workItem from="1677410887520" duration="1526000" />
-      <workItem from="1677431394795" duration="753000" />
-    </task>
-    <task id="LOCAL-00002" summary="Merge remote-tracking branch 'origin/Develop' into Develop">
-      <created>1661597520993</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1661597520993</updated>
-    </task>
-    <task id="LOCAL-00003" summary="I fixed Error with Eslint and install StoryBook">
-      <created>1661601412899</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1661601412899</updated>
-    </task>
-    <task id="LOCAL-00004" summary="I created Atoms">
-      <created>1661878512359</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1661878512359</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Create Sidebar">
-      <created>1661942186694</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1661942186694</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Create New Icon">
-      <created>1663009875823</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1663009875823</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Create SidebarV2.tsx">
-      <created>1663334307410</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1663334307410</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Create Login.tsx">
-      <created>1663400447103</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1663400447103</updated>
+      <workItem from="1677431394795" duration="1025000" />
+      <workItem from="1677931594370" duration="189000" />
+      <workItem from="1677931800856" duration="8000" />
+      <workItem from="1677932158905" duration="1169000" />
+      <workItem from="1682931960880" duration="2696000" />
+      <workItem from="1682947301069" duration="14000" />
+      <workItem from="1683052272769" duration="7190000" />
+      <workItem from="1683127625394" duration="2136000" />
+      <workItem from="1683130219395" duration="1281000" />
     </task>
     <task id="LOCAL-00009" summary="Add Formik">
       <created>1663413821929</created>
@@ -561,7 +546,56 @@
       <option name="project" value="LOCAL" />
       <updated>1677326976450</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="fixed error">
+      <created>1677433457234</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1677433457235</updated>
+    </task>
+    <task id="LOCAL-00052" summary="fixed error">
+      <created>1683117118400</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1683117118402</updated>
+    </task>
+    <task id="LOCAL-00053" summary="fixed error">
+      <created>1683127641935</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1683127641936</updated>
+    </task>
+    <task id="LOCAL-00054" summary="eslinter">
+      <created>1683128146406</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1683128146406</updated>
+    </task>
+    <task id="LOCAL-00055" summary="test">
+      <created>1683128267540</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1683128267540</updated>
+    </task>
+    <task id="LOCAL-00056" summary="test">
+      <created>1683128409488</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1683128409488</updated>
+    </task>
+    <task id="LOCAL-00057" summary="test">
+      <created>1683128491847</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1683128491847</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,8 +613,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed Redux new" />
-    <MESSAGE value="Authentication with backend" />
     <MESSAGE value="I Created Login and Logout" />
     <MESSAGE value="I wrote README.md and created register." />
     <MESSAGE value="I worked on the registers" />
@@ -604,6 +636,8 @@
     <MESSAGE value="added new functions in transactions" />
     <MESSAGE value="new form" />
     <MESSAGE value="fixed error" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed error" />
+    <MESSAGE value="eslinter" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>
