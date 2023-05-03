@@ -7,19 +7,7 @@
     <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="fixed error">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.storybook/addons.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.storybook/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.storybook/preview-head.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.storybook/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/reducers/loginRedux.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/reducers/loginRedux.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Accordion/Accordeon.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Accordion/Accordeon.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Content/Content.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Content/Content.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Molecules/SelectedIcon/Accordeon.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/SelectedIcon/Accordeon.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/UrlAddress.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/UrlAddress.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,14 +220,7 @@
       <workItem from="1677932158905" duration="1169000" />
       <workItem from="1682931960880" duration="2696000" />
       <workItem from="1682947301069" duration="14000" />
-      <workItem from="1683052272769" duration="5516000" />
-    </task>
-    <task id="LOCAL-00003" summary="I fixed Error with Eslint and install StoryBook">
-      <created>1661601412899</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1661601412899</updated>
+      <workItem from="1683052272769" duration="7190000" />
     </task>
     <task id="LOCAL-00004" summary="I created Atoms">
       <created>1661878512359</created>
@@ -577,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677433457235</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="fixed error">
+      <created>1683117118400</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1683117118402</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
