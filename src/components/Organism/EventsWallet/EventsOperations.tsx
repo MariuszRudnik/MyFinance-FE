@@ -5,12 +5,12 @@ import { theme } from '../../../theme/mainTheme';
 import styled from 'styled-components/macro';
 import Paragraph from '../../Atoms/Paragraph/Paragraph';
 import { useQuery } from 'react-query';
-import { Link, Route, Routes, useNavigate, useParams } from 'react-router-dom';
+import { Route, Routes, useNavigate, useParams } from 'react-router-dom';
 import { getOperations } from '../../Utils/featchHelper';
 import { Operations } from '../../../types/Category/GetOperations';
 import { formatCurrency } from '../../Utils/formatCurrency';
 import Modal from '../../Modal/Modal';
-import { AddTransaction } from '../../Molecules/AddTransation/AddTransaction';
+
 import { EditTransaction } from '../../Molecules/EditTransaction/EditTransaction';
 interface ReducerType {
   type: string;
@@ -81,10 +81,7 @@ export const EventsOperations = () => {
   const navigate = useNavigate();
   const { id } = useParams();
   const [pageNumberQuery, setPageNumberQuery] = useState(0);
-  const { data, isLoading, error } = useQuery(
-    ['operations', { id }, pageNumberQuery],
-    getOperations
-  );
+  const { data } = useQuery(['operations', { id }, pageNumberQuery], getOperations);
   const [transactionData, setTransactionData] = useState([]);
 
   const editTransaction = (item: any) => {
@@ -117,7 +114,7 @@ export const EventsOperations = () => {
 
   let transaction = [];
   if (data != undefined) {
-    const { transactionItems, pagesCount } = data;
+    const { transactionItems } = data;
     transaction = transactionItems.map((item: Operations) => (
       <div key={item.id}>
         <OperationsWrapper>

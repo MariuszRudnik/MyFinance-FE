@@ -6,12 +6,11 @@ import Heading from '../../Atoms/Heading/Heading';
 import { theme } from '../../../theme/mainTheme';
 import styled from 'styled-components/macro';
 import bell from '../../Assets/icons/bell.svg';
-import monitoring from '../../Assets/icons/monitoring.svg';
 import logo from '../../Assets/iconsLogo/people.jpg';
 import { useDispatch, useSelector } from 'react-redux';
 import arrow from '../../Assets/icons/arrow.svg';
 import { useTranslation } from 'react-i18next';
-import { ArrowStyles, FlexDiv, Menu, MenuItem, NavWrapper, StyleDiv } from './style/navbar.style';
+import { ArrowStyles, FlexDiv, NavWrapper, StyleDiv } from './style/navbar.style';
 import ButtonIconsSidebar from '../../Atoms/ButtonIconSidebar/ButtonIconSidebar';
 import { NavLink } from 'react-router-dom';
 import { UrlTypes } from '../../../types/UrlTypes';
@@ -72,7 +71,7 @@ const NewParagraph = styled(Paragraph)`
 `;
 
 export const Navbar = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const dispatch: any = useDispatch();
   const logOut = () => {
     return dispatch(fetchLogout());

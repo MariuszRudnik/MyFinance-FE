@@ -1,10 +1,8 @@
 import React from 'react';
-import { UserPageTemplates } from '../templates/UserPageTemplates';
-import { theme } from '../theme/mainTheme';
+
 import { Content } from '../components/Molecules/Content/Content';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
-import Button from '../components/Atoms/Button/Button';
 
 const WrapperContent = styled.div`
   padding: 15px;

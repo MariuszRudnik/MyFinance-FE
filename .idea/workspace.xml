@@ -6,7 +6,36 @@
   <component name="ChangeListManager">
     <list default="true" id="71f8acf1-6595-4fab-acf1-93b75aa88df7" name="Changes" comment="test">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/AddWallet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/AddWallet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/MainPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Operations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Operations.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Root/Root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Setting.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Setting.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Wallet/CategoryPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Wallet/CategoryPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Atoms/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/Button/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Atoms/ButtonIconSidebar/ButtonIconSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Atoms/ButtonIconSidebar/ButtonIconSidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Context/MainProvider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Context/MainProvider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Context/SelectProviderIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Context/SelectProviderIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddBudgetCategory/AddCategory.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddBudgetParentCategory/AddBudgetParentCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddBudgetParentCategory/AddBudgetParentCategory.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddFrom/AddForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddFrom/AddForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/AddTransation/AddTransaction.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/AddTransation/AddTransaction.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/EditTransaction/EditTransaction.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/EditTransaction/EditTransaction.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/Navbar/style/navbar.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/Navbar/style/navbar.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/SelecteInlut/SelectForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/SelecteInlut/SelectForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/SelectedIcon/SelectedIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/SelectedIcon/SelectedIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Molecules/WalletItem/WalletItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Molecules/WalletItem/WalletItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/AddWallet/AddWalletComponents.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/ChartModule/chartModule.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/ChartModule/chartModule.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsOperations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/EventsWallet/EventsOperations.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Login/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Register/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Register/Register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Organism/Sliderbar/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/UserPageTemplates.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/UserPageTemplates.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/GlobalDarkStyle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/GlobalDarkStyle.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +100,7 @@
       <recent name="$PROJECT_DIR$/src/components" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.build">
     <configuration name="BarChart" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
@@ -131,8 +160,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.start" />
         <item itemvalue="Jest.renders a bar chart" />
         <item itemvalue="Jest.BarChart.should render without crashing" />
         <item itemvalue="Jest.BarChart" />
@@ -220,14 +249,8 @@
       <workItem from="1682931960880" duration="2696000" />
       <workItem from="1682947301069" duration="14000" />
       <workItem from="1683052272769" duration="7190000" />
-      <workItem from="1683127625394" duration="800000" />
-    </task>
-    <task id="LOCAL-00008" summary="Create Login.tsx">
-      <created>1663400447103</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1663400447103</updated>
+      <workItem from="1683127625394" duration="2136000" />
+      <workItem from="1683130219395" duration="1281000" />
     </task>
     <task id="LOCAL-00009" summary="Add Formik">
       <created>1663413821929</created>
@@ -565,7 +588,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683128409488</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="test">
+      <created>1683128491847</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1683128491847</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

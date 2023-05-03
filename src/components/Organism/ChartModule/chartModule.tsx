@@ -1,19 +1,13 @@
-import React, { useContext, useEffect, useRef, useState } from 'react';
-import * as d3 from 'd3';
+import React, { useState } from 'react';
+
 import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom';
 import { getSumOperationsMonth } from '../../Utils/featchHelper';
-import { theme } from '../../../theme/mainTheme';
-import { MainContext, MainProvider } from '../../Context/MainProvider';
+
 import styled from 'styled-components/macro';
 import Paragraph from '../../Atoms/Paragraph/Paragraph';
 import { SelectorsMonthAndYear } from '../../Molecules/SelectorsMonthAndYear/SelectorsMonthAndYear';
 import { BarChart } from '../../Molecules/BarChart/BarChart';
-
-interface SumTransactionType {
-  type: string;
-  sum: number;
-}
 
 const D3Wrapper = styled.div`
   display: flex;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { theme } from '../../../theme/mainTheme';
 import ButtonIconsSidebar from '../../Atoms/ButtonIconSidebar/ButtonIconSidebar';
@@ -85,8 +85,8 @@ const HeadlinesWrapper = styled.div`
 `;
 
 export const Sidebar = () => {
-  const { t, i18n } = useTranslation();
-  const { data, isLoading, error } = useQuery('getWallet', getWallet);
+  const { t } = useTranslation();
+  const { data, isLoading } = useQuery('getWallet', getWallet);
   const [selected, setSelected]: any = useState(0);
   const toggle = (index: number) => {
     if (selected == index) {

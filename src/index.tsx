@@ -1,5 +1,4 @@
 // @types/react/index.d.ts
-import { ProviderIcon } from './components/Context/SelectProviderIcon';
 
 declare module 'react' {
   interface Attributes {
@@ -17,7 +16,7 @@ import { LoadingElements } from './components/Atoms/LoadingElements/LoadingEleme
 import { QueryClient, QueryClientProvider } from 'react-query';
 import 'styled-components/macro';
 import 'react-toastify/dist/ReactToastify.css';
-import { toast, ToastContainer } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import { MainProvider } from './components/Context/MainProvider';
 
 const queryClient = new QueryClient({
