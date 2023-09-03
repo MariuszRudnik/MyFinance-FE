@@ -4,8 +4,8 @@ import { theme } from '../../../theme/mainTheme';
 import Input from '../../Atoms/Input/Input';
 import Button from '../../Atoms/Button/Button';
 
-import { Formik, FormikHelpers, FormikProps, Form, Field, FieldProps } from 'formik';
-import { UrlAddress } from '../../../types/UrlAddress';
+import { Formik, Form, Field } from 'formik';
+
 import { Link } from 'react-router-dom';
 
 interface MyFormValues {
