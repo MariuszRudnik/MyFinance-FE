@@ -21,7 +21,7 @@ function Root({ login, loginAccess, userAccess, walletList }: any) {
 
   useEffect(() => {
     const getUser = async () => {
-      await fetch('https://my-finances-be-mariuszrudnik.vercel.app/api/users', {
+      await fetch(UrlAddress.User, {
         method: 'GET',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',

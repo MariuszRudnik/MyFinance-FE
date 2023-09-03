@@ -22,8 +22,7 @@ export const fetchLogin = (login: any) => {
   return async (dispatch: any) => {
     try {
       dispatch(startRequest());
-      const res = await fetch('https://my-finances-be-mariuszrudnik.vercel.app/api/login', {
-        mode: 'no-cors',
+      const res = await fetch('http://localhost:3002/api/login', {
         method: 'POST',
         body: JSON.stringify(login),
         credentials: 'include',
@@ -74,13 +73,12 @@ export const fetchRegister = (data: FormValues) => {
     try {
       dispatch(startRequest());
       const res = await fetch(UrlAddress.Register, {
-        mode: 'no-cors',
         method: 'POST',
         credentials: 'include',
         body: JSON.stringify(data),
         headers: { 'Content-Type': 'application/json' }
       });
-      //if (res.status !== 201) throw new Error('Something went wrong');
+      if (res.status !== 201) throw new Error('Something went wrong');
       await dispatch(finishRequestWithSuccess());
       await dispatch(UserAccess(data));
       await dispatch(LoginAccess(true));

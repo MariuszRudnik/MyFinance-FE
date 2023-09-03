@@ -5,17 +5,22 @@ import Input from '../../Atoms/Input/Input';
 import Button from '../../Atoms/Button/Button';
 import { Link, useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
-import { Formik, FormikHelpers, FormikProps, Form, Field, FieldProps, ErrorMessage } from 'formik';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { useMutation, useQueryClient } from 'react-query';
 import { UrlAddress } from '../../../types/UrlAddress';
-import { useDispatch } from 'react-redux';
-import { fetchRegister } from '../../../Redux/reducers/loginRedux';
-import { navigate } from '@storybook/addon-links';
 
 interface MyFormValues {
   firstName: string;
   lastName: string;
   email: string;
   password: string;
+  passwordConfirm: string;
+}
+interface RegisterData {
+  email: string;
+  password: string;
+  firstName: string;
+  lastName: string;
   passwordConfirm: string;
 }
 
@@ -42,9 +47,41 @@ const SignupSchema = Yup.object().shape({
 });
 
 export const Register = () => {
-  const dispatch: any = useDispatch();
-  const addUser = (data: MyFormValues) => dispatch(fetchRegister(data));
+  const queryClient = useQueryClient();
   const navigate = useNavigate();
+
+  const mutation = useMutation<unknown, Error, RegisterData>(
+    async (newUser: RegisterData) => {
+      const response = await fetch(UrlAddress.Register, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newUser)
+      });
+
+      if (response.status === 422) {
+        throw new Error('Unprocessable Entity');
+      }
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const data = await response.json();
+
+      if (response.status === 201) {
+        navigate('/');
+      }
+
+      return data;
+    },
+    {
+      onError: (error) => {
+        // Handle the error here if needed
+      }
+    }
+  );
 
   const initialValues: MyFormValues = {
     firstName: '',
@@ -53,27 +90,17 @@ export const Register = () => {
     password: '',
     passwordConfirm: ''
   };
-  const registerOnSubmit = async (
-    email: string,
-    password: string,
-    firstName: string,
-    lastName: string,
-    passwordConfirm: string
-  ): Promise<void> => {
-    console.log({ email, password, firstName, lastName, passwordConfirm });
-    await addUser({ email, password, firstName, lastName, passwordConfirm });
-  };
+
   return (
     <>
       <Formik
         initialValues={initialValues}
         validationSchema={SignupSchema}
         onSubmit={(values, actions) => {
-          console.log({ values, actions });
           const { email, password, firstName, lastName, passwordConfirm } = values;
-          registerOnSubmit(email, password, firstName, lastName, passwordConfirm);
+          mutation.mutate({ email, password, firstName, lastName, passwordConfirm });
+
           actions.setSubmitting(false);
-          navigate('/');
         }}>
         <LoginWrapper as={Form}>
           <h1>
@@ -101,8 +128,9 @@ export const Register = () => {
           <ErrorMessage name="passwordConfirm"></ErrorMessage>
 
           <Button type="submit">Register</Button>
+          {mutation.isError ? <div>Error: {mutation.error.message}</div> : null}
           <p>
-            I have account. <Link to="/"> I want Login. </Link>{' '}
+            I have an account. <Link to="/">I want to Login.</Link>
           </p>
         </LoginWrapper>
       </Formik>
