@@ -1,5 +1,4 @@
 import * as React from 'react';
-import styled from 'styled-components/macro';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import Input from '../../Atoms/Input/Input';
 import Button from '../../Atoms/Button/Button';
@@ -20,7 +19,6 @@ import {
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useMutation, useQueryClient } from 'react-query';
-import { UrlAddress } from '../../../types/UrlAddress';
 import axios from 'axios';
 
 interface MyFormValues {
@@ -40,8 +38,8 @@ const addWalletRes = async (data: any) => {
   }
 };
 
-export const AddWalletComponents: React.FC<any> = ({ addWallet }: any) => {
-  const { t, i18n } = useTranslation();
+export const AddWalletComponents: React.FC<any> = () => {
+  const { t } = useTranslation();
   const [addedWallet, setAddedWallet] = useState(false);
   const queryClient = useQueryClient();
   const { mutate } = useMutation(addWalletRes, {
@@ -77,11 +75,11 @@ export const AddWalletComponents: React.FC<any> = ({ addWallet }: any) => {
           initialValues={initialValues}
           validationSchema={SignupSchema}
           onSubmit={(values, actions) => {
-            const { initialState } = values;
-            const value = {
-              ...values,
-              initialState: Number(initialState)
-            };
+            // const { initialState } = values;
+            // const value = {
+            //   ...values,
+            //   initialState: Number(initialState)
+            // };
 
             setAddedWallet(true);
             mutate(values);

@@ -7,17 +7,29 @@ import { UrlTypes } from '../../types/UrlTypes';
 import { LoginPage } from '../Access/LoginPage';
 import { AddWallet } from '../AddWallet';
 import { Operations } from '../Operations';
-import { UrlAddress } from '../../types/UrlAddress';
 import { RegisterPage } from '../Access/Register';
 import { LoadingElements } from '../../components/Atoms/LoadingElements/LoadingElements';
 import { theme } from '../../theme/mainTheme';
 import { UserPageTemplates } from '../../templates/UserPageTemplates';
 import { CategoryPage } from '../Wallet/CategoryPage';
 import { AddTransaction } from '../../components/Molecules/AddTransation/AddTransaction';
-import Modal from '../../components/Modal/Modal';
 
-function Root({ login, loginAccess, userAccess, walletList }: any) {
+function Root({ login, loginAccess, userAccess }: any) {
   let access = null;
+  fetch('https://my-finances-be-mariuszrudnik.vercel.app/api/login', {
+    mode: 'no-cors',
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      email: 'mariusz@ps7.pl',
+      password: '111'
+    })
+  })
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((error) => console.error(error));
 
   useEffect(() => {
     const getUser = async () => {
@@ -35,7 +47,7 @@ function Root({ login, loginAccess, userAccess, walletList }: any) {
           userAccess(res);
           loginAccess(true);
         })
-        .catch((error) => {
+        .catch(() => {
           loginAccess(false);
         });
     };

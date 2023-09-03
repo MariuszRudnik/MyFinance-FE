@@ -7,17 +7,15 @@ import { AddForm } from '../AddFrom/AddForm';
 
 export const AddTransaction = () => {
   const { id } = useParams();
-  const { t, i18n } = useTranslation();
-  const {
-    data: dataParentCategory,
-    error: errorParentCategory,
-    isLoading: loadingParentCategory
-  } = useQuery(['parentCategory', { id }], getParentCategory);
-  const {
-    data: dataCategory,
-    error: errorCategory,
-    isLoading: loadingCategory
-  } = useQuery(['category', { id }], getCategory);
+  const { t } = useTranslation();
+  const { data: dataParentCategory, isLoading: loadingParentCategory } = useQuery(
+    ['parentCategory', { id }],
+    getParentCategory
+  );
+  const { data: dataCategory, isLoading: loadingCategory } = useQuery(
+    ['category', { id }],
+    getCategory
+  );
 
   if (
     dataCategory == undefined ||

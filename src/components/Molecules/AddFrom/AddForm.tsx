@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ErrorMessage, useFormik } from 'formik';
+import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { useMutation, useQueryClient } from 'react-query';
 import { useNavigate, useParams } from 'react-router-dom';
@@ -49,9 +49,6 @@ const ItemWrapper = styled.div`
   justify-content: center;
   gap: 2px;
 `;
-const RadioWrapper = styled.div`
-  margin: 10px;
-`;
 const LabelParagraph = styled.label`
   font-family: 'Roboto-Regular', 'Roboto-Bold', 'Roboto-Italic', 'Roboto-Light', sans-serif;
   font-size: ${theme.fontSize.s};
@@ -75,7 +72,7 @@ export const AddForm: React.FC<SelectFormProps> = ({ categories, parentCategorie
   const { id } = useParams();
   const queryClient = useQueryClient();
   const navigate = useNavigate();
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const [parentCategory, setParentCategory] = useState(parentCategories[0].id);
   const filteredCategories = categories.filter(

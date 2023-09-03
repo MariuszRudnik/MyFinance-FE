@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
-import { ErrorMessage, Field, useFormik } from 'formik';
+import { useFormik } from 'formik';
 import { InputX } from '../../Atoms/Input2/Input2';
 import Button from '../../Atoms/Button/Button';
 import styled from 'styled-components/macro';
 import { theme } from '../../../theme/mainTheme';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useMutation, useQueryClient } from 'react-query';
-import { useTranslation } from 'react-i18next';
 import axios from 'axios';
-import { UrlAddress } from '../../../types/UrlAddress';
 
 type Category = {
   id: string;
@@ -82,8 +80,6 @@ const editTransactionComponent = async (data: any) => {
 const SelectForm: React.FC<SelectFormProps> = ({ categories, parentCategories, data }) => {
   const { id } = useParams();
   const queryClient = useQueryClient();
-  const navigate = useNavigate();
-  const { t, i18n } = useTranslation();
 
   const { mutate } = useMutation(editTransactionComponent, {
     onSuccess: () => {

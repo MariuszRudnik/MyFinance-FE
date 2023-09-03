@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { theme } from '../../../../theme/mainTheme';
-import logo from '../../../Assets/iconsLogo/people.jpg';
 
 export const NavWrapper = styled.nav`
   display: flex;
