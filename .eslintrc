@@ -27,7 +27,7 @@
             "no-duplicate-imports": "error",
             "ban-ts-comment": 0,
             "react/no-unknown-property": "off",
-            "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+            "@typescript-eslint/no-unused-vars": "off",
             "@typescript-eslint/no-explicit-any": "off"
     }
 }

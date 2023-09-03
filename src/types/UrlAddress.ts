@@ -1,4 +1,5 @@
-const Url = 'https://my-finances-be-mariuszrudnik.vercel.app/';
+// const Url = 'https://my-finances-be-mariuszrudnik.vercel.app/';
+const Url = process.env.REACT_APP_GET_URL;
 
 export const UrlAddress = {
   Login: Url + 'api/login',

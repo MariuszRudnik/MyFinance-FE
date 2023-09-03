@@ -33,7 +33,7 @@ function Root({ login, loginAccess, userAccess }: any) {
 
   useEffect(() => {
     const getUser = async () => {
-      await fetch('https://my-finances-be-mariuszrudnik.vercel.app/api/users', {
+      await fetch(UrlAddress.User, {
         method: 'GET',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
