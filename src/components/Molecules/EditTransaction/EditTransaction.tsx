@@ -1,34 +1,18 @@
 import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { ErrorMessage, Field, Form, Formik } from 'formik';
 import Button from '../../Atoms/Button/Button';
 import styled from 'styled-components/macro';
 import Paragraph from '../../Atoms/Paragraph/Paragraph';
 import { theme } from '../../../theme/mainTheme';
 import { useMutation, useQuery, useQueryClient } from 'react-query';
-import axios from 'axios';
 import { deleteTransaction, getCategory, getParentCategory } from '../../Utils/featchHelper';
 import SelectForm from '../SelecteInlut/SelectForm';
 
-interface ParentCategoryData {
-  icon: string;
-  id: string;
-  name: string;
-  plannedBudget: string;
-}
 interface Transaction {
   id: string;
   transaction: string;
 }
-interface Values {
-  category: string;
-  date: string;
-  description: string;
-  name: string;
-  operations: string;
-  parentCategory: string;
-  price: number;
-}
+
 const WrapperForm = styled.div`
   display: flex;
   flex-direction: column;
@@ -55,7 +39,7 @@ export const EditTransaction = ({ data }: any) => {
     getCategory
   );
 
-  const { mutate, isLoading, isError, isSuccess } = useMutation(deleteTransaction, {
+  const { mutate } = useMutation(deleteTransaction, {
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['operations', { id }] });
       queryClient.invalidateQueries({ queryKey: 'sumTransaction' });

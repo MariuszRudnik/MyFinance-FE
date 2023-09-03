@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { ButtonWrapper, StylForm } from '../../Organism/AddWallet/style/StyleAddWallet.style';
-import { ErrorMessage, Field, Form, Formik, useFormik } from 'formik';
+import { ErrorMessage, Field, Form, Formik } from 'formik';
 import Paragraph from '../../Atoms/Paragraph/Paragraph';
 import Button from '../../Atoms/Button/Button';
 import { useTranslation } from 'react-i18next';
@@ -11,7 +11,6 @@ import { useMutation } from 'react-query';
 import { UrlAddress } from '../../../types/UrlAddress';
 import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import app from '../../Assets/icons/wallet.svg';
 
 import { ErrorTextMessage } from '../../Atoms/ErrorTextMessage/ErrorTextMessage';
 
@@ -55,7 +54,7 @@ const addCategory = async (data: addCategory) => {
 export const AddBudgetParentCategory = () => {
   const { selectIcon } = useContext(ContextIcon);
   const { id } = useParams();
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [plannedCategory, setPlannedCategory] = useState(true);
 
   const { mutate } = useMutation(addCategory);
