@@ -31,7 +31,6 @@ function Root({ login, loginAccess, userAccess, walletList }: any) {
           return res.json();
         })
         .then((res) => {
-          //walletList();
           userAccess(res);
           loginAccess(true);
         })
