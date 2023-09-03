@@ -36,15 +36,14 @@ function Root({ login, loginAccess, userAccess }: any) {
       await fetch(UrlAddress.User, {
         method: 'GET',
         headers: { 'Content-Type': 'application/json' },
-        credentials: 'include',
-        mode: 'no-cors'
+        credentials: 'include'
       })
         .then((res) => {
           if (res.status !== 200) throw new Error('Something went wrong or you are not login');
           return res.json();
         })
         .then((res) => {
-          // walletList();
+          //walletList();
           userAccess(res);
           loginAccess(true);
         })
