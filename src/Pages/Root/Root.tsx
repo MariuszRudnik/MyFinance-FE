@@ -13,6 +13,7 @@ import { theme } from '../../theme/mainTheme';
 import { UserPageTemplates } from '../../templates/UserPageTemplates';
 import { CategoryPage } from '../Wallet/CategoryPage';
 import { AddTransaction } from '../../components/Molecules/AddTransation/AddTransaction';
+import { UrlAddress } from '../../types/UrlAddress';
 
 function Root({ login, loginAccess, userAccess }: any) {
   let access = null;
