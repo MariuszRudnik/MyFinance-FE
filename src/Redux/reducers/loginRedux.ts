@@ -22,7 +22,7 @@ export const fetchLogin = (login: any) => {
   return async (dispatch: any) => {
     try {
       dispatch(startRequest());
-      const res = await fetch('http://localhost:3002/api/login', {
+      const res = await fetch(UrlAddress.Login, {
         method: 'POST',
         body: JSON.stringify(login),
         credentials: 'include',
@@ -61,6 +61,7 @@ export const fetchLogout = () => {
     }
   };
 };
+
 interface FormValues {
   firstName: string;
   lastName: string;
