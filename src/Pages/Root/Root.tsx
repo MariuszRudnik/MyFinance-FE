@@ -17,8 +17,7 @@ import { UrlAddress } from '../../types/UrlAddress';
 
 function Root({ login, loginAccess, userAccess }: any) {
   let access = null;
-  fetch('https://my-finances-be-mariuszrudnik.vercel.app/api/login', {
-    mode: 'no-cors',
+  fetch(UrlAddress.Login, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
