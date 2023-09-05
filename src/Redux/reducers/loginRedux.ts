@@ -61,6 +61,7 @@ export const fetchLogout = () => {
     }
   };
 };
+
 interface FormValues {
   firstName: string;
   lastName: string;
