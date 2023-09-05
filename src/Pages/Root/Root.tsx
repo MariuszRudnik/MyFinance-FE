@@ -17,16 +17,11 @@ import { UrlAddress } from '../../types/UrlAddress';
 
 function Root({ login, loginAccess, userAccess }: any) {
   let access = null;
-  fetch('https://my-finances-be-mariuszrudnik.vercel.app/api/login', {
-    mode: 'no-cors',
+  fetch(UrlAddress.Login, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      email: 'mariusz@ps7.pl',
-      password: '111'
-    })
+    }
   })
     .then((response) => response.json())
     .then((data) => console.log(data))
